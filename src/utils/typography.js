@@ -1,8 +1,7 @@
 import Typography from 'typography'
-// import presets, { colors } from './presets'
 
 const headerFontFamily = [
-  `Maison Neue`,
+  `brandon_grotesque`,
   `Helvetica Neue`,
   `Arial`,
   `sans-serif`,
@@ -10,8 +9,8 @@ const headerFontFamily = [
 
 const _options = {
   headerFontFamily,
-  bodyFontFamily: [`Maison Neue`, `Helvetica Neue`, `Arial`, `sans-serif`],
-  bodyWeight: 300,
+  bodyFontFamily: [`brandon_grotesque`, `Helvetica Neue`, `Arial`, `sans-serif`],
+  bodyWeight: 500,
   baseLineHeight: 1.4,
   baseFontSize: `16px`,
   headerLineHeight: 1.075,
