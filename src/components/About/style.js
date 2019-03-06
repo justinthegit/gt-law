@@ -120,6 +120,15 @@ export const QuoteWrapper = styled.div`
 		text-align: right;
 	}
 
+	@media (max-width: 1280px) {
+		max-width: 330px;
+		p {
+			font-size: 26px;
+			padding:0 25px;
+		}
+
+	}
+
 	@media (max-width: 768px) {
 		order: 2;
 
