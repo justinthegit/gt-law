@@ -156,8 +156,8 @@ export const NavItem = styled.div`
 
 export const WhiteLine = styled.div`
 	display: block;
-	color: red;
-	height: 10px;
+	background-color: white;
+	height: 1px;
 	width: 100%;
 	z-index: 3;
 `;

@@ -7,6 +7,8 @@ import SEO from '../components/seo';
 import { NavBar } from '../components/NavBar';
 import { HeaderCarousel } from '../components/HeaderCarousel';
 import { About } from '../components/About';
+import { Areas } from '../components/Areas';
+
 
 
 const IndexPage = () => (
@@ -16,6 +18,7 @@ const IndexPage = () => (
 		<NavBar />
 		<HeaderCarousel />
 		<About/>
+		<Areas/>
 
 		<Link to="/page-2/">Go to page 2</Link>
 	</Layout>
