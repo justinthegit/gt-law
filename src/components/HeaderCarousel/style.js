@@ -12,16 +12,11 @@ export const Wrapper = styled.div`
 	@media (max-width: 320px) {
 		height: 428px;
 	}
-
 `;
 export const HeroImg = styled.img`
 	object-fit: contain;
 	margin: 0;
-
-
 `;
-
-
 
 export const Title = styled.div`
 	position: absolute;
@@ -63,7 +58,6 @@ export const Title = styled.div`
 		h2 {
 			font-size: 80px;
 			font-weight: 700;
-
 		}
 	}
 
@@ -76,7 +70,7 @@ export const Title = styled.div`
 			font-weight: 700;
 		}
 
-		img{
+		img {
 			height: 27px;
 			width: 27px;
 		}
@@ -89,7 +83,6 @@ export const Title = styled.div`
 		h2 {
 			font-size: 40px;
 			font-weight: 700;
-
 		}
 	}
 `;
@@ -130,26 +123,22 @@ export const WatchNow = styled.div`
 		color: #6cc24a;
 	}
 
-
-@media (max-width:320px) {
-	width: 176px;
-	height: 77px;
-	font-size: 14px;
-line-height:16px;
-bottom: 100px;
-	right: 50px;
-	img {
-		height: 36px;
-		width: 36px;
+	@media (max-width: 320px) {
+		width: 176px;
+		height: 77px;
+		font-size: 14px;
+		line-height: 16px;
+		bottom: 100px;
+		right: 50px;
+		img {
+			height: 36px;
+			width: 36px;
+		}
+		p {
+			padding: 14px 20px;
+		}
 	}
-	p {
-		padding: 14px 20px;
-	}
-
-}
-
 `;
-
 
 export const KnowMore = styled.div`
 	background-color: #0047bb;
@@ -178,7 +167,7 @@ export const KnowMore = styled.div`
 	@media (max-width: 320px) {
 		height: 63px;
 		h1 {
-		font-size: 16px;
-	}
+			font-size: 16px;
+		}
 	}
 `;
