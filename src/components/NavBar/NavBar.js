@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper, Nav, MobileNav, NavItem, WhiteLine } from './style.js';
+import { Wrapper, Nav, MobileNav, NavItem, WhiteLine, Clickable } from './style.js';
 import logo from '../../images/gt-logo.svg';
 import Hamburger from './hamburger.js';
 
@@ -35,24 +35,26 @@ class NavBar extends Component {
 						<a href="/">A DAY IN THE LIFE</a>
 						<a href="/">APPLICATION INFO+FAQS</a>
 					</Nav>
-					<div onClick={() => this.handleClick()}>
+					<Clickable onClick={() => this.handleClick()}>
 						<Hamburger isOpen={this.state.isOpen} />
-					</div>
+					</Clickable>
 				</Wrapper>
 
 				<MobileNav isOpen={this.state.isOpen}>
 					<NavItem>
 						<a href="/">ABOUT G+T</a>
-						<WhiteLine />
 					</NavItem>
+					<WhiteLine />
 					<NavItem>
 						<a href="/">PRACTICE AREAS</a>
-						<WhiteLine />
 					</NavItem>
+					<WhiteLine />
+
 					<NavItem>
 						<a href="/">A DAY IN THE LIFE</a>
-						<WhiteLine />
 					</NavItem>
+					<WhiteLine />
+
 					<NavItem>
 						<a href="/">APPLICATION INFO + FAQS</a>
 					</NavItem>

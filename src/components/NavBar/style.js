@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 	height: 100%;
 	width: 100%;
 	border: 1px dashed red;
+	position: relative;
 
 	img {
 		margin: 32px;
@@ -28,6 +29,7 @@ export const Wrapper = styled.div`
 		}
 	}
 	@media (max-width: 320px) {
+		height: 60px;
 		img {
 			width: 100px;
 			margin: 20px;
@@ -37,6 +39,8 @@ export const Wrapper = styled.div`
 
 export const Nav = styled.nav`
 	padding-right: 30px;
+	z-index: 2;
+
 	a {
 		padding: 0 25px;
 		font-size: 16px;
@@ -44,6 +48,7 @@ export const Nav = styled.nav`
 		letter-spacing: -0.24px;
 		text-align: center;
 		text-decoration: none;
+		font-weight: 700;
 	}
 
 	@media (max-width: 1024px) {
@@ -60,21 +65,28 @@ export const Nav = styled.nav`
 	}
 `;
 
+export const Clickable = styled.div`
+	display: none;
+	@media (max-width: 768px) {
+		display: inline-block;
+	}
+`;
+
 export const HamburgerWrapper = styled.div`
 	display: none;
 	margin-right: 32px;
 
 	@media (max-width: 768px) {
 		display: inline-block;
-		width: 40px;
-		height: 24px;
+		width: 24px;
+		height: 12px;
 		position: relative;
 	}
 `;
 
 export const FirstLine = styled.span`
 	display: block;
-	height: 2px;
+	height: 3px;
 	width: 100%;
 	background: #0047bb;
 	transition: 0.4s ease;
@@ -82,41 +94,54 @@ export const FirstLine = styled.span`
 	position: absolute;
 	margin-top: -1px;
 	transform: ${(props) =>
-		props.isOpen ? 'translate3d(0, 12px, 0) rotate(45deg)' : 'translate3d(0, 0, 0) rotate(0deg)'};
+		props.isOpen ? 'translate3d(0, 6px, 0) rotate(45deg)' : 'translate3d(0, 0, 0) rotate(0deg)'};
 `;
 
 export const SecondLine = styled(FirstLine)`
 			transition: .1s ease-out;
 			opacity: ${(props) => (props.isOpen ? 0 : 1)};
-			top: 12px;
+			top: 6px;
 `;
 
 export const ThirdLine = styled(FirstLine)`
 			transform: ${(props) =>
-				props.isOpen ? 'translate3d(0, 12px, 0) rotate(-45deg)' : 'translate3d(0, 24px, 0) rotate(0deg)'};
+				props.isOpen ? 'translate3d(0, 6px, 0) rotate(-45deg)' : 'translate3d(0, 12px, 0) rotate(0deg)'};
 		display:block;
 
 `;
 
 export const MobileNav = styled.div`
-	padding: 40px 0;
-	background: #D0D0CE;
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 900px;
+
+	background: #d0d0ce;
 	display: none;
-	position: relative;
-	z-index: -2;
 	transition: 1s ease;
 	transform: ${(props) => (props.isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+
 	@media (max-width: 768px) {
-		display: block;
-		padding: 40px 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+	}
+
+	@media (max-width: 480px) {
+		height: 600px;
+	}
+
+	@media (max-width: 320px) {
+		height: 428px;
 	}
 `;
 
 export const NavItem = styled.div`
 	display: block;
 	color: red;
-	text-align: center;
-	padding: 25px 0;
+	padding: 30px 0;
 
 	a {
 		text-decoration: none;
@@ -130,9 +155,9 @@ export const NavItem = styled.div`
 `;
 
 export const WhiteLine = styled.div`
-display:block;
-color:red;
-height:10px;
-width: 100%;
-
+	display: block;
+	color: red;
+	height: 10px;
+	width: 100%;
+	z-index: 3;
 `;
