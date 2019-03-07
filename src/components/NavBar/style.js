@@ -141,16 +141,37 @@ export const MobileNav = styled.div`
 export const NavItem = styled.div`
 	display: block;
 	color: red;
-	padding: 30px 0;
+	padding: 60px 0px;
+	max-width: 360px;
+
+	text-align: center;
 
 	a {
 		text-decoration: none;
-		font-size: 24px;
+		font-size: 40px;
 		color: #0047bb;
 		letter-spacing: -0.35px;
 		font-weight: 700;
 		text-align: center;
-		line-height: 28px;
+		line-height: 120%;
+	}
+
+	@media (max-width: 480px) {
+		max-width: 240px;
+
+		padding: 50px 0px;
+		a {
+			font-size: 26px;
+		}
+	}
+
+	@media (max-width: 320px) {
+		max-width: 220px;
+
+		padding: 30px 0px;
+		a {
+			font-size: 24px;
+		}
 	}
 `;
 
@@ -158,6 +179,6 @@ export const WhiteLine = styled.div`
 	display: block;
 	background-color: white;
 	height: 1px;
-	width: 100%;
+	width: 80%;
 	z-index: 3;
 `;
