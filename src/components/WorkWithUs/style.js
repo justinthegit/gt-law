@@ -58,7 +58,11 @@ export const TextWrapper = styled.div`
 		line-height: 22px;
 		margin-right: 7px;
 	}
-
+	div {
+		display:flex;
+		flex-direction:row;
+		align-items: center;
+	}
 	img {
 		height: 17px;
 		margin: 0;
@@ -114,7 +118,12 @@ export const ReallyLike = styled.div`
 		line-height: 22px;
 		margin-right: 0px;
 	}
-
+	
+	div {
+		display:flex;
+		flex-direction:row;
+		align-items: center;
+	}
 	img {
 		display: inline-block;
 		margin: 0;
@@ -184,6 +193,10 @@ export const ReallyLike = styled.div`
 
 		span {
 			font-size:18px;
+		}
+
+		div {
+			display:inline-block;
 		}
 
 		img {

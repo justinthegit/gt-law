@@ -8,10 +8,10 @@ class Area extends Component {
 			<AreaWrapper>
         <h1>{this.props.title}</h1>
 
-        <div>
-        <span>Learn more</span>
+        <a href="/">
+        <span >Learn more</span>
         <img src={arrowIcon} alt=""/>
-        </div>
+        </a>
 			</AreaWrapper>
 		);
 	}

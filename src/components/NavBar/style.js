@@ -114,11 +114,11 @@ export const MobileNav = styled.div`
 	z-index: 1;
 	position: absolute;
 	width: 100%;
-	height: 900px;
+	height: 428px;
 
 	background: #d0d0ce;
 	display: none;
-	transition: 1s ease;
+	transition: 0.6s ease;
 	transform: ${(props) => (props.isOpen ? 'translateY(0)' : 'translateY(-100%)')};
 
 	@media (max-width: 768px) {
@@ -129,50 +129,29 @@ export const MobileNav = styled.div`
 		justify-content: center;
 	}
 
-	@media (max-width: 480px) {
-		height: 600px;
-	}
 
-	@media (max-width: 320px) {
-		height: 428px;
-	}
 `;
 
 export const NavItem = styled.div`
 	display: block;
 	color: red;
-	padding: 60px 0px;
-	max-width: 360px;
+	font-weight: 700;
+	max-width: 220px;
+	padding: 30px 0px;
+
 
 	text-align: center;
 
 	a {
 		text-decoration: none;
-		font-size: 40px;
+		font-size: 24px;
 		color: #0047bb;
 		letter-spacing: -0.35px;
-		font-weight: 700;
 		text-align: center;
 		line-height: 120%;
 	}
 
-	@media (max-width: 480px) {
-		max-width: 240px;
 
-		padding: 50px 0px;
-		a {
-			font-size: 26px;
-		}
-	}
-
-	@media (max-width: 320px) {
-		max-width: 220px;
-
-		padding: 30px 0px;
-		a {
-			font-size: 24px;
-		}
-	}
 `;
 
 export const WhiteLine = styled.div`
@@ -180,5 +159,7 @@ export const WhiteLine = styled.div`
 	background-color: white;
 	height: 1px;
 	width: 80%;
+	max-width: 260px;
+
 	z-index: 3;
 `;

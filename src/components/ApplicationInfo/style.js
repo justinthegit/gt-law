@@ -106,7 +106,7 @@ export const QuestionWrapper = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 	height: 75px;
-	transition: 0.1s ease;
+	transition: 0.1s ease-out;
 	align-items: center;
 	padding: 0 30px;
 	background-color: ${(props) => (props.isOpen ? ' #6cc24a' : 'rgba(255, 255, 255, 0.05)')};
@@ -115,30 +115,34 @@ export const QuestionWrapper = styled.div`
 	p {
 		font-size: 24px;
 		margin: 0;
+		line-height: 124%;
+		margin-RIGHT: 20px;
+
+
 	}
 
 	svg {
 		height: 11px;
 		width: 19px;
 		margin: 0;
+
 		vertical-align: middle;
+		transform: ${(props) => (props.isOpen ? 'rotateX(180deg)': null)};
 
 		path {
-			fill: ${(props) => (props.isOpen ? '#fff' : ' #6CC24A')
+			fill: ${(props) => (props.isOpen ? '#fff' : ' #6CC24A')};
 		}
-
-
 	}
 
 	:hover {
 		background-color: #6cc24a;
-
-		img {
-			display: none;
-			:nth-of-type(2) {
-				display: inline-block;
+		svg {
+			transform: rotateX(180deg);
+			path {
+				fill: #fff;
 			}
 		}
+
 	}
 
 	@media (max-width: 480px) {
@@ -151,13 +155,9 @@ export const QuestionWrapper = styled.div`
 `;
 
 export const Answer = styled.div`
-	position: ${(props) => (props.isOpen ? 'relative' : 'absolute')};
 	background-color: white;
 	padding: 40px 120px;
-	z-index: -1;
-	/* transition: 0.5s ease; */
-	visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
-	transform: ${(props) => (props.isOpen ? 'translateY(0)' : `translateY(-140%)`)};
+	display: ${(props) => (props.isOpen ? 'block' : 'none')};
 	color: #003057;
 
 	p {
@@ -177,6 +177,8 @@ export const Answer = styled.div`
 	}
 	@media (max-width: 768px) {
 		padding: 40px 50px;
+
+
 	}
 
 	@media (max-width: 480px) {
@@ -194,7 +196,6 @@ export const DownloadApp = styled.div`
 		width: 50%;
 		height: 50%;
 	}
-
 `;
 
 export const TextContainer = styled.div`
@@ -216,5 +217,4 @@ export const TextContainer = styled.div`
 		letter-spacing: -0.26px;
 		margin-bottom: 40px;
 	}
-
 `;

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { HeroWrapper, TextWrapper, ReallyLike } from './style.js';
+import arrowIcon from '../../images/arrow-in-circle.svg'
+
 
 class WorkWithUs extends Component {
 	render() {
@@ -13,7 +15,7 @@ class WorkWithUs extends Component {
 							<span>
 								gradaustralia.com.au
 							</span>
-							<img src="https://res.cloudinary.com/avenue/image/upload/v1551846903/green-btn_bsh4bi.png" alt=""/>
+							<img src={arrowIcon} alt=""/>
 
 						</div>
 					</ReallyLike>
@@ -38,7 +40,7 @@ class WorkWithUs extends Component {
 						cvmail.com.au
 					</span>
 
-					<img src="https://res.cloudinary.com/avenue/image/upload/v1551846903/green-btn_bsh4bi.png" alt=""/>
+					<img src={arrowIcon} alt=""/>
 
 			</div>
 			

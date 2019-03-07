@@ -19,7 +19,7 @@ export const Container = styled.div`
 		font-size: 38px;
 		color: white;
 		margin-bottom: 60px;
-		font-weight: normal
+		font-weight: normal;
 	}
 
 	@media (max-width: 1280px) {
@@ -39,10 +39,9 @@ export const Container = styled.div`
 
 	@media (max-width: 480px) {
 		h1 {
-		font-size: 26px;
+			font-size: 26px;
 		}
 		padding: 30px 30px 10PX 30px;
-
 	}
 `;
 
@@ -87,12 +86,27 @@ export const HorizontalLine = styled.div`
 export const AreaWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-
+	position:relative;
 	h1 {
 		font-size: 28px;
 		color: white;
 		margin-bottom: 10px;
 		max-width: 200px;
+	}
+
+	a {
+		text-decoration:none;
+
+		:before {
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:0;
+		}
 	}
 
 
@@ -101,6 +115,8 @@ export const AreaWrapper = styled.div`
 		color: #d8d8d8;
 		font-weight: normal;
 		margin-right: 10px;
+
+	
 	}
 
 	img {
@@ -112,35 +128,35 @@ export const AreaWrapper = styled.div`
 
 	@media (max-width: 1280px) {
 
-		div {
+		a {
 		height: auto;
 	}
 		h1 {
 			font-size: 24px;
 		}
-
-		@media (max-width: 768px) {
-			flex-direction: row;
-			justify-content: space-between;
-			h1 {
-				max-width: 100%;
-			}
-
-			span {
-				display: none;
-			}
-		}
 	}
 
+
 	@media (max-width: 768px) {
+		flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
 		h1 {
 			margin: 0;
 			font-size: 25px;
 			margin-right: 15px;
+			max-width: 100%;
+
 		}
 		img {
 			height: 30px;
+			width: 30px;
 		}
+
+		span {
+				display: none;
+			}
 	}
 
 	@media (max-width: 480px) {
@@ -152,6 +168,7 @@ export const AreaWrapper = styled.div`
 		}
 		img {
 			height: 17px;
+			width: 17px;
 
 		}
 	}
