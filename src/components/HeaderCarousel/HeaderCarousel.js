@@ -23,10 +23,7 @@ class HeaderCarousel extends Component {
 					/>
 					<p>
 						Sectado temaa vorest qua aad vitatur acias mvitatur acias molor.
-						<span>
-							{' '}
-							Watch now.
-						</span>
+						<span> Watch now.</span>
 					</p>
 				</WatchNow>
 				<KnowMore>

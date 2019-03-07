@@ -7,6 +7,10 @@ export const BlueWrapper = styled.div`
 	height: 100%;
 	width: 100%;
 	background-color: #0047bb;
+
+	@media (max-width: 480px) {
+		margin-top: 37px;
+	}
 `;
 
 export const Container = styled.div`
@@ -19,6 +23,7 @@ export const Container = styled.div`
 		color: white;
 		margin-bottom: 30px;
 		font-weight: 500;
+		max-width: 340px;
 	}
 
 	p {
@@ -28,6 +33,7 @@ export const Container = styled.div`
 		letter-spacing: -0.26px;
 		line-height: 22px;
 		max-width: 620px;
+		margin-bottom: 5px;
 	}
 
 	span {
@@ -65,7 +71,11 @@ export const Container = styled.div`
 		}
 
 		p {
-			padding: 0 30px;
+			padding: 0 50px 0 30px;
+		}
+
+		span {
+			display: block;
 		}
 		padding: 30px 0px 0 0px;
 	}
@@ -92,8 +102,9 @@ export const QuestionsContainer = styled.div`
 export const DropDownWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
 	width: 100%;
+	max-width: 1036px;
 `;
 
 export const QuestionWrapper = styled.div`

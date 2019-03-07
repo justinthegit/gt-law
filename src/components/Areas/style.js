@@ -41,7 +41,7 @@ export const Container = styled.div`
 		h1 {
 		font-size: 26px;
 		}
-		padding: 30px 30px 0 30px;
+		padding: 30px 30px 10PX 30px;
 
 	}
 `;
@@ -76,6 +76,9 @@ export const HorizontalLine = styled.div`
 
 	@media (max-width: 768px) {
 		margin: ${(props) => (props.mobile ? '20px 0' : null)};
+	}
+	@media (max-width: 480px) {
+		margin: ${(props) => (props.mobile ? '18px 0' : null)};
 	}
 `;
 

@@ -14,8 +14,13 @@ export const Wrapper = styled.div`
 	}
 `;
 export const HeroImg = styled.img`
-	object-fit: contain;
-	margin: 0;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+
+
+	@media (max-width: 480px) {
+	}
 `;
 
 export const Title = styled.div`
@@ -45,7 +50,7 @@ export const Title = styled.div`
 
 	@media (max-width: 1280px) {
 		left: 80px;
-		top: 100px;
+		top: 160px;
 		h2 {
 			font-size: 100px;
 		}
@@ -53,20 +58,25 @@ export const Title = styled.div`
 
 	@media (max-width: 1024px) {
 		left: 40px;
-		top: 60px;
+		top: 160px;
 		width: 320px;
 		h2 {
 			font-size: 80px;
 			font-weight: 700;
 		}
+
+		img {
+			height: 50px;
+			width: 50px;
+		}
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 480px) {
 		left: 30px;
 		top: 40px;
 		width: 270px;
 		h2 {
-			font-size: 60px;
+			font-size: 40px;
 			font-weight: 700;
 		}
 
@@ -80,10 +90,6 @@ export const Title = styled.div`
 		left: 25px;
 		top: 60px;
 		width: 180px;
-		h2 {
-			font-size: 40px;
-			font-weight: 700;
-		}
 	}
 `;
 
@@ -97,10 +103,10 @@ export const WatchNow = styled.div`
 	line-height: 100%;
 	color: white;
 	position: absolute;
-	bottom: 20%;
-	right: 12%;
-	/* bottom: 190px;
-	right: 165px; */
+	/* bottom: 20%;
+	right: 12%; */
+	bottom: 190px;
+	right: 165px;
 
 	img {
 		position: absolute;
@@ -123,20 +129,36 @@ export const WatchNow = styled.div`
 		color: #6cc24a;
 	}
 
-	@media (max-width: 320px) {
-		width: 176px;
+	@media (max-width: 768px) {
+		right: 86px;
+	}
+
+	@media (max-width: 768px) {
+		right: 86px;
+
+	}
+	@media (max-width: 480px) {
+		right: 55px;
+		bottom: 136px;
 		height: 77px;
+		width: 176px;
 		font-size: 14px;
 		line-height: 16px;
-		bottom: 100px;
-		right: 50px;
 		img {
 			height: 36px;
 			width: 36px;
 		}
+
 		p {
 			padding: 14px 20px;
 		}
+	}
+
+
+	@media (max-width: 480px) {
+		right: 48px;
+		bottom: 103px;
+
 	}
 `;
 

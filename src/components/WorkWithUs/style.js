@@ -33,7 +33,9 @@ export const TextWrapper = styled.div`
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	margin-top: 80px;
+	margin-top: 90px;
+	padding-bottom: 32px;
+
 
 	p {
 		max-width: 700px;
@@ -72,11 +74,12 @@ export const TextWrapper = styled.div`
 
 		@media (max-width :480px ) {
 			margin-top: 30px;
+			padding-bottom: 0;
 			p {
 				padding: 0 30px;
 				font-size: 16px;
 				line-height: 20px;
-				margin-bottom: 20px;
+				margin-bottom: 17px;
 			}
 		}
 `;
@@ -91,7 +94,7 @@ export const ReallyLike = styled.div`
 		font-size: 38px;
 		color: #0047bb;
 		letter-spacing: -0.25px;
-		line-height: 38px;
+		line-height: 100%;
 	}
 
 	p {
@@ -199,6 +202,7 @@ export const ReallyLike = styled.div`
 		h2 {
 			font-size:26px;
 			padding: 0;
+			line-height: 100%;
 		}
 
 		p {
@@ -212,7 +216,7 @@ export const ReallyLike = styled.div`
 
 
 	@media (max-width: 320px) {
-		padding:0 30px 0 30px;
+		padding:0 30px 0 36px;
 	
 
 

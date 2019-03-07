@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-	padding: 70px 0;
+	padding: 70px 0 110px 0;
 	p {
 		max-width: 600px;
 		text-align: center;
@@ -15,12 +15,12 @@ export const Wrapper = styled.div`
 		color: #003057;
 		letter-spacing: -0.41px;
 		line-height: 32px;
-		margin-bottom: 30px;
-		padding: 0 40px;
+		margin-bottom: 35px;
+		padding: 0 0px;
 	}
 
 	img {
-		padding: 40px 0;
+		margin: 52px 0 100px 0;
 	}
 
 	@media (max-width: 768px) {
@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
 		}
 
 		img {
-			padding: 30px 0;
+			margin:20px 0 32px 0;
 		}
 	}
 
@@ -57,10 +57,6 @@ export const Wrapper = styled.div`
 			padding: 0 20px;
 		}
 
-		img {
-			padding: 15px 0;
-			margin-bottom: 25px;
-		}
 	}
 `;
 
@@ -113,6 +109,7 @@ export const QuoteWrapper = styled.div`
 	}
 
 	span {
+		margin-top: 14px;
 		font-weight: normal;
 		font-size: 18px;
 		color: #0047bb;
@@ -155,6 +152,8 @@ export const QuoteWrapper = styled.div`
 			font-size: 21px;
 			line-height: 28px;
 			letter-spacing: -0.24px;
+			margin-top: 10px;
+			margin-bottom:0px;
 		}
 
 		span {
