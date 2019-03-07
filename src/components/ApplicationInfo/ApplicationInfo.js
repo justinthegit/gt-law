@@ -3,7 +3,6 @@ import { BlueWrapper, Container, QuestionsContainer, HorizontalLine } from './st
 import Question from './question.js';
 
 class ApplicationInfo extends Component {
-
 	constructor(props) {
 		super(props);
 
@@ -22,7 +21,6 @@ class ApplicationInfo extends Component {
 			},
 			() => console.log(this.state.isOpen)
 		);
-
 	}
 	render() {
 		return (
@@ -37,18 +35,19 @@ class ApplicationInfo extends Component {
 						around Australia. <span>FAQs below</span>
 					</p>
 					<QuestionsContainer>
-							<Question question="How do I apply for a clerkship?" />
+						<Question question="How do I apply for a clerkship?" />
 
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
-							<Question question="What sort of work will I do?" />
+						<Question question="What sort of work will I do?" />
+						<Question question="How do I apply for a clerkship?" />
 
+						<Question question="What sort of work will I do?" />
+						<Question question="How do I apply for a clerkship?" />
 
-					
+						<Question question="What sort of work will I do?" />
+
+						<Question question="How do I apply for a clerkship?" />
+
+						<Question question="What sort of work will I do?" />
 					</QuestionsContainer>
 				</Container>
 			</BlueWrapper>

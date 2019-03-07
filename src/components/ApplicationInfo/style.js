@@ -36,6 +36,13 @@ export const Container = styled.div`
 
 	@media (max-width: 1280px) {
 		padding: 80px 100px 0 100px;
+		
+		h1 {
+			font-size: 30px;
+			line-height: 120%;
+			margin-bottom: 25px;
+		}
+
 	}
 
 	@media (max-width: 1024px) {
@@ -52,8 +59,15 @@ export const Container = styled.div`
 	@media (max-width: 480px) {
 		h1 {
 			font-size: 26px;
+			padding: 0 30px;
+			margin-bottom: 20px;
+
 		}
-		padding: 30px 30px 0 30px;
+
+		p {
+			padding: 0 30px;
+		}
+		padding: 30px 0px 0 0px;
 	}
 `;
 
@@ -63,7 +77,15 @@ export const QuestionsContainer = styled.div`
 	align-content: center;
 	align-items: center;
 	margin-top: 50px;
+
+
+
+	@media (max-width: 480px) {
+		margin-top: 30px;
+	}
 `;
+
+
 
 //area.js
 
@@ -111,6 +133,14 @@ export const QuestionWrapper = styled.div`
 			}
 		}
 	}
+
+	@media (max-width: 480px) {
+		height: 89px;
+		p {
+			font-size: 18px;
+			padding: 0;
+		}
+	}
 `;
 
 export const Answer = styled.div`
@@ -118,9 +148,10 @@ export const Answer = styled.div`
 	background-color: white;
 	padding: 40px 120px;
 	z-index: -1;
-	transition: 0.5s ease;
+	/* transition: 0.5s ease; */
 	visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
 	transform: ${(props) => (props.isOpen ? 'translateY(0)' : `translateY(-140%)`)};
+	color: #003057;
 	
 	p {
 		font-weight: normal;
@@ -128,6 +159,23 @@ export const Answer = styled.div`
 		color: #2d2926;
 		letter-spacing: -0.26px;
 		line-height: 24px;
-		text-align: center;
+		padding: 0;
+
 	}
+	span {
+		font-weight: 900;
+	}
+
+	@media (max-width: 1024px) {
+		padding: 40px 80px;
+	}
+	@media (max-width: 768px) {
+		padding: 40px 50px;
+	}
+
+	@media (max-width: 480px) {
+		padding: 40px 30px;
+	}
+
+
 `;
