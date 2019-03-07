@@ -19,6 +19,7 @@ export const Container = styled.div`
 		font-size: 38px;
 		color: white;
 		margin-bottom: 60px;
+		font-weight: normal
 	}
 
 	@media (max-width: 1280px) {
@@ -83,8 +84,6 @@ export const HorizontalLine = styled.div`
 export const AreaWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-items: center;
-	align-items: center;
 
 	h1 {
 		font-size: 28px;

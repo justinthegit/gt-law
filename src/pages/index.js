@@ -9,6 +9,7 @@ import { HeaderCarousel } from '../components/HeaderCarousel';
 import { About } from '../components/About';
 import { Areas } from '../components/Areas';
 import { WorkWithUs } from '../components/WorkWithUs';
+import { ApplicationInfo } from '../components/ApplicationInfo';
 
 
 
@@ -22,6 +23,7 @@ const IndexPage = () => (
 		<About/>
 		<Areas/>
 		<WorkWithUs/>
+		<ApplicationInfo/>
 
 		<Link to="/page-2/">Go to page 2</Link>
 	</Layout>
