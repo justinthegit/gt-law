@@ -28,14 +28,9 @@ class Question extends Component {
 					<p>{this.props.question}</p>
 
 					<div>
-						<img
-							src="https://res.cloudinary.com/avenue/image/upload/v1551921813/green-arrow_kmdffl.png"
-							alt=""
-						/>
-						<img
-							src="https://res.cloudinary.com/avenue/image/upload/v1551921813/white-arrow_kaw2uf.png"
-							alt=""
-						/>
+						<svg xmlns="http://www.w3.org/2000/svg" width="19" height="11">
+							<path fillRule="evenodd" d="M16.68511 0L9.49983 6.58006 2.31489 0 0 2.29964l8.34255 7.64499L9.49983 11l1.15762-1.05537L19 2.29964z"/>
+						</svg>
 					</div>
 				</QuestionWrapper>
 				<Answer isOpen={this.state.isOpen}>

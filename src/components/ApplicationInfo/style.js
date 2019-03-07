@@ -117,15 +117,17 @@ export const QuestionWrapper = styled.div`
 		margin: 0;
 	}
 
-	img {
+	svg {
 		height: 11px;
 		width: 19px;
 		margin: 0;
 		vertical-align: middle;
 
-		:nth-of-type(2) {
-			display: ${(props) => (props.isOpen ? 'inline-block' : 'none')};
+		path {
+			fill: ${(props) => (props.isOpen ? '#fff' : ' #6CC24A')
 		}
+
+
 	}
 
 	:hover {
@@ -214,5 +216,5 @@ export const TextContainer = styled.div`
 		letter-spacing: -0.26px;
 		margin-bottom: 40px;
 	}
-	
+
 `;

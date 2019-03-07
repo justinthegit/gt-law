@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AreaWrapper } from './style.js';
+import arrowIcon from '../../images/arrow-in-circle.svg'
 
 class Area extends Component {
 	render() {
@@ -9,7 +10,7 @@ class Area extends Component {
 
         <div>
         <span>Learn more</span>
-        <img src="https://res.cloudinary.com/avenue/image/upload/v1551846903/green-btn_bsh4bi.png" alt=""/>
+        <img src={arrowIcon} alt=""/>
         </div>
 			</AreaWrapper>
 		);

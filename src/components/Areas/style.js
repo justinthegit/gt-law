@@ -94,10 +94,7 @@ export const AreaWrapper = styled.div`
 		margin-bottom: 10px;
 		max-width: 200px;
 	}
-	
-	div {
-		height: 17px;
-	}
+
 
 	span {
 		font-size: 18px;
@@ -108,9 +105,9 @@ export const AreaWrapper = styled.div`
 
 	img {
 		height: 17px;
+		width: 17px;
 		margin: 0;
-		vertical-align: middle;
-		/* transform: translateY(3px); */
+		transform: translateY(3px);
 	}
 
 	@media (max-width: 1280px) {
@@ -155,7 +152,7 @@ export const AreaWrapper = styled.div`
 		}
 		img {
 			height: 17px;
-			
+
 		}
 	}
 `;
