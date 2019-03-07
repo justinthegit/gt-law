@@ -123,8 +123,12 @@ export const QuoteWrapper = styled.div`
 	@media (max-width: 1280px) {
 		max-width: 330px;
 		p {
-			font-size: 26px;
+			font-size: 23px;
 			padding:0 25px;
+		}
+		
+		span {
+			padding-right:20px;
 		}
 
 	}
@@ -141,6 +145,8 @@ export const QuoteWrapper = styled.div`
 
 		span {
 			text-align: center;
+			font-size: 20px;
+
 		}
 	}
 
