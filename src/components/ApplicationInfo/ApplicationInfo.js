@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BlueWrapper, Container, QuestionsContainer, HorizontalLine } from './style.js';
+import { BlueWrapper, Container, QuestionsContainer, DownloadApp,TextContainer } from './style.js';
 import Question from './question.js';
 
 class ApplicationInfo extends Component {
@@ -24,6 +24,7 @@ class ApplicationInfo extends Component {
 	}
 	render() {
 		return (
+			<div>
 			<BlueWrapper>
 				<Container>
 					<h1>starting your career with G+T</h1>
@@ -42,6 +43,18 @@ class ApplicationInfo extends Component {
 					</QuestionsContainer>
 				</Container>
 			</BlueWrapper>
+			<DownloadApp>
+				<TextContainer>
+				<h1>READY TO WRITE YOUR OWN STORY AT GILBERT + TOBIN?</h1>
+				<p>Download our app to unlock more insights into the opportunities and people at G+T, in our interactive brochure.   </p>
+				</TextContainer>
+
+				<img src="https://res.cloudinary.com/avenue/image/upload/v1551937761/placeholder-bottom_mmayww.jpg" alt=""/>
+			
+			</DownloadApp>
+
+
+</div>
 		);
 	}
 }

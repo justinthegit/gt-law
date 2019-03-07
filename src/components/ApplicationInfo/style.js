@@ -16,7 +16,7 @@ export const BlueWrapper = styled.div`
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 80px 120px 0 120px;
+	padding: 80px 120px 100px 120px;
 
 	h1 {
 		font-size: 38px;
@@ -42,13 +42,12 @@ export const Container = styled.div`
 
 	@media (max-width: 1280px) {
 		padding: 80px 100px 0 100px;
-		
+
 		h1 {
 			font-size: 30px;
 			line-height: 120%;
 			margin-bottom: 25px;
 		}
-
 	}
 
 	@media (max-width: 1024px) {
@@ -67,7 +66,6 @@ export const Container = styled.div`
 			font-size: 26px;
 			padding: 0 30px;
 			margin-bottom: 20px;
-
 		}
 
 		p {
@@ -88,14 +86,10 @@ export const QuestionsContainer = styled.div`
 	align-items: center;
 	margin-top: 50px;
 
-
-
 	@media (max-width: 480px) {
 		margin-top: 30px;
 	}
 `;
-
-
 
 //area.js
 
@@ -112,7 +106,7 @@ export const QuestionWrapper = styled.div`
 	flex-direction: row;
 	justify-content: space-between;
 	height: 75px;
-	transition: 0.4s ease;
+	transition: 0.1s ease;
 	align-items: center;
 	padding: 0 30px;
 	background-color: ${(props) => (props.isOpen ? ' #6cc24a' : 'rgba(255, 255, 255, 0.05)')};
@@ -163,7 +157,7 @@ export const Answer = styled.div`
 	visibility: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
 	transform: ${(props) => (props.isOpen ? 'translateY(0)' : `translateY(-140%)`)};
 	color: #003057;
-	
+
 	p {
 		font-weight: normal;
 		font-size: 18px;
@@ -171,7 +165,6 @@ export const Answer = styled.div`
 		letter-spacing: -0.26px;
 		line-height: 24px;
 		padding: 0;
-
 	}
 	span {
 		font-weight: 900;
@@ -187,6 +180,39 @@ export const Answer = styled.div`
 	@media (max-width: 480px) {
 		padding: 40px 30px;
 	}
+`;
 
+export const DownloadApp = styled.div`
+	display: flex;
+	flex-direction: row;
+	background-color: #efefef;
+	padding: 80px 120px 100px 120px;
 
+	img {
+		width: 50%;
+		height: 50%;
+	}
+
+`;
+
+export const TextContainer = styled.div`
+	padding-right: 100px;
+
+	h1 {
+		font-weight: 700;
+		font-size: 34px;
+		color: #0047bb;
+		letter-spacing: -0.22px;
+		line-height: 37px;
+		margin-bottom: 40px;
+	}
+
+	p {
+		font-weight: normal;
+		font-size: 18px;
+		color: #2d2926;
+		letter-spacing: -0.26px;
+		margin-bottom: 40px;
+	}
+	
 `;
