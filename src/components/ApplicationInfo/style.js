@@ -41,7 +41,7 @@ export const Container = styled.div`
 	}
 
 	@media (max-width: 1280px) {
-		padding: 80px 100px 0 100px;
+		padding: 80px 100px 100px 100px;
 
 		h1 {
 			font-size: 30px;
@@ -51,11 +51,11 @@ export const Container = styled.div`
 	}
 
 	@media (max-width: 1024px) {
-		padding: 80px 60px 0 60px;
+		padding: 80px 60px 100px 60px;
 	}
 
 	@media (max-width: 768px) {
-		padding: 50px 40px 10px 40px;
+		padding: 50px 40px 60px 40px;
 		h1 {
 			margin-bottom: 10px;
 		}
@@ -117,8 +117,6 @@ export const QuestionWrapper = styled.div`
 		margin: 0;
 		line-height: 124%;
 		margin-RIGHT: 20px;
-
-
 	}
 
 	svg {
@@ -127,7 +125,7 @@ export const QuestionWrapper = styled.div`
 		margin: 0;
 
 		vertical-align: middle;
-		transform: ${(props) => (props.isOpen ? 'rotateX(180deg)': null)};
+		transform: ${(props) => (props.isOpen ? 'rotateX(180deg)' : null)};
 
 		path {
 			fill: ${(props) => (props.isOpen ? '#fff' : ' #6CC24A')};
@@ -142,7 +140,6 @@ export const QuestionWrapper = styled.div`
 				fill: #fff;
 			}
 		}
-
 	}
 
 	@media (max-width: 480px) {
@@ -177,8 +174,6 @@ export const Answer = styled.div`
 	}
 	@media (max-width: 768px) {
 		padding: 40px 50px;
-
-
 	}
 
 	@media (max-width: 480px) {
@@ -195,19 +190,56 @@ export const DownloadApp = styled.div`
 	img {
 		width: 50%;
 		height: 50%;
+		margin: 0;
+		@media (max-width: 768px) {
+			margin-top: 20px;
+			width: 100%;
+			height: 100%;
+		}
 	}
+	@media (max-width: 1280px) {
+		align-items: center;
+	}
+
+	@media (max-width: 1024px) {
+		padding: 60px 60px 60px 60px;
+	
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		padding: 38px 0px 0px 0px;
+	}
+
+
 `;
 
 export const TextContainer = styled.div`
 	padding-right: 100px;
+	display: flex;
+	flex-direction: column;
 
 	h1 {
 		font-weight: 700;
 		font-size: 34px;
 		color: #0047bb;
 		letter-spacing: -0.22px;
-		line-height: 37px;
+		line-height: 100%;
 		margin-bottom: 40px;
+
+		@media (max-width: 1280px) {
+			font-size: 32px;
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 1024px) {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 26px;
+		}
 	}
 
 	p {
@@ -216,5 +248,73 @@ export const TextContainer = styled.div`
 		color: #2d2926;
 		letter-spacing: -0.26px;
 		margin-bottom: 40px;
+
+		@media (max-width: 1280px) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width: 1024px) {
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 480px) {
+			font-size: 18px;
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0;
+		height: 50px;
+		width: 168px;
+		margin-bottom: 15px;
+
+		:nth-of-type(2) {
+			height: 50px;
+			width: 150px;
+		}
+	}
+
+	@media (max-width: 1280px) {
+		padding-right: 80px;
+	}
+
+	@media (max-width: 1024px) {
+		padding-right: 40px;
+	}
+
+	@media (max-width: 768px) {
+		padding-left: 20px;
+		flex-direction:row;
+		justify-items: center;
+
+		div {
+			:nth-child(1) {
+			max-width: 300px;
+			padding-right: 30px;
+			}
+			:nth-child(2) {
+				align-self: center;
+
+			}
+		}
+	}
+
+	@media (max-width: 480px) {
+		padding-right: 30px;
+		flex-direction:column;
+
+		div {
+			:nth-child(1) {
+			max-width: 100%;
+			padding-right: 0;
+			}
+
+			:nth-child(2) {
+				align-self: flex-start;
+
+			}
+		}
 	}
 `;
+
