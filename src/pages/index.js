@@ -10,6 +10,7 @@ import { About } from '../components/About';
 import { Areas } from '../components/Areas';
 import { WorkWithUs } from '../components/WorkWithUs';
 import { ApplicationInfo } from '../components/ApplicationInfo';
+import { Footer } from '../components/Footer';
 
 
 
@@ -24,8 +25,7 @@ const IndexPage = () => (
 		<Areas/>
 		<WorkWithUs/>
 		<ApplicationInfo/>
-
-		<Link to="/page-2/">Go to page 2</Link>
+		<Footer/>
 	</Layout>
 );
 
