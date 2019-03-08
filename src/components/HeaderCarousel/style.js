@@ -227,9 +227,12 @@ export const FormWrapper = styled.div`
 		width: 452px;
 	}
 
+
 	@media (max-width: 480px) {
-		width: 360px;
+		width: 300px;
 	}
+
+
 `;
 
 export const FormWrap = styled.form`
@@ -257,13 +260,17 @@ export const FormWrap = styled.form`
 
 			@media (max-width: 480px) {
 				font-size: 10px;
-				letter-spacing: -0.0px;
+				letter-spacing: -0.1px;
 				line-height: 10px;
+				margin-bottom: 12px;
 			}
 		}
 
 		@media (max-width: 480px) {
 			font-size: 16px;
+			letter-spacing: .1px;
+			line-height: 120%;
+
 		}
 	}
 
@@ -315,4 +322,8 @@ export const Button = styled.button`
 	text-align: center;
 	align-self: center;
 	margin-bottom: 20px;
+
+	@media (max-width: 480px) {
+		margin-bottom: 0;
+		}
 `;

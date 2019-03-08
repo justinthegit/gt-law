@@ -13,27 +13,13 @@ class Areas extends Component {
 						<AreasRow>
 
 						<HorizontalLine mobile/>
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="CORPORATE ADVISORY" url="corporate-advisory"/>
 							<HorizontalLine mobile/>
 
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="BANKING + INFRASTRUCTURE" url="banking-and-infrastructure"/>
 							<HorizontalLine mobile/>
 
-							<Area title="COMPETITION + REGULATION"/>
-							<HorizontalLine mobile/>
-
-						</AreasRow>
-
-						<HorizontalLine desktop/>
-
-						<AreasRow>
-							<Area title="COMPETITION + REGULATION"/>
-							<HorizontalLine mobile/>
-
-							<Area title="COMPETITION + REGULATION"/>
-							<HorizontalLine mobile/>
-
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="COMPETITION + REGULATION" url="competition-and-regulation"/>
 							<HorizontalLine mobile/>
 
 						</AreasRow>
@@ -41,13 +27,27 @@ class Areas extends Component {
 						<HorizontalLine desktop/>
 
 						<AreasRow>
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="DISPUTES + INVESTIGATIONS" url="litigation-dispute-investigations"/>
 							<HorizontalLine mobile/>
 
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="TECHNOLOGY + DIGITAL" url="technology-digital"/>
 							<HorizontalLine mobile/>
 
-							<Area title="COMPETITION + REGULATION"/>
+							<Area title="INTELLECTUAL PROPERTY" url="intellectual-property"/>
+							<HorizontalLine mobile/>
+
+						</AreasRow>
+
+						<HorizontalLine desktop/>
+
+						<AreasRow>
+							<Area title="ENERGY + RESOURCES" url="energy-and-resources"/>
+							<HorizontalLine mobile/>
+
+							<Area title="REAL ESTATE + PROJECTS" url="real-estate-and-projects"/>
+							<HorizontalLine mobile/>
+
+							<Area title="PRO BONO" url="pro-bono"/>
 							<HorizontalLine mobile/>
 
 						</AreasRow>

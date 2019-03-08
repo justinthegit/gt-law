@@ -50,12 +50,14 @@ export const TextWrapper = styled.div`
 	
 	}
 
-	span {
+	a {
 		font-weight: 700;
 		font-size: 18px;
 		color: #0047bb;
 		letter-spacing: -0.26px;
 		line-height: 22px;
+		text-decoration:none;
+
 		margin-right: 7px;
 	}
 	div {
@@ -119,10 +121,11 @@ export const ReallyLike = styled.div`
 		margin-right: 0px;
 	}
 	
-	div {
+	a {
 		display:flex;
 		flex-direction:row;
 		align-items: center;
+		text-decoration:none;
 	}
 	img {
 		display: inline-block;
@@ -195,7 +198,7 @@ export const ReallyLike = styled.div`
 			font-size:18px;
 		}
 
-		div {
+		a {
 			display:inline-block;
 		}
 

@@ -87,11 +87,12 @@ export const AreaWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	position:relative;
+	justify-content:space-between;
 	h1 {
 		font-size: 28px;
 		color: white;
 		margin-bottom: 10px;
-		max-width: 200px;
+		width: 240px;
 	}
 
 	a {
@@ -133,6 +134,7 @@ export const AreaWrapper = styled.div`
 	}
 		h1 {
 			font-size: 24px;
+			padding-right: 30px;
 		}
 	}
 
@@ -147,6 +149,9 @@ export const AreaWrapper = styled.div`
 			font-size: 25px;
 			margin-right: 15px;
 			max-width: 100%;
+			width: 100%;
+
+
 
 		}
 		img {
