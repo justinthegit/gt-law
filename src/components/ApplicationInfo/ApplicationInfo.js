@@ -56,11 +56,15 @@ class ApplicationInfo extends Component {
 							</p>
 						</div>
 					<div>
-					<img
-							src="https://res.cloudinary.com/avenue/image/upload/v1552018996/download-google_t8jjeg.png"
-							alt=""
-						/>
-						<img src={downloadApple} alt="" />
+					<a href="/
+					"><img
+					src="https://res.cloudinary.com/avenue/image/upload/v1552018996/download-google_t8jjeg.png"
+					alt=""
+				/></a>
+
+				<a href="/
+				">						<img src={downloadApple} alt="" />
+				</a>
 					</div>
 					
 					</TextContainer>

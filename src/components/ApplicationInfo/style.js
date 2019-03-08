@@ -261,6 +261,10 @@ export const TextContainer = styled.div`
 			font-size: 18px;
 		}
 	}
+	
+	a {
+		display: block;
+	}
 
 	img {
 		display: block;
