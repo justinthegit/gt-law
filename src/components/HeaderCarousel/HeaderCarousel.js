@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
-import { Wrapper, HeroImg, KnowMore, Title, WatchNow } from './style.js';
+import { Wrapper, HeroImg, KnowMore, Title, WatchNow, FormWrapper} from './style.js';
+import Form from './form.js'
 
 class HeaderCarousel extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			formOpen: false
+		};
+
+		this.handleClick = this.handleClick.bind(this);
+	}
+
+	handleClick() {
+		const currentStatus = this.state.formOpen;
+		this.setState(
+			{
+				formOpen: !currentStatus
+			},
+			() => console.log(this.state.formOpen)
+		);
+	}
 	render() {
 		return (
 			<Wrapper>
@@ -22,14 +42,18 @@ class HeaderCarousel extends Component {
 						alt=""
 					/>
 					<p>
-						Sectado temaa vorest qua aad vitatur acias mvitatur acias molor.
+						Sectado temaa vorest quad vitatur acias mvitatur acias molor.
 						<span> Watch now.</span>
 					</p>
 				</WatchNow>
-				<KnowMore>
+				<KnowMore onClick={() => this.handleClick()}>
 					<img src="https://res.cloudinary.com/avenue/image/upload/v1551828145/white-up_jolwdz.png" alt="" />
 					<h1>WANT TO KNOW MORE?</h1>
 				</KnowMore>
+
+				<Form handleClick ={this.handleClick} formOpen ={this.state.formOpen} />
+
+
 			</Wrapper>
 		);
 	}
