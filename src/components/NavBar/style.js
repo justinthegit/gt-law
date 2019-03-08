@@ -49,6 +49,20 @@ export const Nav = styled.nav`
 		text-align: center;
 		text-decoration: none;
 		font-weight: 700;
+		position: relative;
+
+		:hover {
+			::after {
+				content: "";
+				position: absolute;
+				bottom: -3px;
+				height: 4px;
+				width: 85%;
+
+				left: 8%;
+				background-color: #6cc24a;
+			}
+		}
 	}
 
 	@media (max-width: 1024px) {
@@ -128,8 +142,6 @@ export const MobileNav = styled.div`
 		align-content: center;
 		justify-content: center;
 	}
-
-
 `;
 
 export const NavItem = styled.div`
@@ -138,7 +150,6 @@ export const NavItem = styled.div`
 	font-weight: 700;
 	max-width: 220px;
 	padding: 30px 0px;
-
 
 	text-align: center;
 
@@ -150,8 +161,6 @@ export const NavItem = styled.div`
 		text-align: center;
 		line-height: 120%;
 	}
-
-
 `;
 
 export const WhiteLine = styled.div`
