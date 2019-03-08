@@ -192,7 +192,7 @@ export const DownloadApp = styled.div`
 		height: 50%;
 		margin: 0;
 		@media (max-width: 768px) {
-			margin-top: 20px;
+			margin-top: 30px;
 			width: 100%;
 			height: 100%;
 		}
@@ -269,14 +269,15 @@ export const TextContainer = styled.div`
 	img {
 		display: block;
 		margin: 0;
-		height: 50px;
 		width: 168px;
 		margin-bottom: 15px;
 
-		:nth-of-type(2) {
-			height: 50px;
-			width: 150px;
-		}
+
+		@media (max-width: 480px) {
+			width: 130px;
+			margin-bottom: 6px;
+	}
+
 	}
 
 	@media (max-width: 1280px) {

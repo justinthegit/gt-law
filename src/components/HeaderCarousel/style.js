@@ -286,6 +286,8 @@ export const FormWrap = styled.form`
 export const Input = styled.input`
 	padding: 5px 0 5px 18px;
 	margin: 7px 0;
+	outline: 0;
+
 
 	::placeholder {
 		color: #0047bb;
@@ -301,6 +303,8 @@ export const TextArea = styled.textarea`
 	height: 109px;
 	margin: 7px 0 20px 0;
 	padding: 10px 0 5px 18px;
+	outline: 0;
+
 
 	::placeholder {
 		color: #0047bb;

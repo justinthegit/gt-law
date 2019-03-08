@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
 	justify-content: space-between;
 	height: 100%;
 	width: 100%;
-	border: 1px dashed red;
 	position: relative;
 
 	img {
