@@ -116,6 +116,7 @@ export const AreaWrapper = styled.div`
 		color: #d8d8d8;
 		font-weight: normal;
 		margin-right: 10px;
+		opacity: 0.7;
 
 	
 	}
