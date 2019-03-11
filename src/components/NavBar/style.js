@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
 	width: 100%;
 	position: relative;
 
+
 	img {
 		margin: 32px;
 	}

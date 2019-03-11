@@ -30,7 +30,9 @@ class NavBar extends Component {
 		return (
 			<div>
 				<Wrapper>
-					<img src={logo} alt="" />
+					<a href="https://www.gtlaw.com.au/">
+						<img src={logo} alt="" />
+					</a>
 					<Nav>
 						<Link activeClass="active" to="about" spy={true} smooth="easeOutQuad" duration={800}>
 							ABOUT G+T
