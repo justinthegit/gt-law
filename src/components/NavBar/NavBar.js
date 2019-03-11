@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Wrapper, Nav, MobileNav, NavItem, WhiteLine, Clickable } from './style.js';
+import { Link } from 'react-scroll';
+
 import logo from '../../images/gt-logo.svg';
 import Hamburger from './hamburger.js';
 
@@ -30,10 +32,18 @@ class NavBar extends Component {
 				<Wrapper>
 					<img src={logo} alt="" />
 					<Nav>
-						<a href="/">ABOUT G+T</a>
-						<a href="/">PRACTICE AREAS</a>
-						<a href="/">A DAY IN THE LIFE</a>
-						<a href="/">APPLICATION INFO+FAQS</a>
+						<Link activeClass="active" to="about" spy={true} smooth="easeOutQuad" duration={800}>
+							ABOUT G+T
+						</Link>
+						<Link activeClass="active" to="areas" spy={true} smooth="easeOutQuad" duration={800}>
+							PRACTICE AREAS
+						</Link>
+						<Link activeClass="active" to="aDayInTheLife" spy={true} smooth="easeOutQuad" duration={800}>
+							A DAY IN THE LIFE
+						</Link>
+						<Link activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
+							APPLICATION INFO+FAQS
+						</Link>
 					</Nav>
 					<Clickable onClick={() => this.handleClick()}>
 						<Hamburger isOpen={this.state.isOpen} />
@@ -42,21 +52,29 @@ class NavBar extends Component {
 
 				<MobileNav isOpen={this.state.isOpen}>
 					<NavItem>
-						<a href="/">ABOUT G+T</a>
+						<Link activeClass="active" to="about" spy={true} smooth="easeOutQuad" duration={800}>
+							ABOUT G+T
+						</Link>{' '}
 					</NavItem>
 					<WhiteLine />
 					<NavItem>
-						<a href="/">PRACTICE AREAS</a>
+						<Link activeClass="active" to="areas" spy={true} smooth="easeOutQuad" duration={800}>
+							PRACTICE AREAS
+						</Link>{' '}
 					</NavItem>
 					<WhiteLine />
 
 					<NavItem>
-						<a href="/">A DAY IN THE LIFE</a>
+						<Link activeClass="active" to="aDayInTheLife" spy={true} smooth="easeOutQuad" duration={800}>
+							A DAY IN THE LIFE
+						</Link>{' '}
 					</NavItem>
 					<WhiteLine />
 
 					<NavItem>
-						<a href="/">APPLICATION INFO + FAQS</a>
+						<Link activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
+							APPLICATION INFO+FAQS
+						</Link>{' '}
 					</NavItem>
 				</MobileNav>
 			</div>

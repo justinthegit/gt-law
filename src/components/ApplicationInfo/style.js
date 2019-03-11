@@ -289,13 +289,13 @@ export const TextContainer = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		padding-left: 20px;
+		padding-left: 40px;
 		flex-direction:row;
-		justify-items: center;
+		justify-items: space-evenly;
 
 		div {
 			:nth-child(1) {
-			max-width: 300px;
+			max-width: 280px;
 			padding-right: 30px;
 			}
 			:nth-child(2) {

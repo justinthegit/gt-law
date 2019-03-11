@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper, Nav, MobileNav, NavItem, WhiteLine,  } from './style.js';
+import { Wrapper} from './style.js';
 import logo from '../../images/gt-logo.svg';
 
 class Footer extends Component {

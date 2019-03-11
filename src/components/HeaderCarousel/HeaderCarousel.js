@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper, HeroImg, KnowMore, Title, WatchNow, FormWrapper} from './style.js';
+import { Wrapper, HeroImg, KnowMore, Title, WatchNow} from './style.js';
 import Form from './form.js'
 
 class HeaderCarousel extends Component {
