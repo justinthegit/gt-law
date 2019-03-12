@@ -5,6 +5,11 @@ export const Wrapper = styled.div`
 	height: 900px;
 	object-fit: contain;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
 
 	@media (max-width: 480px) {
 		height: 600px;
@@ -13,6 +18,12 @@ export const Wrapper = styled.div`
 	@media (max-width: 320px) {
 		height: 428px;
 	}
+`;
+
+export const SlideWrapper = styled.div`
+	width: 100%;
+	height: 100%;
+	position: relative;
 `;
 export const HeroImg = styled.img`
 	object-fit: cover;
@@ -41,11 +52,12 @@ export const Title = styled.div`
 	}
 
 	img {
-		display: inline-block;
+		display: inline-block !important;
 		margin: 0;
 		width: 70px;
 		height: 70px;
 		margin-left: 10px;
+		margin-bottom: 7px;
 	}
 
 	@media (max-width: 1280px) {
@@ -53,6 +65,10 @@ export const Title = styled.div`
 		top: 160px;
 		h2 {
 			font-size: 100px;
+		}
+
+		img {
+			margin-bottom: 0px;
 		}
 	}
 
@@ -68,12 +84,13 @@ export const Title = styled.div`
 		img {
 			height: 50px;
 			width: 50px;
+			margin-bottom: 3px;
 		}
 	}
 
 	@media (max-width: 480px) {
 		left: 30px;
-		top: 40px;
+		top: 80px;
 		width: 270px;
 		h2 {
 			font-size: 40px;
@@ -83,6 +100,7 @@ export const Title = styled.div`
 		img {
 			height: 27px;
 			width: 27px;
+			margin-bottom: 0px;
 		}
 	}
 
@@ -95,7 +113,7 @@ export const Title = styled.div`
 
 export const WatchNow = styled.div`
 	width: 281px;
-	height: 117px;
+	height: 117px !important;
 	background-color: #003057;
 	font-size: 20px;
 	font-weight: normal;
@@ -107,6 +125,7 @@ export const WatchNow = styled.div`
 	right: 12%; */
 	bottom: 190px;
 	right: 165px;
+	z-index: 10;
 
 	img {
 		position: absolute;
@@ -120,13 +139,35 @@ export const WatchNow = styled.div`
 	}
 
 	p {
-		padding: 30px 40px;
+		padding: 30px 37px;
 		margin: 0;
 	}
 
 	span {
-		letter-spacing: -0.33px;
-		color: #6cc24a;
+		img {
+			position: relative;
+			height: 13px;
+			width: 13px;
+			display: inline-block;
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+		a {
+			letter-spacing: -0.33px;
+			color: #6cc24a;
+			text-decoration: none;
+
+			:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+			}
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -139,8 +180,8 @@ export const WatchNow = styled.div`
 	@media (max-width: 480px) {
 		right: 55px;
 		bottom: 136px;
-		height: 77px;
-		width: 176px;
+		height: 77px !important;
+		width: 176px !important;
 		font-size: 14px;
 		line-height: 16px;
 		img {
@@ -153,13 +194,13 @@ export const WatchNow = styled.div`
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media (max-width: 320px) {
 		right: 48px;
 		bottom: 103px;
 	}
 `;
 
-export const KnowMore = styled.div`
+export const KnowMore = styled.button`
 	background-color: #0047bb;
 	width: 100%;
 	height: 90px;
@@ -172,6 +213,9 @@ export const KnowMore = styled.div`
 	justify-content: center;
 	justify-items: center;
 	color: white;
+	outline: none;
+	border: none;
+	cursor: pointer;
 
 	img {
 		width: 11px;
@@ -189,6 +233,22 @@ export const KnowMore = styled.div`
 			font-size: 16px;
 		}
 	}
+`;
+
+export const ButtonPrevious = styled.a`
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	content: "";
+	z-index: 5;
+	cursor: url('https://res.cloudinary.com/avenue/image/upload/v1552361772/btn-prev_ym0puc.svg') 0 10, auto;
+`;
+
+export const ButtonNext = styled(ButtonPrevious)`
+left:50%;
+cursor: url('https://res.cloudinary.com/avenue/image/upload/v1552361772/btn-next_wmqnqy.svg') 0 10,auto;
 `;
 
 //form.js
@@ -230,15 +290,15 @@ export const Cross = styled.button`
 	position: absolute;
 	top: 0;
 	right: 0;
-	padding:0;
+	padding: 0;
 	background: transparent;
-	border:none;
-	outline:none;
-	cursor:pointer;
+	border: none;
+	outline: none;
+	cursor: pointer;
 
-	img{
-		margin:0;
-		padding:0;
+	img {
+		margin: 0;
+		padding: 0;
 	}
 `;
 
@@ -330,10 +390,8 @@ export const Button = styled.button`
 	text-align: center;
 	align-self: center;
 	margin-bottom: 20px;
-	cursor:pointer;
-	outline:none;
-
-
+	cursor: pointer;
+	outline: none;
 
 	@media (max-width: 480px) {
 		margin-bottom: 0;

@@ -5,6 +5,7 @@ class About extends Component {
 	render() {
 		return (
 			<Wrapper>
+			
 				<p>
 					G+T is a leading transactions, regulatory and disputes law firm, committed to outstanding
 					citizenship.
