@@ -418,10 +418,12 @@ export const VideoOverlayWrapper = styled.div`
 	top: 0;
 	left: 0;
 	height: 100%;
+	width: 100%;
 	z-index: 20;
-	transition: .6s ease-in-out;
+	transition: .5s ease-in-out;
 	opacity: ${(props) => (props.videoOpen ? '0.7' : '0')};
-	width: ${(props) => (props.videoOpen ? '100%' : '0')};
+	z-index: ${(props) => (props.videoOpen ? '10000' : '-7')};
+
 `;
 
 export const VideoClose = styled(Cross)`
