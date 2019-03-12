@@ -20,10 +20,12 @@ class Slide extends Component {
 						alt=""
 					/>
 					<p>
-						{this.props.text}
+            {this.props.text}
+            
+            <img src={playBtn} alt="" />
+
 						<span>
 							{' '}
-							{/* <img src={playBtn} alt="" /> */}
 							<a href=""> Watch now.</a>
 						</span>
 					</p>

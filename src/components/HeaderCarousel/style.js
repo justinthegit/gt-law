@@ -132,26 +132,28 @@ export const WatchNow = styled.div`
 		top: 0;
 		transform: translateY(-50%) translateX(50%);
 		right: 0;
-
 		margin: 0;
 		width: 70px;
 		height: 70px;
+		
 	}
 
 	p {
 		padding: 30px 37px;
 		margin: 0;
-	}
-
-	span {
 		img {
 			position: relative;
 			height: 13px;
 			width: 13px;
 			display: inline-block;
-			margin-right: 5px;
+			margin-right: 6px;
+			margin-top: 5px;
 			vertical-align: middle;
 		}
+	}
+
+	span {
+	
 		a {
 			letter-spacing: -0.33px;
 			color: #6cc24a;
@@ -190,7 +192,12 @@ export const WatchNow = styled.div`
 		}
 
 		p {
-			padding: 14px 20px;
+			padding: 12px 15px;
+			img {
+			height: 10px;
+			width: 10px;
+			margin-right:4px;
+		}
 		}
 	}
 
