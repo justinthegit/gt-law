@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Wrapper, HeroImg, KnowMore, Title, WatchNow} from './style.js';
 import Form from './form.js'
+import upArrow from '../../images/up-arrow.svg'
+
 
 class HeaderCarousel extends Component {
 	constructor(props) {
@@ -47,7 +49,7 @@ class HeaderCarousel extends Component {
 					</p>
 				</WatchNow>
 				<KnowMore onClick={() => this.handleClick()}>
-					<img src="https://res.cloudinary.com/avenue/image/upload/v1551828145/white-up_jolwdz.png" alt="" />
+				<img src={upArrow} alt="" />
 					<h1>WANT TO KNOW MORE?</h1>
 				</KnowMore>
 

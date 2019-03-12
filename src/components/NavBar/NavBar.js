@@ -34,16 +34,16 @@ class NavBar extends Component {
 						<img src={logo} alt="" />
 					</a>
 					<Nav>
-						<Link activeClass="active" to="about" spy={true} smooth="easeOutQuad" duration={800}>
+						<Link href="#" activeClass="active" to="about" spy={true} smooth="easeOutQuad" duration={800}>
 							ABOUT G+T
 						</Link>
-						<Link activeClass="active" to="areas" spy={true} smooth="easeOutQuad" duration={800}>
+						<Link href="#" activeClass="active" to="areas" spy={true} smooth="easeOutQuad" duration={800}>
 							PRACTICE AREAS
 						</Link>
-						<Link activeClass="active" to="aDayInTheLife" spy={true} smooth="easeOutQuad" duration={800}>
+						<Link href="#" activeClass="active" to="aDayInTheLife" spy={true} smooth="easeOutQuad" duration={800}>
 							A DAY IN THE LIFE
 						</Link>
-						<Link activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
+						<Link href="#" activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
 							APPLICATION INFO+FAQS
 						</Link>
 					</Nav>

@@ -37,9 +37,10 @@ class WorkWithUs extends Component {
 					</p>
 
 					<div>
-						<a href="https://www.cvmail.com.au">cvmail.com.au</a>
-
-						<img src={arrowIcon} alt="" />
+						<a href="https://www.cvmail.com.au">
+							<span>cvmail.com.au</span>
+							<img src={arrowIcon} alt="" />
+						</a>
 					</div>
 				</TextWrapper>
 			</div>

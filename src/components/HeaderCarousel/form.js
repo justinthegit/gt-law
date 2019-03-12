@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { FormContainer, FormWrap, Input, TextArea, Button, FormWrapper } from './style.js';
+import { FormContainer, FormWrap, Input, TextArea, Button, FormWrapper, Cross } from './style.js';
 import { Formik } from 'formik';
 
 import closeBtn from '../../images/close-btn.svg';
+
 
 class Form extends Component {
 	render() {
@@ -31,9 +32,9 @@ class Form extends Component {
 					{({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
 						<FormWrapper  formOpen={this.props.formOpen}>
 
-							<div onClick={this.props.handleClick}>
+							<Cross onClick={this.props.handleClick}>
 								<img src={closeBtn} alt="" />
-							</div>
+							</Cross>
 
 							<FormWrap onSubmit={handleSubmit}>
 								<p>

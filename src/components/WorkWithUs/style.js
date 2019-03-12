@@ -57,7 +57,9 @@ export const TextWrapper = styled.div`
 		letter-spacing: -0.26px;
 		line-height: 22px;
 		text-decoration:none;
-
+		display:flex;
+		flex-direction:row;
+		align-items: center;
 		margin-right: 7px;
 	}
 	div {
@@ -68,6 +70,7 @@ export const TextWrapper = styled.div`
 	img {
 		height: 17px;
 		margin: 0;
+		margin-left: 10px;
 	}
 
 	@media (max-width :768px ) {
