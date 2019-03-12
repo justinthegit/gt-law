@@ -135,7 +135,6 @@ export const WatchNow = styled.div`
 		margin: 0;
 		width: 70px;
 		height: 70px;
-		
 	}
 
 	p {
@@ -147,17 +146,21 @@ export const WatchNow = styled.div`
 			width: 13px;
 			display: inline-block;
 			margin-right: 6px;
-			margin-top: 5px;
+			margin-top: 6px;
 			vertical-align: middle;
 		}
 	}
 
 	span {
-	
-		a {
+		button {
 			letter-spacing: -0.33px;
 			color: #6cc24a;
 			text-decoration: none;
+			padding: 0;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			outline: none;
 
 			:before {
 				content: '';
@@ -194,10 +197,10 @@ export const WatchNow = styled.div`
 		p {
 			padding: 12px 15px;
 			img {
-			height: 10px;
-			width: 10px;
-			margin-right:4px;
-		}
+				height: 10px;
+				width: 10px;
+				margin-right: 4px;
+			}
 		}
 	}
 
@@ -271,7 +274,7 @@ export const FormContainer = styled.div`
 	transition: 0.6s ease;
 	transform: ${(props) => (props.formOpen ? 'translateY(0)' : 'translateY(100%)')};
 	padding-top: 30px;
-	z-index:5;
+	z-index: 5;
 
 	@media (max-width: 480px) {
 		height: 432px;
@@ -404,4 +407,24 @@ export const Button = styled.button`
 	@media (max-width: 480px) {
 		margin-bottom: 0;
 	}
+`;
+
+//videoOverlay.js
+
+export const VideoOverlayWrapper = styled.div`
+	display:block;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 20;
+	transition: .6s ease-in-out;
+	opacity: ${(props) => (props.videoOpen ? '0.7' : '0')};
+	width: ${(props) => (props.videoOpen ? '100%' : '0')};
+`;
+
+export const VideoClose = styled(Cross)`
+top: 40px;
+right: 40px;
 `;

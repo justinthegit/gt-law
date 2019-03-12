@@ -14,7 +14,7 @@ class Slide extends Component {
 						alt=""
 					/>
 				</Title>
-				<WatchNow>
+				<WatchNow onClick={this.props.videoClick}>
 					<img
 						src="https://res.cloudinary.com/avenue/image/upload/v1551828144/green-cross_pg0rzp.png"
 						alt=""
@@ -26,7 +26,7 @@ class Slide extends Component {
 
 						<span>
 							{' '}
-							<a href=""> Watch now.</a>
+							<button> Watch now.</button>
 						</span>
 					</p>
 				</WatchNow>
