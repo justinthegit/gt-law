@@ -271,6 +271,7 @@ export const FormContainer = styled.div`
 	transition: 0.6s ease;
 	transform: ${(props) => (props.formOpen ? 'translateY(0)' : 'translateY(100%)')};
 	padding-top: 30px;
+	z-index:5;
 
 	@media (max-width: 480px) {
 		height: 432px;

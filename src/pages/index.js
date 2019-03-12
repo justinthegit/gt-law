@@ -22,7 +22,7 @@ class IndexPage extends Component {
 				<NavBar />
 				<HeaderCarousel />
 
-				<Element name="about">
+				{/* <Element name="about">
 					<About />
 				</Element>
 
@@ -38,7 +38,7 @@ class IndexPage extends Component {
 					<ApplicationInfo />
 				</Element>
 
-				<Footer />
+				<Footer /> */}
 			</Layout>
 		);
 	}

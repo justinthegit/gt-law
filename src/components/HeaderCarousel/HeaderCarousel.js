@@ -49,7 +49,7 @@ class HeaderCarousel extends Component {
 		};
 		return (
 			<Wrapper>
-				<Slider ref={c => (this.slider = c)}>
+				<Slider ref={c => (this.slider = c)} {...settings}>
 					<Slide next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1551828160/hero-img_sytpyx.jpg" text="1.  Sectado temaa vorest quad vitatur acias mvitatur acias molor."/>
 					<Slide next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1544061999/zimmerman_art_jrvwl2.png" text="2.  Sectado temaa vorest quad vitatur acias mvitatur acias molor."/>
 					<Slide next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1543211282/blog_title_1_k7rtfc.png" text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." />
