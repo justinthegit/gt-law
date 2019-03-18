@@ -24,15 +24,10 @@ export const SlideWrapper = styled.div`
 	width: 100%;
 	height: 100%;
 	position: relative;
-`;
-export const HeroImg = styled.img`
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-	margin-bottom: 0px;
 
-	@media (max-width: 480px) {
-	}
+	/* img {
+	transform: translateX(50px);
+	} */
 `;
 
 export const Title = styled.div`
@@ -49,6 +44,8 @@ export const Title = styled.div`
 		line-height: 86%;
 		margin: 0;
 		display: inline;
+		color: 
+		${(props) => (props.whiteTitle ? 'white' : '#003057')};
 	}
 
 	img {
@@ -113,7 +110,7 @@ export const Title = styled.div`
 
 export const WatchNow = styled.div`
 	width: 281px;
-	height: 117px !important;
+	height: auto !important;
 	background-color: #003057;
 	font-size: 20px;
 	font-weight: normal;
@@ -137,22 +134,27 @@ export const WatchNow = styled.div`
 		height: 70px;
 	}
 
-	p {
-		padding: 30px 37px;
+	div {
+		padding: 20px 24px;
 		margin: 0;
-		img {
-			position: relative;
-			height: 13px;
-			width: 13px;
+		display: inline-block;
+
+		p {
 			display: inline-block;
-			margin-right: 6px;
-			margin-top: 6px;
-			vertical-align: middle;
+			margin-bottom: 0;
+			line-height:118%;
+
+
 		}
+	
 	}
 
 	span {
+		display: inline-block;
+		margin-bottom: 0;
+
 		button {
+			
 			letter-spacing: -0.33px;
 			color: #6cc24a;
 			text-decoration: none;
@@ -162,7 +164,7 @@ export const WatchNow = styled.div`
 			cursor: pointer;
 			outline: none;
 
-			:before {
+			/* :before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -171,7 +173,19 @@ export const WatchNow = styled.div`
 				width: 100%;
 				height: 100%;
 				z-index: 0;
-			}
+			} */
+		}
+
+		img {
+			position: relative;
+			height: 15px;
+			width: 15px;
+			display: inline-block;
+			margin-right: 5px;
+			margin-top: 8px;
+			margin-left: 4px;
+			vertical-align: middle;
+			transform: translateY(-50%);
 		}
 	}
 
@@ -185,7 +199,6 @@ export const WatchNow = styled.div`
 	@media (max-width: 480px) {
 		right: 55px;
 		bottom: 136px;
-		height: 77px !important;
 		width: 176px !important;
 		font-size: 14px;
 		line-height: 16px;
@@ -194,7 +207,7 @@ export const WatchNow = styled.div`
 			width: 36px;
 		}
 
-		p {
+		div {
 			padding: 12px 15px;
 			img {
 				height: 10px;

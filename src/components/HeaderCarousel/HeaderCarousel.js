@@ -17,15 +17,15 @@ class HeaderCarousel extends Component {
 
 		this.state = {
 			formOpen: false,
-			videoOpen: false,
+			videoOpen: false
 		};
 
 		this.handleClick = this.handleClick.bind(this);
 		this.videoClick = this.videoClick.bind(this);
-    this.escFunction = this.escFunction.bind(this);
+		this.escFunction = this.escFunction.bind(this);
 
 		this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
+		this.previous = this.previous.bind(this);
 	}
 
 	handleClick() {
@@ -38,75 +38,109 @@ class HeaderCarousel extends Component {
 		);
 	}
 
-	escFunction(event){
-    if(event.keyCode === 27) {
-			this.setState(
-				{
-					videoOpen: false,
-				},
-			);
-    }
-  }
+	escFunction(event) {
+		if (event.keyCode === 27) {
+			this.setState({
+				videoOpen: false
+			});
+		}
+	}
 
-	 videoClick() {
+	videoClick() {
 		const currentStatus = this.state.videoOpen;
 		this.setState(
 			{
 				videoOpen: !currentStatus
 			},
 			() => console.log(this.state.videoOpen)
-
 		);
 	}
 
-  next() {
-    this.slider.slickNext();
-  }
-  previous() {
-    this.slider.slickPrev();
-  }
+	next() {
+		this.slider.slickNext();
+	}
+	previous() {
+		this.slider.slickPrev();
+	}
 	render() {
-
-		console.log(this.props)
-
+		console.log(this.props);
 
 		const settings = {
 			dots: true,
 			infinite: true,
-			fade:true,
+			fade: true,
 			speed: 1000,
 			slidesToShow: 1,
 			slidesToScroll: 1
 		};
 		return (
 			<Wrapper>
-				<VideoOverlay escFunction={this.escFunction} videoClick={this.videoClick} videoOpen={this.state.videoOpen}/>
-				<Slider ref={c => (this.slider = c)} {...settings}>
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="1.  Sectado temaa vorest quad vitatur acias mvitatur acias molor.">
-						<Img fluid={this.props.image1.childImageSharp.fluid} critical fadeIn={false}/>
+				<VideoOverlay
+					escFunction={this.escFunction}
+					videoClick={this.videoClick}
+					videoOpen={this.state.videoOpen}
+				/>
+				<Slider ref={(c) => (this.slider = c)} {...settings}>
+					<Slide
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Hear more about the defining moments in Ciara’s career, and the difference her clerkship made."
+					>
+						<Img fluid={this.props.image1.childImageSharp.fluid} critical fadeIn={false} />
 					</Slide>
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="2.  Sectado temaa vorest quad vitatur acias mvitatur acias molor.">
+					<Slide
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Find out more about Daniels thoughts on innovation in the legal industry."
+					>
 						<Img fluid={this.props.image2.childImageSharp.fluid} />
 					</Slide>
 
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
-					<Img fluid={this.props.image3.childImageSharp.fluid} />
+					<Slide
+						whiteTitle
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Discover why Sean chose to start his career at Gilbert + Tobin, and why its workplace culture makes such a difference."
+					>
+						<Img fluid={this.props.image3.childImageSharp.fluid} />
 					</Slide>
 
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
-					<Img fluid={this.props.image4.childImageSharp.fluid} />
+					<Slide
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Discover how Kaushalya balances her career as a successful lawyer and the needs of her family."
+					>
+						<Img fluid={this.props.image4.childImageSharp.fluid} />
 					</Slide>
 
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
-					<Img fluid={this.props.image5.childImageSharp.fluid} />
+					<Slide
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Hear about some of Courtney’s unique learning opportunities, and why she chose Gilbert + Tobin in Perth."
+					>
+						<Img fluid={this.props.image5.childImageSharp.fluid} />
 					</Slide>
 
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
-					<Img fluid={this.props.image6.childImageSharp.fluid} />
+					<Slide
+						videoClick={this.videoClick}
+						videoOpen={this.state.videoOpen}
+						next={this.next}
+						previous={this.previous}
+						text="Jenny explains how mentoring has played a major role in her career and why she’s always learning."
+					>
+						<Img fluid={this.props.image6.childImageSharp.fluid} />
 					</Slide>
-
 				</Slider>
-		
 
 				<KnowMore onClick={() => this.handleClick()}>
 					<img src={upArrow} alt="" />
@@ -118,11 +152,6 @@ class HeaderCarousel extends Component {
 		);
 	}
 }
-
-
-
-
-
 
 // const Image4 = () => (
 // 	<StaticQuery

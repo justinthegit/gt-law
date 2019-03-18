@@ -86,7 +86,7 @@ export const VideoContainer = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		padding: 0 30px;
+		padding: 0 29px;
 
 	}
 

@@ -96,7 +96,7 @@ export const QuestionsContainer = styled.div`
 export const DropDownWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 3px;
+	margin-top: 3px;
 	width: 100%;
 	max-width: 1036px;
 `;
@@ -167,13 +167,14 @@ export const Answer = styled.div`
 	p {
 		font-weight: normal;
 		font-size: 18px;
-		color: #2d2926;
+		color: #003057;
 		letter-spacing: -0.26px;
 		line-height: 24px;
 		padding: 0;
 	}
 	span {
-		font-weight: 900;
+		font-weight: 0;
+		font-family: 'brandon_grotesque'
 	}
 
 	@media (max-width: 1024px) {

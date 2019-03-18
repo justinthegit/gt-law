@@ -48,7 +48,7 @@ export const TextWrapper = styled.div`
 		letter-spacing: -0.41px;
 		line-height: 32px;
 		margin-bottom: 30px;
-		padding: 0 40px;
+		padding: 0 20px;
 	
 	}
 
@@ -74,10 +74,12 @@ export const TextWrapper = styled.div`
 			font-size: 18px;
 			margin-bottom:0px;
 			font-weight: 300;
+			padding: 0 10px;
 		}
 
 		span {
 			font-weight: 600;
+			/* font-size:18px; */
 		}
 	}
 	img {
@@ -99,9 +101,33 @@ export const TextWrapper = styled.div`
 			padding-bottom: 0;
 			p {
 				padding: 0 30px;
-				font-size: 16px;
+				font-size: 18px;
 				line-height: 20px;
 				margin-bottom: 17px;
+			}
+
+			a {
+				display: flex;
+				flex-direction:row;
+
+				align-content: center;
+				margin-top: 10px;
+
+				img {
+					width: 15px;
+					height: 15px;
+				}
+			}
+
+			div {
+
+				p {
+					padding: 7px 30px;
+					line-height: 130%;
+				}
+				p, span {
+					font-size: 16px;
+				}
 			}
 		}
 `;
@@ -198,6 +224,9 @@ export const ReallyLike = styled.div`
 		top:0;
 		left:0;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
 
 		h2 {
 			font-size: 40px;
@@ -215,7 +244,11 @@ export const ReallyLike = styled.div`
 		}
 
 		a {
-			display:inline-block;
+
+			display:flex;
+		flex-direction:row;
+		align-items: center;
+		text-decoration:none;
 		}
 
 		img {
@@ -230,6 +263,8 @@ export const ReallyLike = styled.div`
 		text-align: left;
 		padding:0 80px 0 30px;
 		margin-top: 43px;
+		align-items:flex-start;
+
 
 		h2 {
 			font-size:26px;

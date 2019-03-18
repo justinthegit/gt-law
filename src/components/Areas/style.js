@@ -159,6 +159,8 @@ export const AreaWrapper = styled.div`
 			margin-right: 15px;
 			max-width: 100%;
 			width: 100%;
+			padding:0;
+
 
 
 
@@ -179,11 +181,19 @@ export const AreaWrapper = styled.div`
 			margin: 0;
 			font-size: 16px;
 			margin-right: 15px;
+			padding:0;
 		}
 		img {
 			height: 17px;
 			width: 17px;
 
+		}
+	}
+
+	@media (max-width: 320px) {
+		h1 {
+			margin-right: 0;
+			padding-right:10px;
 		}
 	}
 `;

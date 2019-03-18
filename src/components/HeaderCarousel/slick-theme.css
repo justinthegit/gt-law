@@ -127,7 +127,7 @@
 {
     position: absolute;
     bottom: 166px;
-    right: 395px;
+    right: 342px;
     display: block;
 
     width: auto;
@@ -215,7 +215,7 @@
     .slick-dots {
         position: absolute;
     bottom: 166px;
-    right: 318px;
+    right: 263px;
     }
     
 }
@@ -225,7 +225,7 @@
     .slick-dots {
     position: absolute;
     bottom: 116px;
-    right: 178px;
+    right: 125px;
     }
     
 }
@@ -235,7 +235,8 @@
     .slick-dots {
     position: absolute;
     bottom: 85px;
-    right: 172px;
+    right: 120px;
+
     }
     
 }

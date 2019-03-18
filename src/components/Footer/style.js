@@ -4,45 +4,48 @@ export const Wrapper = styled.div`
 	background: white;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 	height: 100%;
 	width: 100%;
 	position: relative;
+	margin-top: 50px;
 
 	p {
 		font-size: 14px;
+		font-weight: 300;
+		letter-spacing: -0.21px;
+		align-self: flex-end;
+		padding-left: 35px;
 	}
 
-	span, a {
-		color: #0047BB;
+	span,
+	a {
+		color: #0047bb;
 	}
 
 	img {
-		margin: 32px;
 		height: 30px;
+		min-width: 95px;
 	}
 
-	@media (max-width: 1024px) {
-		/* img {
-			width: 140px;
-		} */
+	@media (max-width: 1280px) {
+		padding: 0 60px;
 	}
 
-	@media (max-width: 768px) {
-		z-index: 2;
+	@media (max-width: 480px) {
+		flex-direction: column;
+		text-align: center;
+		padding:0;
+		margin-top: 28px;
+		p {
+			order: -1;
+			padding: 0 30px;
 
-		/* img {
-			width: 140px;
-		} */
-	}
-	@media (max-width: 320px) {
-		height: 60px;
-		/* img {
-			width: 100px;
-			margin: 20px;
-		} */
-	}
+		}
 
-	
+		img {
+			order: 2;
+		}
+	}
 `;
