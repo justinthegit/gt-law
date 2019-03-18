@@ -54,7 +54,7 @@ export const Wrapper = styled.div`
 			font-size: 16px;
 			line-height: 18px;
 			letter-spacing: -0.24px;
-			padding: 0 20px;
+			padding: 0 26px;
 		}
 	}
 `;
@@ -66,7 +66,6 @@ export const InfoWrapper = styled.div`
 	grid-gap: 0;
 	margin-top: 25px;
 	margin-bottom: 68px;
-
 	background-color: #003057;
 	justify-content: center;
 	div {
@@ -82,7 +81,6 @@ export const InfoWrapper = styled.div`
 
 	@media (max-width: 480px) {
 		grid-template-columns: 1fr;
-		/* justify-items: center; */
 		margin-bottom: 48px;
 
 
@@ -90,7 +88,7 @@ export const InfoWrapper = styled.div`
 
 			max-width:100%;
 
-			:nth-of-type(2) {
+			/* :nth-of-type(2) {
 		transform: translateY(-50px);
 		z-index:0;
 
@@ -99,9 +97,10 @@ export const InfoWrapper = styled.div`
 	:nth-of-type(3) {
 		transform: translateY(-115px);
 		z-index:0;
-	}
+	} */
 		}
 	}
+
 `;
 
 export const VideoContainer = styled.div`

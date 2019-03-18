@@ -75,7 +75,7 @@ export const Container = styled.div`
 		span {
 			display: block;
 		}
-		padding: 30px 0px 0 0px;
+		padding: 30px 0px  0px;
 	}
 `;
 
@@ -220,6 +220,8 @@ export const DownloadApp = styled.div`
 		padding: 38px 0px 0px 0px;
 	}
 
+
+
 	div {
 		width: 100%;
 			height: 100%;
@@ -227,15 +229,12 @@ export const DownloadApp = styled.div`
 
 			div {
 				img {
-			object-fit: contain !important;
-			margin: 0;
+			/* object-fit: contain !important;
+			margin: 0; */
 		}
 			}
 	
-		@media (max-width: 768px) {
-			margin-top: 30px;
-
-		}
+	
 	}
 `;
 
@@ -264,6 +263,7 @@ export const TextContainer = styled.div`
 
 		@media (max-width: 480px) {
 			font-size: 26px;
+			margin-top: 0;
 		}
 	}
 
@@ -334,6 +334,7 @@ export const TextContainer = styled.div`
 	@media (max-width: 480px) {
 		padding-right: 30px;
 		flex-direction: column;
+		margin-bottom: 29px !important;
 
 
 		div {

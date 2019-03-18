@@ -42,7 +42,7 @@ export const Container = styled.div`
 		h1 {
 			font-size: 26px;
 		}
-		padding: 30px 30px 20PX 30px;
+		padding: 30px 30px 15PX 30px;
 	}
 `;
 
