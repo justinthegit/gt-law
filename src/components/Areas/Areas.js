@@ -22,32 +22,38 @@ class Areas extends Component {
 							<Area title="COMPETITION + REGULATION" url="competition-and-regulation"/>
 							<HorizontalLine mobile/>
 
+							<Area title="DISPUTES + INVESTIGATIONS" url="litigation-dispute-investigations"/>
+							<HorizontalLine mobile/>
+
 						</AreasRow>
 
 						<HorizontalLine desktop/>
 
 						<AreasRow>
-							<Area title="DISPUTES + INVESTIGATIONS" url="litigation-dispute-investigations"/>
-							<HorizontalLine mobile/>
-
+				
 							<Area title="TECHNOLOGY + DIGITAL" url="technology-digital"/>
 							<HorizontalLine mobile/>
 
 							<Area title="INTELLECTUAL PROPERTY" url="intellectual-property"/>
 							<HorizontalLine mobile/>
 
-						</AreasRow>
-
-						<HorizontalLine desktop/>
-
-						<AreasRow>
 							<Area title="ENERGY + RESOURCES" url="energy-and-resources"/>
 							<HorizontalLine mobile/>
 
 							<Area title="REAL ESTATE + PROJECTS" url="real-estate-and-projects"/>
 							<HorizontalLine mobile/>
 
+						</AreasRow>
+
+						<HorizontalLine desktop/>
+
+						<AreasRow>
+					
+
 							<Area title="PRO BONO" url="pro-bono"/>
+							<HorizontalLine mobile/>
+
+							<Area title="TAX" url="pro-bono"/>
 							<HorizontalLine mobile/>
 
 						</AreasRow>

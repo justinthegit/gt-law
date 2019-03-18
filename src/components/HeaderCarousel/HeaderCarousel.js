@@ -3,8 +3,8 @@ import { Wrapper, KnowMore } from './style.js';
 import './slick.css';
 import './slick-theme.css';
 import Slider from 'react-slick';
-// import "~slick-carousel/slick/slick.css";
-// import "~slick-carousel/slick/slick-theme.css";
+import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
 
 import Form from './form.js';
 import upArrow from '../../images/up-arrow.svg';
@@ -66,6 +66,10 @@ class HeaderCarousel extends Component {
     this.slider.slickPrev();
   }
 	render() {
+
+		console.log(this.props)
+
+
 		const settings = {
 			dots: true,
 			infinite: true,
@@ -78,9 +82,29 @@ class HeaderCarousel extends Component {
 			<Wrapper>
 				<VideoOverlay escFunction={this.escFunction} videoClick={this.videoClick} videoOpen={this.state.videoOpen}/>
 				<Slider ref={c => (this.slider = c)} {...settings}>
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1551828160/hero-img_sytpyx.jpg" text="1.  Sectado temaa vorest quad vitatur acias mvitatur acias molor."/>
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1544061999/zimmerman_art_jrvwl2.png" text="2.  Sectado temaa vorest quad vitatur acias mvitatur acias molor."/>
-					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} imageURL="https://res.cloudinary.com/avenue/image/upload/v1543211282/blog_title_1_k7rtfc.png" text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." />
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="1.  Sectado temaa vorest quad vitatur acias mvitatur acias molor.">
+						<Img fluid={this.props.image1.childImageSharp.fluid} critical fadeIn={false}/>
+					</Slide>
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="2.  Sectado temaa vorest quad vitatur acias mvitatur acias molor.">
+						<Img fluid={this.props.image2.childImageSharp.fluid} />
+					</Slide>
+
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
+					<Img fluid={this.props.image3.childImageSharp.fluid} />
+					</Slide>
+
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
+					<Img fluid={this.props.image4.childImageSharp.fluid} />
+					</Slide>
+
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
+					<Img fluid={this.props.image5.childImageSharp.fluid} />
+					</Slide>
+
+					<Slide videoClick={this.videoClick} videoOpen={this.state.videoOpen} next={this.next} previous={this.previous} text="3.  Sectado temaa vorest quad vitatur acias mvitatur acias molor." >
+					<Img fluid={this.props.image6.childImageSharp.fluid} />
+					</Slide>
+
 				</Slider>
 		
 
@@ -95,4 +119,59 @@ class HeaderCarousel extends Component {
 	}
 }
 
+
+
+
+
+
+// const Image4 = () => (
+// 	<StaticQuery
+// 		query={graphql`
+// 			query asdffff {
+// 				placeholderImage: file(relativePath: { eq: "kaushalya-4.jpg" }) {
+// 					childImageSharp {
+// 						fluid(maxWidth: 1440) {
+// 							...GatsbyImageSharpFluid
+// 						}
+// 					}
+// 				}
+// 			}
+// 		`}
+// 		render={(data) => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+// 	/>
+// );
+
+// const Image5 = () => (
+// 	<StaticQuery
+// 		query={graphql`
+// 			query asdfasdf {
+// 				placeholderImage: file(relativePath: { eq: "courtney-5.jpg" }) {
+// 					childImageSharp {
+// 						fluid(maxWidth: 1440) {
+// 							...GatsbyImageSharpFluid
+// 						}
+// 					}
+// 				}
+// 			}
+// 		`}
+// 		render={(data) => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+// 	/>
+// );
+
+// const Image6 = () => (
+// 	<StaticQuery
+// 		query={graphql`
+// 			query  fasdf{
+// 				placeholderImage: file(relativePath: { eq: "jenny-6.jpg" }) {
+// 					childImageSharp {
+// 						fluid(maxWidth: 1440) {
+// 							...GatsbyImageSharpFluid
+// 						}
+// 					}
+// 				}
+// 			}
+// 		`}
+// 		render={(data) => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+// 	/>
+// );
 export default HeaderCarousel;

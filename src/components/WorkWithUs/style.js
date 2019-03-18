@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+
+
 export const HeroWrapper = styled.div`
 	position: relative;
 	img {
@@ -61,11 +63,22 @@ export const TextWrapper = styled.div`
 		flex-direction:row;
 		align-items: center;
 		margin-right: 7px;
+		margin-top: 24px;
 	}
 	div {
 		display:flex;
-		flex-direction:row;
+		flex-direction:column;
 		align-items: center;
+
+		p{
+			font-size: 18px;
+			margin-bottom:0px;
+			font-weight: 300;
+		}
+
+		span {
+			font-weight: 600;
+		}
 	}
 	img {
 		height: 17px;
@@ -240,4 +253,13 @@ export const ReallyLike = styled.div`
 
 
 	}
+`;
+
+
+
+export const BgImg = styled.div`
+img {
+	z-index: -4;
+
+}
 `;

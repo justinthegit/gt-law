@@ -5,7 +5,7 @@ export const BlueWrapper = styled.div`
 	width: 100%;
 	background-color: #0047bb;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		height: 100%;
 	}
 `;
@@ -28,13 +28,14 @@ export const Container = styled.div`
 
 	@media (max-width: 1024px) {
 		padding: 80px 60px 0 60px;
+		h1 {
+			margin-bottom: 10px;
+		}
 	}
 
 	@media (max-width: 768px) {
 		padding: 50px 40px 10px 40px;
-		h1 {
-			margin-bottom: 10px;
-		}
+	
 	}
 
 	@media (max-width: 480px) {
@@ -48,17 +49,19 @@ export const Container = styled.div`
 export const AreasContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	max-width: 1050px;
+	max-width: 1180px;
 `;
 
 export const AreasRow = styled.div`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* justify-content: space-between; */
 
-	@media (max-width: 768px) {
-		flex-direction: column;
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
 	}
+
+
 `;
 
 export const HorizontalLine = styled.div`
@@ -69,13 +72,13 @@ export const HorizontalLine = styled.div`
 	margin: ${(props) => (props.desktop ? '50px 0' : props.mobile ? '30px 0' : null)};
 	display: ${(props) => (props.desktop ? 'inline-block' : props.mobile ? 'none' : null)};
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		display: ${(props) => (props.desktop ? 'none' : props.mobile ? 'inline-block' : null)};
+		margin: ${(props) => (props.mobile ? '20px 0' : null)};
+
 	}
 
-	@media (max-width: 768px) {
-		margin: ${(props) => (props.mobile ? '20px 0' : null)};
-	}
+
 	@media (max-width: 480px) {
 		margin: ${(props) => (props.mobile ? '18px 0' : null)};
 	}
@@ -88,11 +91,17 @@ export const AreaWrapper = styled.div`
 	flex-direction: column;
 	position:relative;
 	justify-content:space-between;
+
+	:hover {
+		span{
+			text-decoration: underline;
+		}
+	}
 	h1 {
 		font-size: 28px;
 		color: white;
-		margin-bottom: 10px;
-		width: 240px;
+		margin-bottom: 13px;
+		max-width: 240px;
 	}
 
 	a {
@@ -113,10 +122,9 @@ export const AreaWrapper = styled.div`
 
 	span {
 		font-size: 18px;
-		color: #d8d8d8;
+		color: white;
 		font-weight: normal;
 		margin-right: 10px;
-		opacity: 0.7;
 
 	
 	}
@@ -134,13 +142,13 @@ export const AreaWrapper = styled.div`
 		height: auto;
 	}
 		h1 {
-			font-size: 24px;
+			font-size: 22px;
 			padding-right: 30px;
 		}
 	}
 
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		flex-direction: row;
 			justify-content: space-between;
 			align-items: center;

@@ -6,7 +6,8 @@ class Slide extends Component {
 	render() {
 		return (
 			<SlideWrapper>
-				<HeroImg src={this.props.imageURL} alt="hi" />
+				{/* <HeroImg src={this.props.imageURL} alt="hi" /> */}
+				{this.props.children}
 				<Title>
 					<h2>there's more</h2>
 					<img

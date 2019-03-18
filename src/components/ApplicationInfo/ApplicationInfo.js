@@ -37,11 +37,17 @@ class ApplicationInfo extends Component {
 						</p>
 						<QuestionsContainer>
 							<Question question="How do I apply for a clerkship?" />
+							<Question question="What sort of work will I do?" />
+							<Question question="Who will support me during my clerkship?" />
+							<Question question="What sort of training will I receive as a clerk?" />
+							<Question question="Can I get involved in legal innovation as a clerk?" />
+							<Question question="Can I contribute to the Pro Bono practice?" />
+							<Question question="Can I get involved in community activities?" />
+							<Question question="What do you look for in a clerkship application?" />
 							<Question question="What is the interview process, and how can I prepare?" />
-							<Question question="How do I apply for a clerkship?" />
-							<Question question="What is the interview process, and how can I prepare?" />
-							<Question question="How do I apply for a clerkship?" />
-							<Question question="What is the interview process, and how can I prepare?" />
+							<Question question="Do you offer Indigenous traineeships?" />
+							<Question question="If I don’t clerk with G+T, can I still join the firm as a graduate?" />
+
 						</QuestionsContainer>
 					</Container>
 				</BlueWrapper>

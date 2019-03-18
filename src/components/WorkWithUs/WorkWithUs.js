@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { HeroWrapper, TextWrapper, ReallyLike } from './style.js';
+import { HeroWrapper, TextWrapper, ReallyLike, BgImg } from './style.js';
 import arrowIcon from '../../images/arrow-in-circle.svg';
+import Img from 'gatsby-image';
+import { StaticQuery, graphql } from 'gatsby';
 
 class WorkWithUs extends Component {
 	render() {
@@ -20,32 +22,56 @@ class WorkWithUs extends Component {
 						</a>
 					</ReallyLike>
 
-					<img
+					{/* <img
 						src="https://res.cloudinary.com/avenue/image/upload/v1551841624/working-gt_voeswh.jpg"
 						alt=""
-					/>
+					/> */}
+
+					<BgImg>
+						<Image />
+					</BgImg>
 				</HeroWrapper>
 				<TextWrapper>
-					<p>
-						If you’re ready for more, apply for our clerkship program. Applications open DEC 2019 and close
-						DEC 2019.
-					</p>
-
-					<p>
-						If you are a law student in your fourth or penultimate year of study, please apply through
-						CVmail for our Sydney, Melbourne and Perth clerkships.{' '}
-					</p>
+					<p>If you’re ready for more, apply for our clerkship programs</p>
 
 					<div>
-						<a href="https://www.cvmail.com.au">
-							<span>cvmail.com.au</span>
-							<img src={arrowIcon} alt="" />
-						</a>
+						<p>
+							Sydney applications open <span>11 June 2019</span> and close <span>14 July 2019</span>
+						</p>
+
+						<p>
+							Melbourne applications open <span>8 July 2019</span> and close <span>11 August 2019</span>
+						</p>
+
+						<p>
+							Perth applications open <span>15 July 2019</span> and close <span> 4 August 2019</span>
+						</p>
 					</div>
+
+					<a href="https://www.cvmail.com.au">
+						<span>Learn more</span>
+						<img src={arrowIcon} alt="" />
+					</a>
 				</TextWrapper>
 			</div>
 		);
 	}
 }
 
+const Image = () => (
+	<StaticQuery
+		query={graphql`
+			query {
+				placeholderImage: file(relativePath: { eq: "clerkship.jpg" }) {
+					childImageSharp {
+						fluid(maxWidth: 1440) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+			}
+		`}
+		render={(data) => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+	/>
+);
 export default WorkWithUs;

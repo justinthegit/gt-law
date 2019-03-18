@@ -117,6 +117,8 @@ export const QuestionWrapper = styled.div`
 		margin: 0;
 		line-height: 124%;
 		margin-RIGHT: 20px;
+		font-weight:  ${(props) => (props.isOpen ? '500' : null)};
+		color: ${(props) => (props.isOpen ? '#003057' : null)};
 	}
 
 	svg {
@@ -128,17 +130,22 @@ export const QuestionWrapper = styled.div`
 		transform: ${(props) => (props.isOpen ? 'rotateX(180deg)' : null)};
 
 		path {
-			fill: ${(props) => (props.isOpen ? '#fff' : ' #6CC24A')};
+			fill: ${(props) => (props.isOpen ? '#003057' : ' #6CC24A')};
 		}
 	}
 
 	:hover {
-		background-color: #6cc24a;
+		/* background-color: #6cc24a;
 		svg {
 			transform: rotateX(180deg);
 			path {
 				fill: #fff;
 			}
+		} */
+
+		p {
+			/* text-decoration:${(props) => (props.isOpen ? 'null' : 'underline')}; */
+			text-decoration: underline;
 		}
 	}
 
