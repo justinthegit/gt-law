@@ -35,8 +35,8 @@ export const TextWrapper = styled.div`
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	margin-top: 90px;
-	padding-bottom: 32px;
+	margin-top: 100px;
+	padding-bottom: 52px;
 
 
 	p {
@@ -63,7 +63,7 @@ export const TextWrapper = styled.div`
 		flex-direction:row;
 		align-items: center;
 		margin-right: 7px;
-		margin-top: 24px;
+		margin-top: 30px;
 	}
 	div {
 		display:flex;
@@ -90,6 +90,7 @@ export const TextWrapper = styled.div`
 
 	@media (max-width :768px ) {
 		margin-top: 50px;
+		padding-bottom: 0;
 			p {
 				padding: 0 50px;
 				font-size: 24px;
@@ -137,6 +138,8 @@ export const ReallyLike = styled.div`
 	left: 105px;
 	top: 80px;
 	max-width: 393px;
+	z-index: 30;
+
 
 	h2 {
 		font-size: 38px;
@@ -262,7 +265,7 @@ export const ReallyLike = styled.div`
 	@media (max-width: 480px) {
 		text-align: left;
 		padding:0 80px 0 30px;
-		margin-top: 43px;
+		margin-top: 33px;
 		align-items:flex-start;
 
 
@@ -270,6 +273,7 @@ export const ReallyLike = styled.div`
 			font-size:26px;
 			padding: 0;
 			line-height: 100%;
+			margin-bottom: 24px;
 		}
 
 		p {
@@ -296,5 +300,8 @@ export const BgImg = styled.div`
 img {
 	z-index: -4;
 
+	/* @media (max-width: 480px) {
+		height: 266px;
+	} */
 }
 `;

@@ -28,7 +28,7 @@ const IndexPage = ({data}) => {
 			<HeaderCarousel {...data}  />
 
 			<Element name="about">
-				<About />
+				<About {...data}/>
 			</Element>
 
 			<Element name="areas">
@@ -88,6 +88,18 @@ export const query = graphql`
     }
 
 		image6: file(relativePath: { eq: "jenny-6.jpg" }) {
+      ...squareImage
+    }
+		
+		info1: file(relativePath: { eq: "info-1.jpg" }) {
+      ...squareImage
+    }
+
+		info2: file(relativePath: { eq: "info-2.jpg" }) {
+      ...squareImage
+    }
+
+		info3: file(relativePath: { eq: "info-3.jpg" }) {
       ...squareImage
     }
   }
