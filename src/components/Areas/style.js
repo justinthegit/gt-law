@@ -19,7 +19,7 @@ export const Container = styled.div`
 		font-size: 38px;
 		color: white;
 		margin-bottom: 60px;
-		font-weight: normal;
+		font-weight: 700;
 	}
 
 	@media (max-width: 1280px) {
@@ -123,7 +123,7 @@ export const AreaWrapper = styled.div`
 	span {
 		font-size: 18px;
 		color: white;
-		font-weight: normal;
+		font-weight: 700;
 		margin-right: 10px;
 
 	

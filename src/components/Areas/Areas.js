@@ -13,14 +13,18 @@ class Areas extends Component {
 						<AreasRow>
 
 						<HorizontalLine mobile/>
-							<Area title="CORPORATE ADVISORY" url="corporate-advisory"/>
-							<HorizontalLine mobile/>
 
-							<Area title="BANKING + INFRASTRUCTURE" url="banking-and-infrastructure"/>
+						<Area title="BANKING + INFRASTRUCTURE" url="banking-and-infrastructure"/>
 							<HorizontalLine mobile/>
 
 							<Area title="COMPETITION + REGULATION" url="competition-and-regulation"/>
 							<HorizontalLine mobile/>
+
+							<Area title="CORPORATE ADVISORY" url="corporate-advisory"/>
+							<HorizontalLine mobile/>
+
+						
+						
 
 							<Area title="DISPUTES + INVESTIGATIONS" url="litigation-dispute-investigations"/>
 							<HorizontalLine mobile/>
@@ -30,31 +34,39 @@ class Areas extends Component {
 						<HorizontalLine desktop/>
 
 						<AreasRow>
-				
-							<Area title="TECHNOLOGY + DIGITAL" url="technology-digital"/>
+						<Area title="ENERGY + RESOURCES" url="energy-and-resources"/>
 							<HorizontalLine mobile/>
-
 							<Area title="INTELLECTUAL PROPERTY" url="intellectual-property"/>
 							<HorizontalLine mobile/>
 
-							<Area title="ENERGY + RESOURCES" url="energy-and-resources"/>
+							<Area title="PRO BONO" url="pro-bono"/>
 							<HorizontalLine mobile/>
+
 
 							<Area title="REAL ESTATE + PROJECTS" url="real-estate-and-projects"/>
 							<HorizontalLine mobile/>
 
-						</AreasRow>
+			
 
+					
+
+							
+
+
+						</AreasRow>
+	
 						<HorizontalLine desktop/>
 
 						<AreasRow>
 					
 
-							<Area title="PRO BONO" url="pro-bono"/>
-							<HorizontalLine mobile/>
+<Area title="TAX" url="tax"/>
+<HorizontalLine mobile/>
 
-							<Area title="TAX" url="pro-bono"/>
-							<HorizontalLine mobile/>
+<Area title="TECHNOLOGY + DIGITAL" url="technology-digital"/>
+	<HorizontalLine mobile/>
+						
+				
 
 						</AreasRow>
 					</AreasContainer>

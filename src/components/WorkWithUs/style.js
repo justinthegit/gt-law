@@ -56,6 +56,7 @@ export const TextWrapper = styled.div`
 		font-weight: 700;
 		font-size: 18px;
 		color: #0047bb;
+	
 		letter-spacing: -0.26px;
 		line-height: 22px;
 		text-decoration:none;

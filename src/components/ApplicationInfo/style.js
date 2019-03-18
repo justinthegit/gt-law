@@ -22,8 +22,7 @@ export const Container = styled.div`
 		font-size: 38px;
 		color: white;
 		margin-bottom: 30px;
-		font-weight: 500;
-		max-width: 340px;
+		/* max-width: 400px; */
 	}
 
 	p {
@@ -37,7 +36,7 @@ export const Container = styled.div`
 	}
 
 	span {
-		font-weight: 500;
+		font-weight: 700;
 	}
 
 	@media (max-width: 1280px) {
@@ -118,6 +117,7 @@ export const QuestionWrapper = styled.div`
 		line-height: 124%;
 		margin-RIGHT: 20px;
 		max-width: 100%;
+		font-weight: 500;
 
 		/* margin-top: 10px;
 		margin-bottom: 10px; */
@@ -249,7 +249,7 @@ export const TextContainer = styled.div`
 		color: #0047bb;
 		letter-spacing: -0.22px;
 		line-height: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 
 		@media (max-width: 1280px) {
 			font-size: 32px;
@@ -272,7 +272,7 @@ export const TextContainer = styled.div`
 		font-size: 18px;
 		color: #2d2926;
 		letter-spacing: -0.26px;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 
 		@media (max-width: 1280px) {
 			margin-bottom: 30px;
@@ -295,7 +295,7 @@ export const TextContainer = styled.div`
 		display: block;
 		margin: 0;
 		width: 168px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 
 		@media (max-width: 480px) {
 			width: 130px;
@@ -332,7 +332,8 @@ export const TextContainer = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		padding-right: 30px;
+		padding-right: 40px;
+		padding-left: 30px;
 		flex-direction: column;
 		margin-bottom: 29px !important;
 

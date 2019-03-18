@@ -75,7 +75,6 @@ export const Title = styled.div`
 		width: 320px;
 		h2 {
 			font-size: 80px;
-			font-weight: 700;
 		}
 
 		img {
@@ -91,7 +90,6 @@ export const Title = styled.div`
 		width: 270px;
 		h2 {
 			font-size: 40px;
-			font-weight: 700;
 		}
 
 		img {
@@ -164,7 +162,7 @@ export const WatchNow = styled.div`
 			cursor: pointer;
 			outline: none;
 
-			/* :before {
+			:before {
 				content: '';
 				display: block;
 				position: absolute;
@@ -173,7 +171,7 @@ export const WatchNow = styled.div`
 				width: 100%;
 				height: 100%;
 				z-index: 0;
-			} */
+			}
 		}
 
 		img {
@@ -248,7 +246,7 @@ export const KnowMore = styled.button`
 
 	h1 {
 		font-size: 22px;
-		font-weight: normal;
+		font-weight: 700;
 	}
 	@media (max-width: 320px) {
 		height: 63px;

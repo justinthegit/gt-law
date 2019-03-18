@@ -1,10 +1,9 @@
-/* html {
+html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
 
 body {
-  background: #FBF9F6;
   font-variant-ligatures: none;
   -webkit-font-variant-ligatures: none;
   text-rendering: optimizeLegibility;
@@ -22,4 +21,4 @@ body {
 }
 *:after {
   box-sizing: inherit;
-} */
+}

@@ -30,7 +30,7 @@ class ApplicationInfo extends Component {
 			<div>
 				<BlueWrapper>
 					<Container>
-						<h1>starting your career with G+T</h1>
+						<h1>starting your career  <br/>with Gilbert + Tobin</h1>
 						<p>
 							Not all corporate law firms are the same, and a clerkship is the best way to experience what
 							it’s really like to work here. Working under the guidance of Australia’s leading legal
@@ -43,7 +43,7 @@ class ApplicationInfo extends Component {
 								<p>
 									If you are a law student in your fourth or penultimate year of study, please apply
 									through{' '}
-									<a href="https://www.gtlaw.com.au/careers/your-career/law-students/graduate-program">
+									<a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
 										here
 									</a>{' '}
 									for our Sydney, Melbourne and Perth clerkships.
@@ -182,7 +182,7 @@ class ApplicationInfo extends Component {
 									Our graduate lawyers complete a formal 18-month program, working directly with
 									partners and lawyers across at least two practice rotations.{' '}
 									<a href="https://www.gtlaw.com.au/careers/your-career/law-students/graduate-program">
-										link to G+T website
+										Learn more
 									</a>
 								</p>
 							</Question>

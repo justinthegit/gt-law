@@ -10,14 +10,14 @@ class WorkWithUs extends Component {
 			<div>
 				<HeroWrapper>
 					<ReallyLike>
-						<h2>WHAT IT's REALLY LIKE TO WORK AT G+T</h2>
+						<h2>WHAT IT's REALLY LIKE TO WORK AT Gilbert + Tobin</h2>
 						<p>
-							Working with Gilbert + Tobin means working directly with recognised leaders in their fields,
+							Working at G+T means working directly with recognised leaders in their fields,
 							in a firm that makes a difference for its clients and its people. The work is challenging,
 							interesting and rewarding, as these graduates reveal.{' '}
 						</p>
 						<a href="https://gradaustralia.com.au/">
-							<span>gradaustralia.com.au</span>
+							<span>gradaustralia.com.au (unsure link)</span>
 							<img src={arrowIcon} alt="" />
 						</a>
 					</ReallyLike>
@@ -48,8 +48,8 @@ class WorkWithUs extends Component {
 						</p>
 					</div>
 
-					<a href="https://www.cvmail.com.au">
-						<span>Learn more</span>
+					<a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
+						<span>Learn more (unsure link)</span>
 						<img src={arrowIcon} alt="" />
 					</a>
 				</TextWrapper>

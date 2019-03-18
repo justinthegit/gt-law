@@ -17,11 +17,14 @@ export const Wrapper = styled.div`
 		letter-spacing: -0.21px;
 		align-self: flex-end;
 		padding-left: 35px;
+		font-weight: normal
 	}
 
 	span,
 	a {
 		color: #0047bb;
+		font-weight: 500;
+
 	}
 
 	img {
