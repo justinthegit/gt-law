@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Element} from 'react-scroll';
 
 import Layout from '../components/layout';
@@ -18,7 +18,7 @@ const IndexPage = ({data}) => {
 
 
 
-	console.log(data);
+	// console.log(data);
 
 	return (
 		<Layout>

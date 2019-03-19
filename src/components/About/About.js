@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
-import { StaticQuery, graphql } from 'gatsby';
 import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper, ImgWrapper } from './style.js';
 
 class About extends Component {

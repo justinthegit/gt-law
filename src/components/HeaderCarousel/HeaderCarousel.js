@@ -4,12 +4,13 @@ import './slick.css';
 import './slick-theme.css';
 import Slider from 'react-slick';
 import Img from 'gatsby-image';
-import { StaticQuery, graphql } from 'gatsby';
 
 import Form from './form.js';
 import upArrow from '../../images/up-arrow.svg';
 import Slide from './slide.js';
 import VideoOverlay from './videoOverlay.js';
+
+const videoURLs = [ '6krmom_hjEE', 'OgZ2--BldmQ', 'hC8CH0Z3L54', 'Xvw_FJBHakE', 'Q0atlehWrsE', 'LtQ7oXXykSM' ];
 
 class HeaderCarousel extends Component {
 	constructor(props) {
@@ -17,13 +18,17 @@ class HeaderCarousel extends Component {
 
 		this.state = {
 			formOpen: false,
-			videoOpen: false
+			videoOpen: false,
+			videoURL: '6krmom_hjEE'
 		};
 
 		this.handleClick = this.handleClick.bind(this);
-		this.videoClick = this.videoClick.bind(this);
-		this.escFunction = this.escFunction.bind(this);
+		this.closeVideo = this.closeVideo.bind(this);
 
+		this.setVideo = this.setVideo.bind(this);
+		this.openVideo = this.openVideo.bind(this);
+		this.escFunction = this.escFunction.bind(this);
+		this.slideChanged = this.slideChanged.bind(this);
 		this.next = this.next.bind(this);
 		this.previous = this.previous.bind(this);
 	}
@@ -40,17 +45,32 @@ class HeaderCarousel extends Component {
 
 	escFunction(event) {
 		if (event.keyCode === 27) {
-			this.setState({
-				videoOpen: false
-			});
+			this.closeVideo();
+		} else {
+			return null;
 		}
 	}
+	setVideo(video) {
+		this.youtubeVideo = video;
+	}
 
-	videoClick() {
-		const currentStatus = this.state.videoOpen;
+	openVideo() {
+		this.youtubeVideo.playVideo();
+
 		this.setState(
 			{
-				videoOpen: !currentStatus
+				videoOpen: true
+			},
+			() => console.log(this.state.videoOpen)
+		);
+	}
+
+	closeVideo() {
+		this.youtubeVideo.pauseVideo();
+
+		this.setState(
+			{
+				videoOpen: false
 			},
 			() => console.log(this.state.videoOpen)
 		);
@@ -59,11 +79,19 @@ class HeaderCarousel extends Component {
 	next() {
 		this.slider.slickNext();
 	}
+
 	previous() {
 		this.slider.slickPrev();
 	}
+
+	slideChanged(beforeIndex, afterIndex) {
+		this.setState({
+			videoURL: videoURLs[afterIndex]
+		});
+	}
+
 	render() {
-		console.log(this.props);
+		// console.log(this.props);
 
 		const settings = {
 			dots: true,
@@ -71,18 +99,22 @@ class HeaderCarousel extends Component {
 			fade: true,
 			speed: 1000,
 			slidesToShow: 1,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			beforeChange: this.slideChanged
 		};
 		return (
 			<Wrapper>
 				<VideoOverlay
+					videoURL={this.state.videoURL}
 					escFunction={this.escFunction}
-					videoClick={this.videoClick}
+					openVideo={this.openVideo}
+					closeVideo={this.closeVideo}
+					setVideo={this.setVideo}
 					videoOpen={this.state.videoOpen}
 				/>
 				<Slider ref={(c) => (this.slider = c)} {...settings}>
 					<Slide
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
@@ -91,7 +123,7 @@ class HeaderCarousel extends Component {
 						<Img fluid={this.props.image1.childImageSharp.fluid} critical fadeIn={false} />
 					</Slide>
 					<Slide
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
@@ -102,7 +134,7 @@ class HeaderCarousel extends Component {
 
 					<Slide
 						whiteTitle
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
@@ -112,7 +144,7 @@ class HeaderCarousel extends Component {
 					</Slide>
 
 					<Slide
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
@@ -122,7 +154,7 @@ class HeaderCarousel extends Component {
 					</Slide>
 
 					<Slide
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
@@ -132,7 +164,7 @@ class HeaderCarousel extends Component {
 					</Slide>
 
 					<Slide
-						videoClick={this.videoClick}
+						openVideo={this.openVideo}
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}

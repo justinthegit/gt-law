@@ -15,7 +15,7 @@ class Slide extends Component {
 						alt=""
 					/>
 				</Title>
-				<WatchNow onClick={this.props.videoClick}>
+				<WatchNow onClick={this.props.openVideo}>
 					<img
 						src="https://res.cloudinary.com/avenue/image/upload/v1551828144/green-cross_pg0rzp.png"
 						alt=""
@@ -31,8 +31,8 @@ class Slide extends Component {
 						</p>
 					</div>
 				</WatchNow>
-				<ButtonPrevious onClick={this.props.previous} href="#" />
-				<ButtonNext onClick={this.props.next} href="#" />
+				<ButtonPrevious  onClick={this.props.previous} href="#" />
+				<ButtonNext  onClick={this.props.next} href="#" />
 			</SlideWrapper>
 		);
 	}

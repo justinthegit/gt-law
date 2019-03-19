@@ -32,7 +32,7 @@ class Footer extends Component {
 					</a>	
 
 					<p>
-					Gilbert + Tobin is an equal opportunity employer. If you require assistance accessing any of the information contained here, please contact Kristie Barton on <span>(02) 9263 4575</span> or via <a href="#"> gtcareers@gtlaw.com.au  </a>
+					Gilbert + Tobin is an equal opportunity employer. If you require assistance accessing any of the information contained here, please contact Kristie Barton on <span>(02) 9263 4575</span> or via <a href="/"> gtcareers@gtlaw.com.au  </a>
 					</p>
 				</Wrapper>
 

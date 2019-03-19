@@ -25,9 +25,23 @@ export const SlideWrapper = styled.div`
 	height: 100%;
 	position: relative;
 
-	/* img {
-	transform: translateX(50px);
-	} */
+	@media (max-width: 768px) {
+		img {
+			object-position: 34% center !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		img {
+			object-position: 40% center !important;
+		}
+	}
+
+	@media (max-width: 320px) {
+		img {
+			object-position: 32% center !important;
+		}
+	}
 `;
 
 export const Title = styled.div`
@@ -44,8 +58,7 @@ export const Title = styled.div`
 		line-height: 86%;
 		margin: 0;
 		display: inline;
-		color: 
-		${(props) => (props.whiteTitle ? 'white' : '#003057')};
+		color: ${(props) => (props.whiteTitle ? 'white' : '#003057')};
 	}
 
 	img {
@@ -140,11 +153,8 @@ export const WatchNow = styled.div`
 		p {
 			display: inline-block;
 			margin-bottom: 0;
-			line-height:118%;
-
-
+			line-height: 118%;
 		}
-	
 	}
 
 	span {
@@ -152,7 +162,6 @@ export const WatchNow = styled.div`
 		margin-bottom: 0;
 
 		button {
-			
 			letter-spacing: -0.33px;
 			color: #6cc24a;
 			text-decoration: none;
@@ -256,7 +265,10 @@ export const KnowMore = styled.button`
 	}
 `;
 
-export const ButtonPrevious = styled.a`
+export const ButtonPrevious = styled.button`
+	background: transparent;
+	border: none;
+	outline: none;
 	position: absolute;
 	width: 50%;
 	height: 100%;
@@ -423,7 +435,7 @@ export const Button = styled.button`
 //videoOverlay.js
 
 export const VideoOverlayWrapper = styled.div`
-	display:block;
+	display: block;
 	background-color: black;
 	position: absolute;
 	top: 0;
@@ -432,12 +444,23 @@ export const VideoOverlayWrapper = styled.div`
 	width: 100%;
 	z-index: 20;
 	transition: .5s ease-in-out;
-	opacity: ${(props) => (props.videoOpen ? '0.7' : '0')};
+	opacity: ${(props) => (props.videoOpen ? '1' : '0')};
 	z-index: ${(props) => (props.videoOpen ? '10000' : '-7')};
 
+	> div {
+		position: relative;
+		height: 100%;
+	}
+	iframe {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 `;
 
 export const VideoClose = styled(Cross)`
 top: 40px;
 right: 40px;
+z-index: 21;
+
 `;
