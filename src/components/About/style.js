@@ -105,11 +105,9 @@ export const VideoContainer = styled.div`
 	justify-content: space-evenly;
 	width: 100%;
 
-
 	@media (max-width: 768px) {
 		flex-direction: column;
 		padding: 0 40px;
-
 	}
 
 	@media (max-width: 480px) {
@@ -119,9 +117,37 @@ export const VideoContainer = styled.div`
 
 export const ImgWrapper = styled.div`
 	width: 50%;
-	height: 50%;
-	img {
+	height: 402px;
+	position: relative;
+	border: 1px solid red;
+
+	svg {
+		display: ${(props) => (props.playClicked ? 'none' : 'block')};
 		margin: 0;
+		padding: 0;
+		position: absolute;
+		margin: auto auto;
+		z-index: 5;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		path {
+			fill: black;
+		}
+	}
+
+	:hover {
+		cursor: pointer;
+		svg {
+			circle {
+				fill-opacity: 1;
+			}
+
+			polygon {
+				fill: #979797;
+			}
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -133,6 +159,51 @@ export const ImgWrapper = styled.div`
 
 	@media (max-width: 480px) {
 		margin-bottom: 28px;
+	}
+`;
+
+export const VideoWrapper = styled.div`
+	margin: 0;
+
+	z-index: ${(props) => (props.playClicked ? '10000' : '-5')};
+
+	> div {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+	iframe {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+`;
+
+export const Thumbnail = styled.div`
+	z-index: ${(props) => (props.playClicked ? '-1000' : null)};
+	opacity: ${(props) => (props.playClicked ? '0' : '1')};
+	transition: 1s;
+
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	div {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		z-index: ${(props) => (props.playClicked ? '-1000' : null)};
+
+		picture {
+			z-index: ${(props) => (props.playClicked ? '-1000' : null)};
+
+		}
+
+		img {
+			margin: 0;
+		}
 	}
 `;
 
