@@ -102,6 +102,10 @@ export const query = graphql`
 		info3: file(relativePath: { eq: "info-3.jpg" }) {
       ...squareImage
     }
+
+		aboutVideo: file(relativePath: { eq: "about-video.jpg" }) {
+      ...squareImage
+    }
   }
 `
 

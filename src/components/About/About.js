@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
-import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper } from './style.js';
+import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper, ImgWrapper } from './style.js';
 
 class About extends Component {
 	render() {
@@ -26,15 +26,19 @@ class About extends Component {
 
 				</InfoWrapper>
 
-				{/* <img src="https://res.cloudinary.com/avenue/image/upload/v1551840644/placeholder_is2al3.jpg" alt="" /> */}
 				<VideoContainer>
 					<QuoteWrapper>
 						<p>“We have exceptional people stepping out of the lift every day – because we know if we get this right, the rest looks after itself.”</p>
 						<span>Danny Gilbert, Managing Partner</span>
 					</QuoteWrapper>
 
-						<img src="https://res.cloudinary.com/avenue/image/upload/v1551841613/about-video_ehwkae.jpg" alt=""/>
+					<ImgWrapper>
+					<Img fluid={this.props.aboutVideo.childImageSharp.fluid} />
+
+					</ImgWrapper>
+
 				</VideoContainer>
+				
 
 			</Wrapper>
 		);

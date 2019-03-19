@@ -69,24 +69,20 @@ export const InfoWrapper = styled.div`
 	background-color: #003057;
 	justify-content: center;
 	div {
-		z-index:1;
+		z-index: 1;
 		max-width: 386px;
 
 		img {
 			margin: 0;
 		}
-
-
 	}
 
 	@media (max-width: 480px) {
 		grid-template-columns: 1fr;
 		margin-bottom: 48px;
 
-
 		div {
-
-			max-width:100%;
+			max-width: 100%;
 
 			/* :nth-of-type(2) {
 		transform: translateY(-50px);
@@ -100,7 +96,6 @@ export const InfoWrapper = styled.div`
 	} */
 		}
 	}
-
 `;
 
 export const VideoContainer = styled.div`
@@ -108,30 +103,39 @@ export const VideoContainer = styled.div`
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	width: 100%;
 
-	img {
-		width: 50%;
-		height: 50%;
-		padding: 0;
-		margin: 0;
-	}
 
 	@media (max-width: 768px) {
 		flex-direction: column;
 		padding: 0 40px;
 
-		img {
-			order: 1;
-			width: 100%;
-			height: 100%;
-			margin-bottom: 30px;
-		}
 	}
 
 	@media (max-width: 480px) {
 		padding: 0 29px;
 	}
 `;
+
+export const ImgWrapper = styled.div`
+	width: 50%;
+	height: 50%;
+	img {
+		margin: 0;
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		height: 100%;
+		margin-bottom: 38px;
+		order: 1;
+	}
+
+	@media (max-width: 480px) {
+		margin-bottom: 28px;
+	}
+`;
+
 export const QuoteWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
