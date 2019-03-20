@@ -429,9 +429,12 @@ export const FormWrap = styled.form`
 `;
 
 export const Input = styled.input`
-	padding: 5px 0 5px 18px;
+	/* padding: 5px 0 5px 18px; */
+	padding: 8px 0 8px 20px;
+
 	margin: 7px 0;
 	outline: 0;
+	border: none;
 
 	::placeholder {
 		color: #0047bb;
@@ -440,25 +443,27 @@ export const Input = styled.input`
 
 	@media (max-width: 480px) {
 		margin: 5px 0;
-		padding: 5px 0 5px 12px;
+		padding: 8px 0 8px 12px;
 	}
 `;
 
 export const TextArea = styled.textarea`
-	height: 109px;
+	height: 115px;
 	margin: 7px 0 20px 0;
-	padding: 10px 0 5px 18px;
+	padding: 12px 0 7px 20px;
 	outline: 0;
+	border: none;
 
 	::placeholder {
 		color: #0047bb;
 		max-width: 180px;
 		font-weight: 300;
+		line-height: 100%;
 
 	}
 	@media (max-width: 480px) {
 		margin: 5px 0 12px 0;
-		padding: 8px 0 5px 16px;
+		padding: 12px 0 5px 16px;
 	}
 `;
 
