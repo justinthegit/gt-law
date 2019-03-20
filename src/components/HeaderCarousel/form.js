@@ -92,10 +92,7 @@ class Form extends Component {
 								/>
 
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim vehicula
-									nibh, et sollicitudin libero gravida sed. Donec mollis consequat mauris rhoncus
-									iaculis. Integer et porta felis, eu tincidunt lacus. Donec placerat eros vel lectus
-									dignissim rutrum ut nec ex.
+								Gilbert + Tobin (G+T) understands that privacy and how we collect, use, disclose and protect your information is important to you
 								</p>
 								<Button type="submit" disabled={isSubmitting}>
 									SUBMIT
