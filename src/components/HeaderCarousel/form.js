@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
-import { FormContainer, FormWrap, Input, TextArea, Button, FormWrapper, Cross } from './style.js';
+import { FormContainer, FormWrap, Input, TextArea, Button, FormWrapper, OnSubmission, Cross } from './style.js';
 import { Formik } from 'formik';
 
 import closeBtn from '../../images/close-btn.svg';
 
 
 class Form extends Component {
+
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			isSubmitted: false,
+		};
+
+	
+	}
 	render() {
+
+		
 		return (
 			<FormContainer formOpen={this.props.formOpen}>
 				<Formik
@@ -26,20 +38,29 @@ class Form extends Component {
 							setSubmitting(false);
 						}, 400);
 
+						this.setState({
+							isSubmitted: true
+						});
+
 						console.log(values);
+
 					}}
 				>
 					{({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
-						<FormWrapper  formOpen={this.props.formOpen}>
+						<FormWrapper formOpen={this.props.formOpen}>
 
 							<Cross onClick={this.props.handleClick}>
 								<img src={closeBtn} alt="" />
 							</Cross>
 
-							<FormWrap onSubmit={handleSubmit}>
+							<OnSubmission isSubmitted={this.state.isSubmitted}>
+								<p>Thank you for your details, we'll be in touch soon.</p>
+							</OnSubmission>
+
+							<FormWrap isSubmitted={this.state.isSubmitted} onSubmit={handleSubmit}>
 								<p>
 									Interested in learning more about opportunities with G+T? Please enter your details
-									hereand we’ll be in touch.
+									here and we’ll be in touch.
 								</p>
 								<Input
 									placeholder="Full name"

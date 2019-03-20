@@ -26,8 +26,8 @@ export const TextWrapper = styled.div`
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	margin-top: 100px;
-	padding-bottom: 52px;
+	margin-top: 108px;
+	padding-bottom: 54px;
 
 	p {
 		max-width: 700px;
@@ -142,7 +142,7 @@ export const ReallyLike = styled.div`
 		font-size: 18px;
 		color: #2d2926;
 		letter-spacing: -0.26px;
-		line-height: 145%;
+		line-height: 122%;
 		padding-right: 30px;
 	}
 

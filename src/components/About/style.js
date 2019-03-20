@@ -63,37 +63,45 @@ export const InfoWrapper = styled.div`
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, minmax(50px, 386px));
-	grid-gap: 0;
+	grid-gap: 25px;
 	margin-top: 25px;
 	margin-bottom: 68px;
 	background-color: #003057;
 	justify-content: center;
+	padding-bottom: 40px;
 	div {
 		z-index: 1;
 		max-width: 386px;
+		margin: 0 0px;
 
 		img {
 			margin: 0;
 		}
 	}
 
-	@media (max-width: 480px) {
-		grid-template-columns: 1fr;
-		margin-bottom: 48px;
 
-		div {
-			max-width: 100%;
-
-			/* :nth-of-type(2) {
-		transform: translateY(-50px);
-		z-index:0;
+	@media (max-width: 768px) {
+		padding-bottom: 20px;
 
 	}
 
-	:nth-of-type(3) {
-		transform: translateY(-115px);
-		z-index:0;
-	} */
+	@media (max-width: 480px) {
+		grid-template-columns: 1fr;
+		margin-bottom: 48px;
+		grid-gap: 0;
+		padding-bottom: 0;
+
+		div {
+			display: block;
+			max-width: 100%;
+
+			:nth-of-type(2) {
+				margin-top: -20px;
+			}
+
+			:nth-of-type(3) {
+				margin-top: -70px;
+			}
 		}
 	}
 `;
@@ -117,9 +125,8 @@ export const VideoContainer = styled.div`
 
 export const ImgWrapper = styled.div`
 	width: 50%;
-	height: 402px;
+	height: 50%;
 	position: relative;
-	border: 1px solid red;
 
 	svg {
 		display: ${(props) => (props.playClicked ? 'none' : 'block')};
@@ -163,7 +170,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const VideoWrapper = styled.div`
-	margin: 0;
+	/* margin: 0;
 
 	z-index: ${(props) => (props.playClicked ? '10000' : '-5')};
 
@@ -176,7 +183,20 @@ export const VideoWrapper = styled.div`
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-	}
+	} */
+
+	position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
+		iframe { 
+			position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+		}
 `;
 
 export const Thumbnail = styled.div`
@@ -198,7 +218,6 @@ export const Thumbnail = styled.div`
 
 		picture {
 			z-index: ${(props) => (props.playClicked ? '-1000' : null)};
-
 		}
 
 		img {

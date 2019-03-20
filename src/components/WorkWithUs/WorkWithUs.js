@@ -17,7 +17,7 @@ class WorkWithUs extends Component {
 							interesting and rewarding, as these graduates reveal.{' '}
 						</p>
 						<a href="https://gradaustralia.com.au/">
-							<span>gradaustralia.com.au (unsure link)</span>
+							<span>gradaustralia.com.au</span>
 							<img src={arrowIcon} alt="" />
 						</a>
 					</ReallyLike>
@@ -49,7 +49,7 @@ class WorkWithUs extends Component {
 					</div>
 
 					<a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
-						<span>Learn more (unsure link)</span>
+						<span>Learn more</span>
 						<img src={arrowIcon} alt="" />
 					</a>
 				</TextWrapper>

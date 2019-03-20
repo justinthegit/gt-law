@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const BlueWrapper = styled.div`
-	height: 735px;
 	width: 100%;
 	background-color: #0047bb;
 
@@ -13,7 +12,7 @@ export const BlueWrapper = styled.div`
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	padding: 80px 120px 0 120px;
+	padding: 80px 120px 106px 120px;
 
 	h1 {
 		font-size: 38px;
@@ -23,18 +22,18 @@ export const Container = styled.div`
 	}
 
 	@media (max-width: 1280px) {
-		padding: 80px 100px 0 100px;
+		padding: 80px 100px 106 100px;
 	}
 
 	@media (max-width: 1024px) {
-		padding: 80px 60px 0 60px;
+		padding: 80px 60px 15px 60px;
 		h1 {
 			margin-bottom: 10px;
 		}
 	}
 
 	@media (max-width: 768px) {
-		padding: 50px 40px 10px 40px;
+		padding: 50px 40px 15px 40px;
 	
 	}
 
@@ -71,6 +70,8 @@ export const HorizontalLine = styled.div`
 	background-color: #d8d8d8;
 	margin: ${(props) => (props.desktop ? '50px 0' : props.mobile ? '30px 0' : null)};
 	display: ${(props) => (props.desktop ? 'inline-block' : props.mobile ? 'none' : null)};
+	opacity: ${(props) => (props.desktop ? '0.3' : props.mobile ? '0.7' : null)};
+
 
 	@media (max-width: 1024px) {
 		display: ${(props) => (props.desktop ? 'none' : props.mobile ? 'inline-block' : null)};

@@ -74,7 +74,7 @@ export const Container = styled.div`
 		span {
 			display: block;
 		}
-		padding: 30px 0px  0px;
+		padding: 30px 0px 0px;
 	}
 `;
 
@@ -83,7 +83,7 @@ export const QuestionsContainer = styled.div`
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	margin-top: 50px;
+	margin-top: 55px;
 
 	@media (max-width: 480px) {
 		margin-top: 30px;
@@ -146,6 +146,7 @@ export const QuestionWrapper = styled.div`
 				fill: #fff;
 			}
 		} */
+		cursor: pointer;
 
 		p {
 			/* text-decoration:${(props) => (props.isOpen ? 'null' : 'underline')}; */
@@ -167,11 +168,19 @@ export const QuestionWrapper = styled.div`
 			padding: 0;
 		}
 	}
+
+	@media (max-width: 360px) {
+		padding: 0 24px;
+		p {
+			font-size: 16px;
+			margin-right: 10px;
+		}
+	}
 `;
 
 export const Answer = styled.div`
 	background-color: white;
-	padding: 40px 120px;
+	padding: 40px 120px 25px 120px;
 	display: ${(props) => (props.isOpen ? 'block' : 'none')};
 	color: #003057;
 
@@ -206,6 +215,13 @@ export const DownloadApp = styled.div`
 	flex-direction: row;
 	background-color: #efefef;
 	padding: 100px 120px 100px 120px;
+	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.17);
+
+	div {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
 
 	@media (max-width: 1280px) {
 		align-items: center;
@@ -219,23 +235,12 @@ export const DownloadApp = styled.div`
 		flex-direction: column;
 		padding: 38px 0px 0px 0px;
 	}
+	/* box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.17); */
+`;
 
-
-
-	div {
-		width: 100%;
-			height: 100%;
-		margin: 0;
-
-			div {
-				img {
-			/* object-fit: contain !important;
-			margin: 0; */
-		}
-			}
-	
-	
-	}
+export const ImageContainer = styled.div`
+	width: 100%;
+	height: 100%;
 `;
 
 export const TextContainer = styled.div`
@@ -257,7 +262,7 @@ export const TextContainer = styled.div`
 		}
 
 		@media (max-width: 1024px) {
-			font-size: 30px;
+			font-size: 26px;
 			margin-bottom: 20px;
 		}
 
@@ -280,6 +285,8 @@ export const TextContainer = styled.div`
 
 		@media (max-width: 1024px) {
 			margin-bottom: 20px;
+			font-size: 16px;
+
 		}
 
 		@media (max-width: 480px) {
@@ -304,7 +311,7 @@ export const TextContainer = styled.div`
 	}
 
 	@media (max-width: 1280px) {
-		padding-right: 80px;
+		padding-right: 60px;
 	}
 
 	@media (max-width: 1024px) {
@@ -325,8 +332,7 @@ export const TextContainer = styled.div`
 				align-self: center;
 				display: flex;
 				flex-direction: column;
-				align-items:center;
-			 
+				align-items: center;
 			}
 		}
 	}
@@ -337,7 +343,6 @@ export const TextContainer = styled.div`
 		flex-direction: column;
 		margin-bottom: 29px !important;
 
-
 		div {
 			:nth-child(1) {
 				max-width: 100%;
@@ -346,8 +351,7 @@ export const TextContainer = styled.div`
 
 			:nth-child(2) {
 				align-self: flex-start;
-				align-items:flex-start;
-
+				align-items: flex-start;
 			}
 		}
 	}

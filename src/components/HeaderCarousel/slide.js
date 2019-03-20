@@ -9,7 +9,7 @@ class Slide extends Component {
 				{this.props.children}
 
 				<Title whiteTitle={this.props.whiteTitle}>
-					<h2>there's more</h2>
+					<h2>there’s more</h2>
 					<img
 						src="https://res.cloudinary.com/avenue/image/upload/v1551828144/green-cross_pg0rzp.png"
 						alt=""

@@ -44,7 +44,7 @@ class About extends Component {
 				</p>
 				<p>
 					We guide our clients through defining moments in their business, and play a significant role in
-					manyof Australia’s market-shaping deals.
+					many of Australia’s market-shaping deals.
 				</p>
 
 				<InfoWrapper>
@@ -66,7 +66,7 @@ class About extends Component {
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
 
 						<VideoWrapper  playClicked={this.state.playClicked}>
-						<YouTube videoId="Fhl5mrsrDu4" opts={opts} onReady={this._onReady.bind(this)} />
+						<YouTube videoId="OgZ2--BldmQ" opts={opts} onReady={this._onReady.bind(this)} />
 
 						</VideoWrapper>
 

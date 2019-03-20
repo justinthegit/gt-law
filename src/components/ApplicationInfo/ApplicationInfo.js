@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
-import { BlueWrapper, Container, QuestionsContainer, DownloadApp, TextContainer } from './style.js';
+import { BlueWrapper, Container, QuestionsContainer, DownloadApp, TextContainer,ImageContainer } from './style.js';
 import Question from './question.js';
 import downloadApple from '../../images/download-apple.svg';
 
@@ -229,9 +229,9 @@ class ApplicationInfo extends Component {
 
 						
 					</TextContainer>
-					<div>
+					<ImageContainer>
 						<Image />
-					</div>
+					</ImageContainer>
 				</DownloadApp>
 			</div>
 		);

@@ -153,7 +153,8 @@ export const WatchNow = styled.div`
 		p {
 			display: inline-block;
 			margin-bottom: 0;
-			line-height: 118%;
+			line-height: 100%;
+			font-weight: 500;
 		}
 	}
 
@@ -206,7 +207,7 @@ export const WatchNow = styled.div`
 	@media (max-width: 480px) {
 		right: 55px;
 		bottom: 136px;
-		width: 176px !important;
+		width: 182px !important;
 		font-size: 14px;
 		line-height: 16px;
 		img {
@@ -309,6 +310,8 @@ export const FormWrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+	justify-content:center;
+	justify-items:center;
 	width: 570px;
 
 	@media (max-width: 768px) {
@@ -336,12 +339,52 @@ export const Cross = styled.button`
 	}
 `;
 
+export const OnSubmission = styled.div`
+max-width: 387px;
+height: 500px;
+display:  ${(props) => (props.isSubmitted ? 'grid' : 'none')};
+z-index: 1000;
+place-items: center;
+
+p {
+	font-size: 30px;
+	font-weight: 700;
+	text-align:center;
+	color:white;
+}
+
+@media (max-width: 768px) {
+		width: 360px;
+		font-size: 26px;
+ p {
+	font-size: 26px;
+
+ }
+	}
+	
+
+	@media (max-width: 480px) {
+		width: 260px;
+		height: 432px;
+		p {
+			font-size: 20px;
+
+		}
+
+
+	}
+`;
+
 export const FormWrap = styled.form`
 	color: white;
 	max-width: 387px;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+		/* visibility:  ${(props) => (props.isSubmitted ? 'hidden' : 'visible')}; */
+		display:  ${(props) => (props.isSubmitted ? 'none' : 'null')};
+
+
 	p {
 		font-weight: normal;
 		font-size: 20px;
@@ -349,15 +392,17 @@ export const FormWrap = styled.form`
 		letter-spacing: -0.27px;
 		text-align: center;
 		line-height: 110%;
+		font-weight:700;
 
 		:nth-of-type(2) {
-			opacity: 0.58;
+			opacity: 0.48;
 			font-size: 12px;
 			color: #ffffff;
 			letter-spacing: -0.18px;
 			line-height: 14px;
 			margin: 0;
 			margin-bottom: 20px;
+			font-weight: 500;
 
 			@media (max-width: 480px) {
 				font-size: 10px;
@@ -390,6 +435,7 @@ export const Input = styled.input`
 
 	::placeholder {
 		color: #0047bb;
+		font-weight: 300;
 	}
 
 	@media (max-width: 480px) {
@@ -407,6 +453,8 @@ export const TextArea = styled.textarea`
 	::placeholder {
 		color: #0047bb;
 		max-width: 180px;
+		font-weight: 300;
+
 	}
 	@media (max-width: 480px) {
 		margin: 5px 0 12px 0;
