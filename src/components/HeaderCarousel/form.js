@@ -92,7 +92,7 @@ class Form extends Component {
 								/>
 
 								<p>
-								Gilbert + Tobin (G+T) understands that privacy and how we collect, use, disclose and protect your information is important to you
+								Gilbert + Tobin (G+T) understands that privacy and how we collect, use, disclose and protect your information is important to you. <a href="">Privacy Policy</a>.
 								</p>
 								<Button type="submit" disabled={isSubmitting}>
 									SUBMIT

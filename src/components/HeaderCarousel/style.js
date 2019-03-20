@@ -404,6 +404,12 @@ export const FormWrap = styled.form`
 			margin-bottom: 20px;
 			font-weight: 500;
 
+			a {
+				font-weight: 700;
+				color: white;
+				opacity: 1;
+			}
+
 			@media (max-width: 480px) {
 				font-size: 10px;
 				letter-spacing: -0.1px;
