@@ -38,11 +38,13 @@ export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.nav`
-	padding-right: 30px;
+	/* padding-right: 30px; */
+	margin-right: -10px;
 	z-index: 2;
 
 	a {
-		padding: 0 25px;
+		/* padding: 0 25px; */
+		margin-right : 50px;
 		font-size: 16px;
 		color: #0047bb;
 		letter-spacing: -0.24px;
@@ -57,20 +59,22 @@ export const Nav = styled.nav`
 				position: absolute;
 				bottom: -3px;
 				height: 4px;
-				width: 85%;
+				width: 100%;
+				left:0;
 
-				left: 8%;
 				background-color: #6cc24a;
 			}
 		}
+
+
 	}
 
 	@media (max-width: 1024px) {
-		padding-right: 15px;
+		padding-right: 10px;
 
 		a {
 			font-size: 13px;
-			padding: 0 15px;
+			margin-right : 30px;
 		}
 	}
 

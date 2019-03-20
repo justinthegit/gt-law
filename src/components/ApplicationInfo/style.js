@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { WhiteLine } from '../NavBar/style';
 
 export const BlueWrapper = styled.div`
 	margin-top: 50px;
@@ -111,7 +112,7 @@ export const QuestionWrapper = styled.div`
 	background-color: ${(props) => (props.isOpen ? ' #6cc24a' : 'rgba(255, 255, 255, 0.05)')};
 	position: relative;
 	z-index: 1;
-	p {
+	h3 {
 		font-size: 24px;
 		margin: 0;
 		line-height: 124%;
@@ -122,7 +123,7 @@ export const QuestionWrapper = styled.div`
 		/* margin-top: 10px;
 		margin-bottom: 10px; */
 		font-weight:  ${(props) => (props.isOpen ? '500' : null)};
-		color: ${(props) => (props.isOpen ? '#003057' : null)};
+		color: ${(props) => (props.isOpen ? '#003057' : 'white')};
 	}
 
 	svg {
@@ -148,30 +149,30 @@ export const QuestionWrapper = styled.div`
 		} */
 		cursor: pointer;
 
-		p {
+		h3 {
 			/* text-decoration:${(props) => (props.isOpen ? 'null' : 'underline')}; */
 			text-decoration: underline;
 		}
 	}
 
 	@media (max-width: 768px) {
-		p {
-			font-size: 20px;
+		h3 {
+			font-size: 19px;
 			padding: 0;
 		}
 	}
 
 	@media (max-width: 480px) {
 		height: 89px;
-		p {
-			font-size: 18px;
+		h3 {
+			font-size: 17px;
 			padding: 0;
 		}
 	}
 
 	@media (max-width: 360px) {
 		padding: 0 24px;
-		p {
+		h3 {
 			font-size: 16px;
 			margin-right: 10px;
 		}
@@ -187,12 +188,20 @@ export const Answer = styled.div`
 	p {
 		font-weight: normal;
 		font-size: 18px;
-		color: #003057;
+		color: #2D2926;
 		letter-spacing: -0.26px;
 		line-height: 24px;
 		padding: 0;
 		margin-bottom: 20px;
+
+		a {
+		font-weight: 700;
+		color: #0047BB;
+		text-decoration:underline;
 	}
+	}
+
+
 	span {
 		font-weight: 0;
 		font-family: 'brandon_grotesque';
@@ -215,7 +224,6 @@ export const DownloadApp = styled.div`
 	flex-direction: row;
 	background-color: #efefef;
 	padding: 100px 120px 100px 120px;
-	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.17);
 
 	div {
 		width: 100%;
@@ -241,6 +249,8 @@ export const DownloadApp = styled.div`
 export const ImageContainer = styled.div`
 	width: 100%;
 	height: 100%;
+	box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.17);
+
 `;
 
 export const TextContainer = styled.div`

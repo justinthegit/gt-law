@@ -91,15 +91,15 @@ export const query = graphql`
       ...squareImage
     }
 		
-		info1: file(relativePath: { eq: "info-1.jpg" }) {
+		info1: file(relativePath: { eq: "info-1.png" }) {
       ...squareImage
     }
 
-		info2: file(relativePath: { eq: "info-2.jpg" }) {
+		info2: file(relativePath: { eq: "info-2.png" }) {
       ...squareImage
     }
 
-		info3: file(relativePath: { eq: "info-3.jpg" }) {
+		info3: file(relativePath: { eq: "info-3.png" }) {
       ...squareImage
     }
 

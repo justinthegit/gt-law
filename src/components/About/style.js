@@ -59,50 +59,98 @@ export const Wrapper = styled.div`
 	}
 `;
 
-export const InfoWrapper = styled.div`
-	width: 100%;
-	display: grid;
-	grid-template-columns: repeat(3, minmax(50px, 386px));
-	grid-gap: 25px;
-	margin-top: 25px;
-	margin-bottom: 68px;
-	background-color: #003057;
-	justify-content: center;
-	padding-bottom: 40px;
-	div {
-		z-index: 1;
-		max-width: 386px;
-		margin: 0 0px;
+export const ImagesWrap = styled.div`
 
-		img {
-			margin: 0;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		margin-left:44px;
+		/* grid-template-columns: repeat(3, minmax(50px, 386px));
+		grid-template-rows: 1fr; */
+		/* grid-gap: 25px; */
+
+		div {
+			width: 100%;
+			height: 100%;
+			margin:0;
+			margin-right: 55px;
+
+			@media (max-width: 768px) {
+			margin-right:46px; 
+
+
+	}
+			img {
+				margin-top: 0;
+			}
+
+			:nth-of-type(2) {
+				margin-top: -25px;
+			}
+			:nth-of-type(3) {
+				margin-top: 40px;
+			}
 		}
+
+		@media (max-width: 1024px) {
+			margin-left:36px;
 	}
 
-
 	@media (max-width: 768px) {
-		padding-bottom: 20px;
-
+			margin-left:30px;
 	}
 
 	@media (max-width: 480px) {
-		grid-template-columns: 1fr;
-		margin-bottom: 48px;
-		grid-gap: 0;
-		padding-bottom: 0;
+			margin-left:0px;
+			flex-direction:column;
+			div {
+				margin-right:0;
 
-		div {
-			display: block;
-			max-width: 100%;
-
-			:nth-of-type(2) {
-				margin-top: -20px;
+				:nth-of-type(2) {
+				margin-top: 0px;
 			}
-
 			:nth-of-type(3) {
-				margin-top: -70px;
+				margin-top: 0px;
 			}
-		}
+
+			}
+	}
+
+
+
+
+
+
+`;
+export const InfoWrapper = styled.div`
+	margin-top: 28px;
+	width: 100%;
+	height: auto;
+	padding: 17px 77px;
+	background-color: #003057;
+	margin-bottom: 70px;
+
+	@media (max-width: 1024px) {
+		padding: 0px 47px;
+
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 20px;
+		margin-bottom: 50px;
+
+	}
+
+
+	@media (max-width: 480px) {
+		margin-top: 45px;	
+		margin-bottom: 30px;
+
+		padding: 40px 30PX 0 30px;
 	}
 `;
 

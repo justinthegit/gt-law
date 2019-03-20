@@ -66,7 +66,7 @@ class HeaderCarousel extends Component {
 	}
 
 	closeVideo() {
-		this.youtubeVideo.pauseVideo();
+		this.youtubeVideo.stopVideo();
 
 		this.setState(
 			{

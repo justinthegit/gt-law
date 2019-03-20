@@ -25,7 +25,7 @@ class Question extends Component {
 		return (
 				<DropDownWrapper>
 					<QuestionWrapper isOpen={this.state.isOpen} onClick={() => this.handleClick()}>
-						<p>	{this.props.question}</p>
+						<h3>	{this.props.question}</h3>
 
 						<div>
 							<svg xmlns="http://www.w3.org/2000/svg" width="19" height="11">

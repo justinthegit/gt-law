@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import YouTube from 'react-youtube';
 
 import Img from 'gatsby-image';
-import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper, ImgWrapper, Thumbnail, VideoWrapper } from './style.js';
+import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper, ImgWrapper, Thumbnail, VideoWrapper, ImagesWrap } from './style.js';
 
 class About extends Component {
 	constructor(props) {
@@ -43,15 +43,17 @@ class About extends Component {
 					citizenship.
 				</p>
 				<p>
-					We guide our clients through defining moments in their business, and play a significant role in
-					many of Australia’s market-shaping deals.
+					We guide our clients through defining moments in their business, and play a significant role in many
+					of Australia’s market-shaping deals.
 				</p>
 
 				<InfoWrapper>
-					<Img fluid={this.props.info1.childImageSharp.fluid} />
+					<ImagesWrap>
+						<Img fluid={this.props.info1.childImageSharp.fluid} />
 
-					<Img fluid={this.props.info2.childImageSharp.fluid} />
-					<Img fluid={this.props.info3.childImageSharp.fluid} />
+						<Img fluid={this.props.info2.childImageSharp.fluid} />
+						<Img fluid={this.props.info3.childImageSharp.fluid} />
+					</ImagesWrap>
 				</InfoWrapper>
 
 				<VideoContainer>
@@ -64,13 +66,11 @@ class About extends Component {
 					</QuoteWrapper>
 
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
-
-						<VideoWrapper  playClicked={this.state.playClicked}>
-						<YouTube videoId="OgZ2--BldmQ" opts={opts} onReady={this._onReady.bind(this)} />
-
+						<VideoWrapper playClicked={this.state.playClicked}>
+							<YouTube videoId="OgZ2--BldmQ" opts={opts} onReady={this._onReady.bind(this)} />
 						</VideoWrapper>
 
-						<Thumbnail  playClicked={this.state.playClicked}>
+						<Thumbnail playClicked={this.state.playClicked}>
 							<Img fluid={this.props.aboutVideo.childImageSharp.fluid} />
 						</Thumbnail>
 
