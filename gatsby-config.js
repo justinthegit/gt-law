@@ -1,8 +1,8 @@
 module.exports = {
 	pathPrefix: `/theresmore`,
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+		title: `G+T`,
+		description: `G+T is a leading transactions, regulatory and disputes law firm, committed to outstanding citizenship.`,
 		author: `@gatsbyjs`
 	},
 	plugins: [

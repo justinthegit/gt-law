@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import Helmet from 'react-helmet'
 
 import "./layout.css"
 
@@ -29,7 +30,17 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-       
+        <Helmet
+          key="app-head"
+          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+          defaultTitle="G+T"
+        >
+          <link rel="preconnect" href="https://i.vimeocdn.com" />
+          <link rel="preconnect" href="https://f.vimeocdn.com" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.ico" />
+
+        </Helmet>
+
         <div
           style={{
             margin: `0 auto`,
@@ -43,7 +54,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-      
+
         </div>
       </>
     )}

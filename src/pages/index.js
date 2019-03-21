@@ -22,7 +22,7 @@ const IndexPage = ({data}) => {
 
 	return (
 		<Layout>
-			<SEO title="Home" keywords={[ `gatsby`, `application`, `react` ]} />
+			<SEO title="Theres More" />
 
 			<NavBar />
 			<HeaderCarousel {...data}  />

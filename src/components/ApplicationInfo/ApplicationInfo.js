@@ -222,7 +222,7 @@ class ApplicationInfo extends Component {
 								</p>
 							</div>
 							<div>
-								<a href="/
+								<a href="https://itunes.apple.com/gb/app/zappar/id429885268
 					">
 									<img
 										src={downloadGoogle}
@@ -230,7 +230,7 @@ class ApplicationInfo extends Component {
 									/>
 								</a>
 
-								<a href="/
+								<a href="https://itunes.apple.com/gb/app/zappar/id429885268
 				">
 									{' '}
 									<img src={downloadApple} alt="" />
