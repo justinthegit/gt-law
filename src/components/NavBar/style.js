@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+	max-width: 1440px;
+	margin:0 auto;
 	background: white;
 	display: flex;
 	flex-direction: row;

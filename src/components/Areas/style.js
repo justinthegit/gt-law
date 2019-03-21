@@ -10,6 +10,9 @@ export const BlueWrapper = styled.div`
 `;
 
 export const Container = styled.div`
+
+max-width: 1440px;
+    margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	padding: 80px 120px 106px 120px;

@@ -79,8 +79,9 @@ class Form extends Component {
 									onChange={handleChange}
 									onBlur={handleBlur}
 									value={values.email}
+									required
 								/>
-								{errors.email && touched.email && errors.email}
+								{/* {errors.email && touched.email && errors.email} */}
 
 								<TextArea
 									placeholder="Tell us what you would like to know more about...."

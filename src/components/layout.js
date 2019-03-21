@@ -33,9 +33,13 @@ const Layout = ({ children }) => (
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 1440,
+            maxWidth: 'none',
             padding: `0`,
             paddingTop: 0,
+            // display: 'flex',
+            // flexDirection: 'column',
+            // alignItems: 'center',
+
           }}
         >
           <main>{children}</main>

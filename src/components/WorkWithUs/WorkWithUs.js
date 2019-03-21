@@ -16,7 +16,7 @@ class WorkWithUs extends Component {
 							in a firm that makes a difference for its clients and its people. The work is challenging,
 							interesting and rewarding, as these graduates reveal.{' '}
 						</p>
-						<a href="https://gradaustralia.com.au/">
+						<a href="https://gradaustralia.com.au/graduate-employers/gilbert-tobin/graduate-stories">
 							<span>gradaustralia.com.au</span>
 							<img src={arrowIcon} alt="" />
 						</a>

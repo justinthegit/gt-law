@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
-import YouTube from 'react-youtube';
+import Vimeo from '@u-wave/react-vimeo';
 
 import Img from 'gatsby-image';
-import { Wrapper, VideoContainer, QuoteWrapper, InfoWrapper, ImgWrapper, Thumbnail, VideoWrapper, ImagesWrap } from './style.js';
+import {
+	Wrapper,
+	VideoContainer,
+	QuoteWrapper,
+	InfoWrapper,
+	ImgWrapper,
+	Thumbnail,
+	VideoWrapper,
+	ImagesWrap
+} from './style.js';
 
 class About extends Component {
 	constructor(props) {
@@ -15,7 +24,7 @@ class About extends Component {
 	}
 
 	playVideo() {
-		this.youtubeVideo.playVideo();
+		this.vimeo.play();
 
 		this.setState(
 			{
@@ -67,7 +76,11 @@ class About extends Component {
 
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
 						<VideoWrapper playClicked={this.state.playClicked}>
-							<YouTube videoId="OgZ2--BldmQ" opts={opts} onReady={this._onReady.bind(this)} />
+							<Vimeo
+								video="https://vimeo.com/325417307/e01569b4d2"
+								autoplay={false}
+								onReady={this._onReady.bind(this)}
+							/>
 						</VideoWrapper>
 
 						<Thumbnail playClicked={this.state.playClicked}>
@@ -96,13 +109,11 @@ class About extends Component {
 		);
 	}
 
-	_onReady(event) {
+	_onReady(video) {
 		// access to player in all event handlers via event.target
-		event.target.pauseVideo();
+		// event.target.pauseVideo();
 
-		const elVideo = event.target;
-
-		this.youtubeVideo = elVideo;
+		this.vimeo = video;
 	}
 }
 

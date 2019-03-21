@@ -10,7 +10,7 @@ import upArrow from '../../images/up-arrow.svg';
 import Slide from './slide.js';
 import VideoOverlay from './videoOverlay.js';
 
-const videoURLs = [ 'OgZ2--BldmQ', 'OgZ2--BldmQ', 'OgZ2--BldmQ', 'OgZ2--BldmQ', 'OgZ2--BldmQ', 'OgZ2--BldmQ' ];
+const videoURLs = [ '325417307', '56282283', '325417307', '56282283', '325417307', '56282283' ];
 
 class HeaderCarousel extends Component {
 	constructor(props) {
@@ -19,7 +19,7 @@ class HeaderCarousel extends Component {
 		this.state = {
 			formOpen: false,
 			videoOpen: false,
-			videoURL: 'OgZ2--BldmQ'
+			videoURL: '325417307'
 		};
 
 		this.handleClick = this.handleClick.bind(this);
@@ -51,11 +51,12 @@ class HeaderCarousel extends Component {
 		}
 	}
 	setVideo(video) {
-		this.youtubeVideo = video;
+		this.vimeo = video;
 	}
 
 	openVideo() {
-		this.youtubeVideo.playVideo();
+		// this.vimeo.loadVideo(this.state.videoURL).then(this.vimeo.play());
+		this.vimeo.play();
 
 		this.setState(
 			{
@@ -66,7 +67,8 @@ class HeaderCarousel extends Component {
 	}
 
 	closeVideo() {
-		this.youtubeVideo.stopVideo();
+		// this.vimeo.destroy();
+		this.vimeo.unload();
 
 		this.setState(
 			{

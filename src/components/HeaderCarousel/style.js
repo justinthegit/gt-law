@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+	margin:0 auto;
+	max-width: 1440px;
 	position: relative;
 	height: 900px;
 	object-fit: contain;
@@ -134,6 +136,16 @@ export const WatchNow = styled.div`
 	bottom: 190px;
 	right: 165px;
 	z-index: 10;
+
+	:hover {
+		span {
+			/* border-bottom: 2px solid green; */
+			button {
+				text-decoration:underline;
+			}
+			
+		}
+	}
 
 	img {
 		position: absolute;
@@ -395,7 +407,7 @@ export const FormWrap = styled.form`
 		font-weight:700;
 
 		:nth-of-type(2) {
-			opacity: 0.48;
+			opacity: 1;
 			font-size: 12px;
 			color: #ffffff;
 			letter-spacing: -0.18px;
@@ -407,7 +419,7 @@ export const FormWrap = styled.form`
 			a {
 				font-weight: 700;
 				color: white;
-				opacity: 1;
+			
 			}
 
 			@media (max-width: 480px) {

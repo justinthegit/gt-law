@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 import Img from 'gatsby-image';
 import { StaticQuery, graphql } from 'gatsby';
-import { BlueWrapper, Container, QuestionsContainer, DownloadApp, TextContainer,ImageContainer } from './style.js';
+import {
+	BlueWrapper,
+	Container,
+	QuestionsContainer,
+	DownloadApp,
+	TextContainer,
+	ImageContainer,
+	GreyBg
+} from './style.js';
 import Question from './question.js';
 import downloadApple from '../../images/download-apple.svg';
 
@@ -30,7 +38,9 @@ class ApplicationInfo extends Component {
 			<div>
 				<BlueWrapper>
 					<Container>
-						<h1>starting your career  <br/>with Gilbert + Tobin</h1>
+						<h1>
+							starting your career <br />with Gilbert + Tobin
+						</h1>
 						<p>
 							Not all corporate law firms are the same, and a clerkship is the best way to experience what
 							it’s really like to work here. Working under the guidance of Australia’s leading legal
@@ -42,11 +52,8 @@ class ApplicationInfo extends Component {
 							<Question question="How do I apply for a clerkship?">
 								<p>
 									If you are a law student in your fourth or penultimate year of study, please apply
-									through{' '}
-									<a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
-										here
-									</a>{' '}
-									for our Sydney, Melbourne and Perth clerkships.
+									through <a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
+									Sydney, Melbourne and Perth clerkships.
 								</p>
 							</Question>
 
@@ -202,37 +209,37 @@ class ApplicationInfo extends Component {
 					</Container>
 				</BlueWrapper>
 
-				<DownloadApp>
-					<TextContainer>
-						<div>
-							<h1>READY TO WRITE YOUR OWN STORY AT GILBERT + TOBIN?</h1>
-							<p>
-								Download our app to unlock more insights into the opportunities and people at G+T, in
-								our interactive brochure.{' '}
-							</p>
-						</div>
-						<div>
-							<a href="/
+				<GreyBg>
+					<DownloadApp>
+						<TextContainer>
+							<div>
+								<h1>READY TO WRITE YOUR OWN STORY AT GILBERT + TOBIN?</h1>
+								<p>
+									Download our app to unlock more insights into the opportunities and people at G+T,
+									in our interactive brochure.{' '}
+								</p>
+							</div>
+							<div>
+								<a href="/
 					">
-								<img
-									src="https://res.cloudinary.com/avenue/image/upload/v1552018996/download-google_t8jjeg.png"
-									alt=""
-								/>
-							</a>
+									<img
+										src="https://res.cloudinary.com/avenue/image/upload/v1552018996/download-google_t8jjeg.png"
+										alt=""
+									/>
+								</a>
 
-							<a href="/
+								<a href="/
 				">
-								{' '}
-								<img src={downloadApple} alt="" />
-							</a>
-						</div>
-
-						
-					</TextContainer>
-					<ImageContainer>
-						<Image />
-					</ImageContainer>
-				</DownloadApp>
+									{' '}
+									<img src={downloadApple} alt="" />
+								</a>
+							</div>
+						</TextContainer>
+						<ImageContainer>
+							<Image />
+						</ImageContainer>
+					</DownloadApp>
+				</GreyBg>
 			</div>
 		);
 	}

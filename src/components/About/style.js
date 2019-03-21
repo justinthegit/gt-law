@@ -60,6 +60,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ImagesWrap = styled.div`
+	max-width: 1440px;
 
 		display: flex;
 		flex-direction: row;
@@ -127,6 +128,8 @@ export const ImagesWrap = styled.div`
 
 `;
 export const InfoWrapper = styled.div`
+	display:grid;
+	place-items: center;
 	margin-top: 28px;
 	width: 100%;
 	height: auto;
@@ -155,6 +158,8 @@ export const InfoWrapper = styled.div`
 `;
 
 export const VideoContainer = styled.div`
+	max-width: 1440px;
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;

@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 export const HeroWrapper = styled.div`
+	max-width: 1440px;
+	margin: 0 auto;
 	position: relative;
+	margin-top: 80px;
 	img {
 		height: 100%;
 		width: 100%;
@@ -9,14 +12,11 @@ export const HeroWrapper = styled.div`
 	}
 
 	@media (max-width: 768px) {
+		margin-top: 0;
+
 		img {
 			position: relative;
 			margin-top: 50px;
-		}
-	}
-
-	@media (max-width: 480px) {
-		img {
 		}
 	}
 `;
@@ -54,6 +54,9 @@ export const TextWrapper = styled.div`
 		align-items: center;
 		margin-right: 7px;
 		margin-top: 30px;
+		:hover {
+			text-decoration: underline;
+		}
 	}
 	div {
 		display: flex;
@@ -92,9 +95,9 @@ export const TextWrapper = styled.div`
 		padding-bottom: 0;
 		p {
 			padding: 0 30px;
-			font-size: 18px;
+			font-size: 16px;
 			line-height: 20px;
-			margin-bottom: 17px;
+			margin-bottom: 20px;
 		}
 
 		a {
@@ -102,7 +105,8 @@ export const TextWrapper = styled.div`
 			flex-direction: row;
 
 			align-content: center;
-			margin-top: 10px;
+			margin-top: 0px;
+			margin-bottom: 10px;
 
 			img {
 				width: 15px;
@@ -112,8 +116,16 @@ export const TextWrapper = styled.div`
 
 		div {
 			p {
-				padding: 7px 30px;
+				/* padding: 7px 30px; */
 				line-height: 130%;
+				margin-bottom: 24px;
+				max-width: 270px;
+
+
+				:nth-of-type(3) {
+					max-width: 240px;
+
+				}
 			}
 			p,
 			span {
@@ -160,6 +172,10 @@ export const ReallyLike = styled.div`
 		flex-direction: row;
 		align-items: center;
 		text-decoration: none;
+
+		:hover {
+			text-decoration: underline #0047BB;
+		}
 	}
 	img {
 		display: inline-block;

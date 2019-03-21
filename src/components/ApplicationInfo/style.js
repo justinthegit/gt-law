@@ -17,7 +17,9 @@ export const BlueWrapper = styled.div`
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
+	max-width: 1440px;
 	padding: 80px 120px 100px 120px;
+	margin: 0 auto;
 
 	h1 {
 		font-size: 38px;
@@ -83,11 +85,16 @@ export const QuestionsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	align-items: center;
+	/* align-items: center; */
 	margin-top: 55px;
+	padding-left: 80px;
 
-	@media (max-width: 480px) {
-		margin-top: 30px;
+	@media (max-width: 1024px) {
+		padding-left: 40px;
+	}
+
+	@media (max-width: 768px) {
+		padding-left: 0px;
 	}
 `;
 
@@ -219,11 +226,19 @@ export const Answer = styled.div`
 	}
 `;
 
+export const GreyBg = styled.div`
+	background-color: #efefef;
+
+`;
+
+
 export const DownloadApp = styled.div`
+max-width: 1440px; 
 	display: flex;
 	flex-direction: row;
-	background-color: #efefef;
 	padding: 100px 120px 100px 120px;
+	margin:0 auto;
+	
 
 	div {
 		width: 100%;
