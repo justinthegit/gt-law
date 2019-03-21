@@ -85,9 +85,11 @@ class HeaderCarousel extends Component {
 	}
 
 	slideChanged(beforeIndex, afterIndex) {
-		this.setState({
+
+		setTimeout( () => { this.setState({
 			videoURL: videoURLs[afterIndex]
-		});
+		}); }, 10 );
+
 	}
 
 	render() {
