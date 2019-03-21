@@ -54,7 +54,7 @@ export default IndexPage;
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
-			fluid(maxWidth: 1440) {
+			fluid(quality: 100, maxWidth: 1440) {
 				...GatsbyImageSharpFluid
 			}
 		}
