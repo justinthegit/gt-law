@@ -72,6 +72,7 @@ class About extends Component {
 								video="325580665"
 								autoplay={false}
 								onReady={this._onReady.bind(this)}
+							
 							/>
 						</VideoWrapper>
 
