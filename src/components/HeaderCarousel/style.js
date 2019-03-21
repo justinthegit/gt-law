@@ -93,6 +93,7 @@ export const Title = styled.div`
 		width: 320px;
 		h2 {
 			font-size: 80px;
+			letter-spacing: 0;
 		}
 
 		img {
@@ -104,10 +105,11 @@ export const Title = styled.div`
 
 	@media (max-width: 480px) {
 		left: 30px;
-		top:60px;
+		top:120px;
 		width: 270px;
 		h2 {
 			font-size: 50px;
+			letter-spacing: -1.22;
 		}
 
 		img {
