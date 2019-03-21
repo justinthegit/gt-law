@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   align-content: center;
   justify-content: center;
   align-items: center;
-  padding: 70px 0 90px 0;
+  padding: 60px 0 90px 0;
   p {
     max-width: 600px;
     text-align: center;
@@ -16,7 +16,11 @@ export const Wrapper = styled.div`
     letter-spacing: -0.41px;
     line-height: 32px;
     margin-bottom: 30px;
-    padding: 0 0px;
+		padding: 0 0px;
+
+		&.last {
+        margin-bottom: 0;
+      }
   }
 
   img {
@@ -41,9 +45,7 @@ export const Wrapper = styled.div`
       padding: 0 40px;
       margin-bottom: 20px;
 
-      &.last {
-        margin-bottom: 0;
-      }
+
     }
 
     img {
@@ -125,7 +127,7 @@ export const ImagesWrap = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   place-items: center;
-  margin-top: 28px;
+  margin-top: 60px;
   width: 100%;
   height: auto;
   padding: 17px 77px;
