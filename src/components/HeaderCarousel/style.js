@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 	margin:0 auto;
 	max-width: 1440px;
 	position: relative;
-	height: 818px;
+	height: 810px;
 	object-fit: contain;
 	overflow: hidden;
 	display: flex;
@@ -52,7 +52,7 @@ export const SlideWrapper = styled.div`
 export const Title = styled.div`
 	position: absolute;
 	left: 120px;
-	top:78px;
+	top:128px;
 	width: 520px;
 
 	h2 {
@@ -77,7 +77,7 @@ export const Title = styled.div`
 
 	@media (max-width: 1280px) {
 		left: 80px;
-		top: 78px;
+		top:128px;
 		h2 {
 			font-size: 100px;
 		}
@@ -89,7 +89,7 @@ export const Title = styled.div`
 
 	@media (max-width: 1024px) {
 		left: 40px;
-		top: 78px;
+		top:128px;
 		width: 320px;
 		h2 {
 			font-size: 80px;
@@ -104,10 +104,10 @@ export const Title = styled.div`
 
 	@media (max-width: 480px) {
 		left: 30px;
-		top: 78px;
+		top:60px;
 		width: 270px;
 		h2 {
-			font-size: 40px;
+			font-size: 50px;
 		}
 
 		img {
@@ -121,6 +121,10 @@ export const Title = styled.div`
 		left: 25px;
 		top: 60px;
 		width: 180px;
+
+		h2 {
+			font-size: 40px;
+		}
 	}
 `;
 
