@@ -90,7 +90,7 @@ export const Title = styled.div`
 	@media (max-width: 1024px) {
 		left: 40px;
 		top:128px;
-		width: 320px; 
+		width: 320px;
 		h2 {
 			font-size: 80px;
 		}
@@ -524,6 +524,11 @@ export const VideoOverlayWrapper = styled.div`
 	opacity: ${(props) => (props.videoOpen ? '1' : '0')};
 	z-index: ${(props) => (props.videoOpen ? '10000' : '-7')};
 
+
+
+	@media(min-width: 1024px) {
+		display: block;
+	}
 	> div {
 		position: relative;
 		height: 100%;
@@ -531,13 +536,13 @@ export const VideoOverlayWrapper = styled.div`
 	iframe {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
 	}
 `;
 
 export const VideoClose = styled(Cross)`
-top: 40px;
-right: 40px;
+top: 30px;
+right: 30px;
 z-index: 21;
+padding: 10px;
 
 `;
