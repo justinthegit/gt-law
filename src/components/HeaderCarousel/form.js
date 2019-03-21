@@ -14,11 +14,11 @@ class Form extends Component {
 			isSubmitted: false,
 		};
 
-	
+
 	}
 	render() {
 
-		
+
 		return (
 			<FormContainer formOpen={this.props.formOpen}>
 				<Formik
@@ -90,6 +90,7 @@ class Form extends Component {
 									onChange={handleChange}
 									onBlur={handleBlur}
 									value={values.textArea}
+									data-gramm_editor="false"
 								/>
 
 								<p>
