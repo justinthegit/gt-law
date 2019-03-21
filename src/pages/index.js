@@ -55,12 +55,12 @@ export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
 			fluid(quality: 100, maxWidth: 1440) {
-				...GatsbyImageSharpFluid
+				...GatsbyImageSharpFluid_withWebp_noBase64
 			}
 		}
 
 	}
-  
+
 `
 
 
@@ -90,7 +90,7 @@ export const query = graphql`
 		image6: file(relativePath: { eq: "jenny-6.jpg" }) {
       ...squareImage
     }
-		
+
 		info1: file(relativePath: { eq: "info-1.png" }) {
       ...squareImage
     }

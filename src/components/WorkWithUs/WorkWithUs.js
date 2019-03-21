@@ -60,7 +60,7 @@ const Image = () => (
 				placeholderImage: file(relativePath: { eq: "clerkship.jpg" }) {
 					childImageSharp {
 						fluid(quality: 100, maxWidth: 1440) {
-							...GatsbyImageSharpFluid
+							...GatsbyImageSharpFluid_withWebp_noBase64
 						}
 					}
 				}
