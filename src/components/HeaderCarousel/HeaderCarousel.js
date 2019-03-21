@@ -10,7 +10,7 @@ import upArrow from '../../images/up-arrow.svg';
 import Slide from './slide.js';
 import VideoOverlay from './videoOverlay.js';
 
-const videoURLs = [ '325417307', '56282283', '325417307', '56282283', '325417307', '56282283' ];
+const videoURLs = [ '325580763', '325580524', '325580567', '325580603', '325580737', '325580628' ];
 
 class HeaderCarousel extends Component {
 	constructor(props) {
@@ -19,7 +19,7 @@ class HeaderCarousel extends Component {
 		this.state = {
 			formOpen: false,
 			videoOpen: false,
-			videoURL: '325417307'
+			videoURL: '325580763'
 		};
 
 		this.handleClick = this.handleClick.bind(this);

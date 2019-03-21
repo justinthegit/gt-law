@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import nextBtn from '../../images/btn-next.svg';
+import prevBtn from '../../images/btn-prev.svg';
+
 
 export const Wrapper = styled.div`
 	margin:0 auto;
@@ -289,12 +292,12 @@ export const ButtonPrevious = styled.button`
 	top: 0;
 	content: "";
 	z-index: 5;
-	cursor: url('https://res.cloudinary.com/avenue/image/upload/v1552361772/btn-prev_ym0puc.svg') 0 10, auto;
+	cursor: url(${prevBtn}), auto;
 `;
 
 export const ButtonNext = styled(ButtonPrevious)`
 left:50%;
-cursor: url('https://res.cloudinary.com/avenue/image/upload/v1552361772/btn-next_wmqnqy.svg') 0 10,auto;
+cursor: url(${nextBtn}), auto;
 `;
 
 //form.js

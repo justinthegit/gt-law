@@ -22,11 +22,6 @@ class WorkWithUs extends Component {
 						</a>
 					</ReallyLike>
 
-					{/* <img
-						src="https://res.cloudinary.com/avenue/image/upload/v1551841624/working-gt_voeswh.jpg"
-						alt=""
-					/> */}
-
 					<BgImg>
 						<Image />
 					</BgImg>

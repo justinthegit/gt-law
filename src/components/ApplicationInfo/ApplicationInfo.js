@@ -12,6 +12,8 @@ import {
 } from './style.js';
 import Question from './question.js';
 import downloadApple from '../../images/download-apple.svg';
+import downloadGoogle from '../../images/download-google.png';
+
 
 class ApplicationInfo extends Component {
 	constructor(props) {
@@ -223,7 +225,7 @@ class ApplicationInfo extends Component {
 								<a href="/
 					">
 									<img
-										src="https://res.cloudinary.com/avenue/image/upload/v1552018996/download-google_t8jjeg.png"
+										src={downloadGoogle}
 										alt=""
 									/>
 								</a>

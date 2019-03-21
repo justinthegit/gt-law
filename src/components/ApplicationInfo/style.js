@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { WhiteLine } from '../NavBar/style';
 
 export const BlueWrapper = styled.div`
 	margin-top: 50px;

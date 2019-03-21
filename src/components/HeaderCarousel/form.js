@@ -34,7 +34,7 @@ class Form extends Component {
 					}}
 					onSubmit={(values, { setSubmitting }) => {
 						setTimeout(() => {
-							// alert(JSON.stringify(values, null, 2));
+								// alert(JSON.stringify(values, null, 2));
 							setSubmitting(false);
 						}, 400);
 
@@ -93,7 +93,7 @@ class Form extends Component {
 								/>
 
 								<p>
-								Gilbert + Tobin (G+T) understands that privacy and how we collect, use, disclose and protect your information is important to you. <a href="">Privacy Policy</a>.
+								Gilbert + Tobin (G+T) understands that privacy and how we collect, use, disclose and protect your information is important to you. <a href="/">Privacy Policy</a>.
 								</p>
 								<Button type="submit" disabled={isSubmitting}>
 									SUBMIT

@@ -35,15 +35,7 @@ class About extends Component {
 	}
 
 	render() {
-		const opts = {
-			// height: '800',
-			// width: '1200',
-			playerVars: {
-				// https://developers.google.com/youtube/player_parameters
-				autoplay: 0,
-				showinfo: 0
-			}
-		};
+
 
 		return (
 			<Wrapper>
@@ -77,7 +69,7 @@ class About extends Component {
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
 						<VideoWrapper playClicked={this.state.playClicked}>
 							<Vimeo
-								video="https://vimeo.com/325417307/e01569b4d2"
+								video="325580665"
 								autoplay={false}
 								onReady={this._onReady.bind(this)}
 							/>
