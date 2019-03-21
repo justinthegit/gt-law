@@ -278,6 +278,7 @@ export const KnowMore = styled.button`
 	h1 {
 		font-size: 22px;
 		font-weight: 700;
+		padding: 0 20px;
 	}
 	@media (max-width: 430px) {
 		h1 {

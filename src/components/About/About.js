@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Vimeo from '@u-wave/react-vimeo';
+import ReactPlayer from 'react-player'
 
 import Img from 'gatsby-image';
 import {
@@ -24,7 +24,6 @@ class About extends Component {
 	}
 
 	playVideo() {
-		this.vimeo.play();
 
 		this.setState(
 			{
@@ -43,7 +42,7 @@ class About extends Component {
 					G+T is a leading transactions, regulatory and disputes law firm, committed to outstanding
 					citizenship.
 				</p>
-				<p>
+				<p className="last">
 					We guide our clients through defining moments in their business, and play a significant role in many
 					of Australia’s market-shaping deals.
 				</p>
@@ -68,11 +67,10 @@ class About extends Component {
 
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
 						<VideoWrapper playClicked={this.state.playClicked}>
-							<Vimeo
-								video="325580665"
-								autoplay={false}
-								onReady={this._onReady.bind(this)}
-							
+							<ReactPlayer
+								url="https://vimeo.com/325580665"
+								playing={this.state.playClicked}
+
 							/>
 						</VideoWrapper>
 

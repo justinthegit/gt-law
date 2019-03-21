@@ -215,10 +215,9 @@ class ApplicationInfo extends Component {
 					<DownloadApp>
 						<TextContainer>
 							<div>
-								<h1>READY TO WRITE YOUR OWN STORY AT GILBERT + TOBIN?</h1>
+								<h1>READY TO WRITE YOUR OWN STORY AT GILBERT+TOBIN?</h1>
 								<p>
-									Download our app to unlock more insights into the opportunities and people at G+T,
-									in our interactive brochure.{' '}
+								Download the Zappar app to unlock more insights into the opportunities and people at G+T, in our interactive brochure.
 								</p>
 							</div>
 							<div>
