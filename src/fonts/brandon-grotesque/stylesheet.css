@@ -1,35 +1,35 @@
 @font-face {
   font-family: "brandon_grotesque";
+  font-display: swap;
   src: url("brandongrotesque-regular-webfont.woff2") format("woff2"),
     url("brandongrotesque-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "brandon_grotesque";
+  font-display: swap;
   src: url("brandongrotesque-medium-webfont.woff2") format("woff2"),
     url("brandongrotesque-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "brandon_grotesque";
+  font-display: swap;
   src: url("brandongrotesque-bold-webfont.woff2") format("woff2"),
     url("brandongrotesque-bold-webfont.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "brandon_grotesque";
+  font-display: swap;
   src: url("brandongrotesque-black-webfont.woff2") format("woff2"),
     url("brandongrotesque-black-webfont.woff") format("woff");
   font-weight: 900;
   font-style: normal;
-  font-display: swap;
 }

@@ -150,7 +150,7 @@ export const WatchNow = styled.div`
 			button {
 				text-decoration:underline;
 			}
-			
+
 		}
 	}
 
@@ -277,8 +277,7 @@ export const KnowMore = styled.button`
 		font-size: 22px;
 		font-weight: 700;
 	}
-	@media (max-width: 320px) {
-		height: 63px;
+	@media (max-width: 430px) {
 		h1 {
 			font-size: 16px;
 		}
@@ -380,7 +379,7 @@ p {
 
  }
 	}
-	
+
 
 	@media (max-width: 480px) {
 		width: 260px;
@@ -426,7 +425,7 @@ export const FormWrap = styled.form`
 			a {
 				font-weight: 700;
 				color: white;
-			
+
 			}
 
 			@media (max-width: 480px) {

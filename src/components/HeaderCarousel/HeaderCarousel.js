@@ -180,7 +180,7 @@ class HeaderCarousel extends Component {
 
 				<KnowMore onClick={() => this.handleClick()}>
 					<img src={upArrow} alt="" />
-					<h1>WANT TO KNOW MORE?</h1>
+					<h1>Want to know more about our clerkship experience?</h1>
 				</KnowMore>
 
 				<Form handleClick={this.handleClick} formOpen={this.state.formOpen} />
