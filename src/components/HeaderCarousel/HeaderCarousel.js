@@ -84,7 +84,7 @@ class HeaderCarousel extends Component {
 		this.slider.slickPrev();
 	}
 
-	slideChanged(beforeIndex, afterIndex) {
+	slideChanged(afterIndex) {
 
 		setTimeout( () => { this.setState({
 			videoURL: videoURLs[afterIndex]
@@ -102,7 +102,7 @@ class HeaderCarousel extends Component {
 			speed: 1000,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			beforeChange: this.slideChanged
+			afterChange: this.slideChanged
 		};
 		return (
 			<Wrapper>

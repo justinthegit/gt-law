@@ -8,7 +8,7 @@ class Area extends Component {
 			<AreaWrapper>
         <h1>{this.props.title}</h1>
 
-        <a target="_blank" href={`https://www.gtlaw.com.au/expertise/${this.props.url}`}>
+        <a target="_blank" rel="noopener noreferrer" href={`https://www.gtlaw.com.au/expertise/${this.props.url}`}>
         <span >Learn more</span>
         <img src={arrowIcon} alt=""/>
         </a>
