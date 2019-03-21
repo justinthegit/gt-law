@@ -59,7 +59,7 @@ class WorkWithUs extends Component {
 }
 
 const Image = () => (
-	<StaticQuery
+	<StaticQuery	
 		query={graphql`
 			query {
 				placeholderImage: file(relativePath: { eq: "clerkship.jpg" }) {

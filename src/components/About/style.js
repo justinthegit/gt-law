@@ -253,9 +253,10 @@ export const VideoWrapper = styled.div`
 `;
 
 export const Thumbnail = styled.div`
+	/* opacity: ${(props) => (props.playClicked ? '0' : '1')}; */
+
 	z-index: ${(props) => (props.playClicked ? '-1000' : null)};
-	opacity: ${(props) => (props.playClicked ? '0' : '1')};
-	transition: 1s;
+	/* transition: ${(props) => (props.playClicked ? 'opacity 2s 0' : 'opacity 2s, z-index 0 2s')}; */
 
 	position: absolute;
 	height: 100%;
