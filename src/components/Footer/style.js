@@ -24,7 +24,12 @@ export const Wrapper = styled.div`
 	a {
 		color: #0047bb;
 		font-weight: 500;
+		white-space: nowrap;
 
+	}
+
+	a.tel {
+		text-decoration: none;
 	}
 
 	img {

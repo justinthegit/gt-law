@@ -29,14 +29,14 @@ class Footer extends Component {
 				<Wrapper>
 				<a href="https://www.gtlaw.com.au/">
 						<img src={logo} alt="" />
-					</a>	
+					</a>
 
 					<p>
-					Gilbert + Tobin is an equal opportunity employer. If you require assistance accessing any of the information contained here, please contact Kristie Barton on <span>(02) 9263 4575</span> or via <a href="/"> gtcareers@gtlaw.com.au  </a>
+					Gilbert + Tobin is an equal opportunity employer. If you require assistance accessing any of the information contained here, please contact Kristie Barton on <a className="tel" href="tel:0292634575">(02) 9263 4575</a> or via <a href="/"> gtcareers@gtlaw.com.au  </a>
 					</p>
 				</Wrapper>
 
-				
+
 			</div>
 		);
 	}
