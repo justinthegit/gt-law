@@ -90,7 +90,7 @@ export const Title = styled.div`
 	@media (max-width: 1024px) {
 		left: 40px;
 		top:128px;
-		width: 320px;
+		width: 320px; 
 		h2 {
 			font-size: 80px;
 		}
