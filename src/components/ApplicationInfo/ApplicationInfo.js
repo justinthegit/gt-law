@@ -203,7 +203,7 @@ class ApplicationInfo extends Component {
 									individuality, and you’ll have many opportunities for growth and development. We
 									also have many great opportunities for you to support our community and social
 									initiatives, no matter what your role. If you think this sounds like a place where
-									you’ll thrive, get in touch with our Talent Team or browse current vacancies via our{' '}
+									you’ll thrive, get in touch with our 	<a  target="_blank" href="mailto:careers@gtlaw.com.au">Talent Team</a> or browse current vacancies via our{' '}
 									<a  target="_blank" href=" https://www.gtlaw.com.au/careers/browse-jobs"> Careers page</a>.
 								</p>
 							</Question>
