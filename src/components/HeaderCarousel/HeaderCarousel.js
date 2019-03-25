@@ -130,7 +130,7 @@ class HeaderCarousel extends Component {
 						videoOpen={this.state.videoOpen}
 						next={this.next}
 						previous={this.previous}
-						text="Find out more about Daniels thoughts on innovation in the legal industry."
+						text="Find out more about Daniel's thoughts on innovation in the legal industry."
 					>
 						<Img fluid={this.props.image2.childImageSharp.fluid} />
 					</Slide>
