@@ -54,7 +54,7 @@ class ApplicationInfo extends Component {
 							<Question question="How do I apply for a clerkship?">
 								<p>
 									If you are a law student in your fourth or penultimate year of study, please apply
-									through <a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
+									through <a  target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
 									Sydney, Melbourne and Perth clerkships.
 								</p>
 							</Question>
@@ -65,7 +65,7 @@ class ApplicationInfo extends Component {
 									your clerkship, based on your preferences and the business needs. From your first
 									day, you’ll be given the opportunity to test your skills and interest – you can
 									expect to be involved in some challenging matters, and your work will be presented
-									to clients. Often, you’ll work directly with a partner on a matter, oras part of a
+									to clients. Often, you’ll work directly with a partner on a matter, or as part of a
 									bigger team on larger transactions.
 								</p>
 								<p>
@@ -106,7 +106,7 @@ class ApplicationInfo extends Component {
 								</p>
 								<p>
 									You can also expect to use many new lawtech tools, including our in-house due
-									diligence platform DD, document automation and collaboration platforms, and smart
+									diligence platform DD{`<i>`}, document automation and collaboration platforms, and smart
 									search tools.
 								</p>
 							</Question>
@@ -121,7 +121,7 @@ class ApplicationInfo extends Component {
 								</p>
 							</Question>
 
-							<Question question="What sort of networking oppurtunities are available?">
+							<Question question="What sort of networking opportunities are available?">
 								<p>
 									G+T is an open, friendly environment and you’ll build strong relationships with your
 									peers, and with more experienced lawyers within your practice area. Through
@@ -132,14 +132,14 @@ class ApplicationInfo extends Component {
 									Our clerks tell us their experience is fun and often leads to lifelong friendships
 									as well as a valuable professional network. Social events include our annual
 									Christmas Party, practice group drinks, lunch catch-ups, volunteering and sports
-									comps.
+									competitions.
 								</p>{' '}
 							</Question>
 							<Question question="Can I get involved in community activities?">
 								<p>
 									We’re committed to making a positive impact in our community, and there are
-									opportunities to volunteer, such as mentoring high school students, or take part in
-									our reconciliation initiatives, such as cultural awareness training. Our CSR program
+									opportunities to volunteer, such as mentoring high school students, or taking part in
+									our reconciliation initiatives, such as cultural awareness training. Our Corporate Social Responsibility program
 									also focuses on reducing our environmental impact.
 								</p>
 							</Question>
@@ -174,7 +174,7 @@ class ApplicationInfo extends Component {
 							<Question question="Do you offer Indigenous traineeships?">
 								<p>
 									Our{' '}
-									<a href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
+									<a  target="_blank" href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
 										Indigenous legal cadetship{' '}
 									</a>lets you complete your studies while working with us part-time.
 								</p>
@@ -190,7 +190,7 @@ class ApplicationInfo extends Component {
 								<p>
 									Our graduate lawyers complete a formal 18-month program, working directly with
 									partners and lawyers across at least two practice rotations.{' '}
-									<a href="https://www.gtlaw.com.au/careers/your-career/law-students/graduate-program">
+									<a  target="_blank"  href="https://www.gtlaw.com.au/careers/your-career/law-students/graduate-program">
 										Learn more
 									</a>
 								</p>
@@ -204,7 +204,7 @@ class ApplicationInfo extends Component {
 									also have many great opportunities for you to support our community and social
 									initiatives, no matter what your role. If you think this sounds like a place where
 									you’ll thrive, get in touch with our Talent Team or browse current vacancies via our{' '}
-									<a href=" https://www.gtlaw.com.au/careers/browse-jobs"> Careers page</a>.
+									<a  target="_blank" href=" https://www.gtlaw.com.au/careers/browse-jobs"> Careers page</a>.
 								</p>
 							</Question>
 						</QuestionsContainer>
@@ -221,7 +221,7 @@ class ApplicationInfo extends Component {
 								</p>
 							</div>
 							<div>
-								<a href="https://itunes.apple.com/gb/app/zappar/id429885268
+								<a  target="_blank" href="https://play.google.com/store/apps/details?id=com.zappar.Zappar
 					">
 									<img
 										src={downloadGoogle}
@@ -229,7 +229,7 @@ class ApplicationInfo extends Component {
 									/>
 								</a>
 
-								<a href="https://itunes.apple.com/gb/app/zappar/id429885268
+								<a  target="_blank" href="https://itunes.apple.com/gb/app/zappar/id429885268
 				">
 									{' '}
 									<img src={downloadApple} alt="" />

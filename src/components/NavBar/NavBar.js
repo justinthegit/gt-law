@@ -44,7 +44,7 @@ class NavBar extends Component {
 							A DAY IN THE LIFE
 						</Link>
 						<Link href="#" activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
-							APPLICATION INFO+FAQS
+							APPLICATION INFO + FAQS
 						</Link>
 					</Nav>
 					<Clickable onClick={() => this.handleClick()}>
@@ -75,8 +75,8 @@ class NavBar extends Component {
 
 					<NavItem>
 						<Link activeClass="active" to="faqs" spy={true} smooth="easeOutQuad" duration={800}>
-							APPLICATION INFO+FAQS
-						</Link>{' '}
+							APPLICATION INFO + FAQS
+						</Link>{' '} 
 					</NavItem>
 				</MobileNav>
 			</div>

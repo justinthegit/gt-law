@@ -365,9 +365,10 @@ export const OnSubmission = styled.div`
   max-width: 387px;
   width: 387px;
   height: 500px;
-  display: ${props => (props.isSubmitted ? "grid" : "none")};
+  display: ${props => (props.isSubmitted ? "flex" : "none")};
   z-index: 1000;
-  place-items: center;
+  justify-content: center;
+  align-items:center;
 
   p {
     font-size: 30px;

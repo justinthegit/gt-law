@@ -16,7 +16,7 @@ class WorkWithUs extends Component {
 							in a firm that makes a difference for its clients and its people. The work is challenging,
 							interesting and rewarding, as these graduates reveal.{' '}
 						</p>
-						<a href="https://gradaustralia.com.au/graduate-employers/gilbert-tobin/graduate-stories">
+						<a  target="_blank"  href="https://gradaustralia.com.au/graduate-employers/gilbert-tobin/graduate-stories">
 							<span>gradaustralia.com.au</span>
 							<img src={arrowIcon} alt="" />
 						</a>
@@ -27,7 +27,7 @@ class WorkWithUs extends Component {
 					</BgImg>
 				</HeroWrapper>
 				<TextWrapper>
-					<p>If you’re ready for more, apply for our clerkship programs</p>
+					<p>If you’re ready for more, apply for one of our clerkship programs</p>
 
 					<div>
 						<p>
@@ -43,7 +43,7 @@ class WorkWithUs extends Component {
 						</p>
 					</div>
 
-					<a href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
+					<a  target="_blank"  href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
 						<span>Learn more</span>
 						<img src={arrowIcon} alt="" />
 					</a>

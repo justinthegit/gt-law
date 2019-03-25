@@ -4,7 +4,7 @@ export const slides = [
 		desc: 'Hear more about the defining moments in Ciara’s career, and the difference her clerkship made.'
   }, 	{
 		img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg',
-		desc: 'Find out more about Daniels thoughts on innovation in the legal industry.'
+		desc: "Find out more about Daniel's thoughts on innovation in the legal industry."
   }, 	{
 		img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg',
 		desc: 'Discover why Sean chose to start his career at Gilbert + Tobin, and why its workplace culture makes such a difference.'

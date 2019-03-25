@@ -66,7 +66,7 @@ export const Wrapper = styled.div`
 `
 
 export const ImagesWrap = styled.div`
-  max-width: 1440px;
+  max-width: 1200px;
 
   display: flex;
   flex-direction: row;
@@ -75,89 +75,82 @@ export const ImagesWrap = styled.div`
   justify-content: center;
   width: 100%;
   height: auto;
-  margin-left: 44px;
-  /* grid-template-columns: repeat(3, minmax(50px, 386px));
-		grid-template-rows: 1fr; */
-  /* grid-gap: 25px; */
+  margin:0 auto;
 
   div {
     width: 100%;
     height: 100%;
     margin: 0;
-    margin-right: 55px;
+    margin: 0 30px;
 
     @media (max-width: 768px) {
-      margin-right: 46px;
+      margin: 0 20px;
     }
     img {
       margin-top: 0;
     }
 
     :nth-of-type(2) {
-      margin-top: -25px;
+      /* margin-top: -25px; */
     }
     :nth-of-type(3) {
-      margin-top: 40px;
+      /* margin-top: 40px; */
     }
   }
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     margin-left: 36px;
   }
 
   @media (max-width: 768px) {
     margin-left: 30px;
-  }
+  } */
 
   @media (max-width: 480px) {
-    margin-left: 0px;
     flex-direction: column;
-    div {
-      margin-right: 0;
 
-      :nth-of-type(2) {
-        margin-top: 0px;
-      }
-      :nth-of-type(3) {
-        margin-top: 0px;
-      }
+    div {
+      margin: 10px 0;
+    }
+    > div {
+      /* padding: 30px 0; */
+      margin: 20px 0;
     }
   }
 `
 export const InfoWrapper = styled.div`
-  display: grid;
-  place-items: center;
+  display: flex;
   margin-top: 60px;
   width: 100%;
   height: auto;
-  padding: 17px 77px;
+  padding: 65px 77px;
   background-color: #003057;
   margin-bottom: 70px;
 
   @media (max-width: 1024px) {
-    padding: 0px 47px;
+    padding: 35px 47px;
   }
 
   @media (max-width: 768px) {
-    padding: 0px 20px;
+    padding: 35px 20px;
     margin-bottom: 50px;
   }
 
   @media (max-width: 480px) {
     margin-top: 40px;
+    padding: 20px 20px;
     margin-bottom: 30px;
 
-    padding: 40px 30px 0 30px;
+    /* padding: 40px 30px 0 30px; */
   }
 `
 
 export const VideoContainer = styled.div`
-  max-width: 1440px;
-
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
 
   @media (max-width: 768px) {
@@ -263,6 +256,8 @@ export const Thumbnail = styled.div`
 export const QuoteWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 110px;
+  
 
   p {
     max-width: 400px;
@@ -287,6 +282,8 @@ export const QuoteWrapper = styled.div`
 
   @media (max-width: 1280px) {
     max-width: 330px;
+    margin-right: 60px;
+
     p {
       font-size: 23px;
       padding: 0 25px;
@@ -296,6 +293,14 @@ export const QuoteWrapper = styled.div`
       padding-right: 20px;
     }
   }
+
+  @media (max-width: 1024px) {
+
+    margin-right: 30px;
+
+
+  }
+
 
   @media (max-width: 768px) {
     order: 2;

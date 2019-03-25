@@ -25,7 +25,7 @@ max-width: 1440px;
 	}
 
 	@media (max-width: 1280px) {
-		padding: 80px 100px 106 100px;
+		padding: 80px 80px 106px 80px;
 	}
 
 	@media (max-width: 1024px) {
@@ -55,12 +55,11 @@ export const AreasContainer = styled.div`
 `;
 
 export const AreasRow = styled.div`
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	/* justify-content: space-between; */
+	display: flex;
+flex-direction: row;
 
 	@media (max-width: 1024px) {
-		grid-template-columns: 1fr;
+flex-direction: column;
 	}
 
 
@@ -91,6 +90,7 @@ export const HorizontalLine = styled.div`
 //area.js
 
 export const AreaWrapper = styled.div`
+flex-basis: 25%;
 	display: flex;
 	flex-direction: column;
 	position:relative;

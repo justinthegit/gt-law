@@ -39,7 +39,7 @@ class About extends Component {
 		return (
 			<Wrapper>
 				<p>
-					G+T is a leading transactions, regulatory and disputes law firm, committed to outstanding
+					Gilbert + Tobin is a leading transactions, regulatory and disputes law firm, committed to outstanding
 					citizenship.
 				</p>
 				<p className="last">
