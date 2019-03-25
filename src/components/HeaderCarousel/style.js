@@ -493,7 +493,7 @@ export const TextArea = styled.textarea`
 `
 
 export const Button = styled.button`
-  border: 3px solid white;
+  border: 2px solid white;
   background: transparent;
   color: white;
   width: 122px;
