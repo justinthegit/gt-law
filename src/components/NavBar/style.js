@@ -14,6 +14,8 @@ export const Wrapper = styled.div`
 
 
 	img {
+		width: 169px;
+		height: 53px;
 		margin: 32px;
 	}
 
