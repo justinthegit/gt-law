@@ -54,7 +54,7 @@ class ApplicationInfo extends Component {
 							<Question question="How do I apply for a clerkship?">
 								<p>
 									If you are a law student in your fourth or penultimate year of study, please apply
-									through <a  target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
+									<a  target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
 									Sydney, Melbourne and Perth clerkships.
 								</p>
 							</Question>
@@ -78,7 +78,7 @@ class ApplicationInfo extends Component {
 							<Question question="Who will support me during my clerkship?">
 								<p>
 									You’ll be assigned a partner, who will allocate and review your work, and a mentor
-									who will guide you on all aspects of working with G+T. You’ll also be given a buddy,
+									who will guide you on all aspects of working at G+T. You’ll also be given a buddy,
 									who can help with any questions about your day to day experience in the office.
 								</p>
 							</Question>
@@ -139,7 +139,9 @@ class ApplicationInfo extends Component {
 								<p>
 									We’re committed to making a positive impact in our community, and there are
 									opportunities to volunteer, such as mentoring high school students, or taking part in
-									our reconciliation initiatives, such as cultural awareness training. Our Corporate Social Responsibility program
+									our reconciliation initiatives, such as cultural awareness training. Our 	<a  target="_blank" href="https://www.gtlaw.com.au/about-us/community/corporate-social-responsibility">
+										Corporate Social Responsibility{' '}
+									</a> program
 									also focuses on reducing our environmental impact.
 								</p>
 							</Question>
@@ -203,7 +205,7 @@ class ApplicationInfo extends Component {
 									individuality, and you’ll have many opportunities for growth and development. We
 									also have many great opportunities for you to support our community and social
 									initiatives, no matter what your role. If you think this sounds like a place where
-									you’ll thrive, get in touch with our 	<a  target="_blank" href="mailto:careers@gtlaw.com.au">Talent Team</a> or browse current vacancies via our{' '}
+									you’ll thrive, get in touch with our 	<a  target="_blank" href="mailto:gtcareers@gtlaw.com.au ">Talent Team</a> or browse current vacancies via our{' '}
 									<a  target="_blank" href=" https://www.gtlaw.com.au/careers/browse-jobs"> Careers page</a>.
 								</p>
 							</Question>

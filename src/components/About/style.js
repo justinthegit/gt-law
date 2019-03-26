@@ -79,32 +79,32 @@ export const ImagesWrap = styled.div`
 
   div {
     width: 100%;
-    height: 100%;
+    height: auto;
+    /* max-height: 1292px;
+    max-width: 342px; */
     margin: 0;
-    margin: 0 30px;
+    /* object-fit:contain; */
+    margin: 0 40px;
 
     @media (max-width: 768px) {
       margin: 0 20px;
     }
+
+    :nth-of-type(3) {
+      img {
+      object-fit:contain !important;
+    }
+
+    }
     img {
       margin-top: 0;
+      margin-bottom:0;
+      /* object-fit:contain !important; */
+      /* max-height: 1292px; */
+
     }
 
-    :nth-of-type(2) {
-      /* margin-top: -25px; */
-    }
-    :nth-of-type(3) {
-      /* margin-top: 40px; */
-    }
   }
-
-  /* @media (max-width: 1024px) {
-    margin-left: 36px;
-  }
-
-  @media (max-width: 768px) {
-    margin-left: 30px;
-  } */
 
   @media (max-width: 480px) {
     flex-direction: column;

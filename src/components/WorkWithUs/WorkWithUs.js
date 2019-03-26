@@ -44,7 +44,7 @@ class WorkWithUs extends Component {
 					</div>
 
 					<a  target="_blank"  href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">
-						<span>Learn more</span>
+						<span>Apply now</span>
 						<img src={arrowIcon} alt="" />
 					</a>
 				</TextWrapper>

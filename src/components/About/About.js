@@ -50,7 +50,6 @@ class About extends Component {
 				<InfoWrapper>
 					<ImagesWrap>
 						<Img fluid={this.props.info1.childImageSharp.fluid} />
-
 						<Img fluid={this.props.info2.childImageSharp.fluid} />
 						<Img fluid={this.props.info3.childImageSharp.fluid} />
 					</ImagesWrap>
