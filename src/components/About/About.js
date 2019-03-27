@@ -10,7 +10,8 @@ import {
 	ImgWrapper,
 	Thumbnail,
 	VideoWrapper,
-	ImagesWrap
+	ImagesWrap,
+	ImageColumn
 } from './style.js';
 
 class About extends Component {
@@ -49,9 +50,15 @@ class About extends Component {
 
 				<InfoWrapper>
 					<ImagesWrap>
-						<Img fluid={this.props.info1.childImageSharp.fluid} />
-						<Img fluid={this.props.info2.childImageSharp.fluid} />
-						<Img fluid={this.props.info3.childImageSharp.fluid} />
+						<ImageColumn>
+							<Img fluid={this.props.info1.childImageSharp.fluid} />
+						</ImageColumn>
+						<ImageColumn>
+							<Img fluid={this.props.info2.childImageSharp.fluid} />
+						</ImageColumn>
+						<ImageColumn>
+							<Img fluid={this.props.info3.childImageSharp.fluid} />
+						</ImageColumn>
 					</ImagesWrap>
 				</InfoWrapper>
 

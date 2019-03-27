@@ -71,13 +71,48 @@ export const ImagesWrap = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: auto;
   margin:0 auto;
 
-  div {
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+
+`
+export const InfoWrapper = styled.div`
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
+  padding: 65px 77px;
+  background-color: #003057;
+  margin-bottom: 70px;
+
+  @media (max-width: 1024px) {
+    padding: 35px 47px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 35px 20px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 40px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+
+
+    /* padding: 40px 30px 0 30px; */
+  }
+`
+
+export const ImageColumn = styled.div`
+
+
     width: 100%;
     height: auto;
     /* max-height: 1292px;
@@ -104,45 +139,13 @@ export const ImagesWrap = styled.div`
 
     }
 
-  }
+    @media (max-width: 480px) {
 
-  @media (max-width: 480px) {
-    flex-direction: column;
-
-    div {
       margin: 10px 0;
     }
-    > div {
-      /* padding: 30px 0; */
-      margin: 20px 0;
-    }
-  }
-`
-export const InfoWrapper = styled.div`
-  display: flex;
-  margin-top: 60px;
-  width: 100%;
-  height: auto;
-  padding: 65px 77px;
-  background-color: #003057;
-  margin-bottom: 70px;
 
-  @media (max-width: 1024px) {
-    padding: 35px 47px;
-  }
 
-  @media (max-width: 768px) {
-    padding: 35px 20px;
-    margin-bottom: 50px;
-  }
 
-  @media (max-width: 480px) {
-    margin-top: 40px;
-    padding: 20px 20px;
-    margin-bottom: 30px;
-
-    /* padding: 40px 30px 0 30px; */
-  }
 `
 
 export const VideoContainer = styled.div`
@@ -257,7 +260,7 @@ export const QuoteWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 110px;
-  
+
 
   p {
     max-width: 400px;
@@ -338,4 +341,9 @@ export const QuoteWrapper = styled.div`
       line-height: 18px;
     }
   }
+`
+
+
+export const link1 = styled.a`
+
 `
