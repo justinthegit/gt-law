@@ -53,8 +53,7 @@ class ApplicationInfo extends Component {
 						<QuestionsContainer>
 							<Question question="How do I apply for a clerkship?">
 								<p>
-									If you are a law student in your fourth or penultimate year of study, please apply
-									<a  target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
+									If you are a law student in your fourth or penultimate year of study, please apply <a target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
 									Sydney, Melbourne and Perth clerkships.
 								</p>
 							</Question>
@@ -140,8 +139,7 @@ class ApplicationInfo extends Component {
 									We’re committed to making a positive impact in our community, and there are
 									opportunities to volunteer, such as mentoring high school students, or taking part in
 									our reconciliation initiatives, such as cultural awareness training. Our 	<a  target="_blank" href="https://www.gtlaw.com.au/about-us/community/corporate-social-responsibility">
-										Corporate Social Responsibility{' '}
-									</a> program
+										Corporate Social Responsibility</a> program
 									also focuses on reducing our environmental impact.
 								</p>
 							</Question>
@@ -175,10 +173,8 @@ class ApplicationInfo extends Component {
 
 							<Question question="Do you offer Indigenous traineeships?">
 								<p>
-									Our{' '}
-									<a  target="_blank" href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
-										Indigenous legal cadetship{' '}
-									</a>lets you complete your studies while working with us part-time.
+									Our <a  target="_blank" href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
+										Indigenous legal cadetship</a> lets you complete your studies while working with us part-time.
 								</p>
 							</Question>
 
