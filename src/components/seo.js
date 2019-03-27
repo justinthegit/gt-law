@@ -67,6 +67,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `og:image`,
+          content: 'https://www.gtlaw.com.au/theresmore/images/gt-share.png',
+        },
       ]
         .concat(
           keywords.length > 0
