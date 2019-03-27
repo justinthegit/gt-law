@@ -11,7 +11,17 @@ import {
 	Thumbnail,
 	VideoWrapper,
 	ImagesWrap,
-	ImageColumn
+	ImageColumn,
+	Link1,
+	Link2,
+	Link3,
+	Link4,
+	Link5,
+	Link6,
+	Link7,
+	Link8,
+	Link9,
+	Link10,
 } from './style.js';
 
 class About extends Component {
@@ -52,12 +62,22 @@ class About extends Component {
 					<ImagesWrap>
 						<ImageColumn>
 							<Img fluid={this.props.info1.childImageSharp.fluid} />
+							<Link1 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/about-us" />
+							<Link2 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gilbert-tobin-ranked-tier-1-across-eight-practice-areas-legal500-asia-pacific" />
+							<Link3 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/people" />
+							<Link4 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-steps-industry-leading-genderequality-commitments-targeting-40-female-partners-2023" />
 						</ImageColumn>
 						<ImageColumn>
 							<Img fluid={this.props.info2.childImageSharp.fluid} />
+							<Link5 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-steps-industry-leading-genderequality-commitments-targeting-40-female-partners-2023" />
 						</ImageColumn>
 						<ImageColumn>
 							<Img fluid={this.props.info3.childImageSharp.fluid} />
+							<Link6 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gilbert-tobin-ranked-outstanding-firm-asialaw-profiles-2019" />
+							<Link7 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-celebrates-success-2018-lawyers-weekly-australian-law-awards" />
+							<Link8 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-once-again-named-employer-choice-gender-equality" />
+							<Link9 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-named-law-firm-year-corporate-law-private-equity-law-best-lawyers-australia-2020" />
+							<Link10 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-named-law-firm-year-corporate-law-private-equity-law-best-lawyers-australia-2020" />
 						</ImageColumn>
 					</ImagesWrap>
 				</InfoWrapper>

@@ -16,11 +16,11 @@ export const Wrapper = styled.div`
     letter-spacing: -0.41px;
     line-height: 32px;
     margin-bottom: 30px;
-		padding: 0 0px;
+    padding: 0 0px;
 
-		&.last {
-        margin-bottom: 0;
-      }
+    &.last {
+      margin-bottom: 0;
+    }
   }
 
   img {
@@ -44,8 +44,6 @@ export const Wrapper = styled.div`
       letter-spacing: -0.24px;
       padding: 0 40px;
       margin-bottom: 20px;
-
-
     }
 
     img {
@@ -75,12 +73,11 @@ export const ImagesWrap = styled.div`
   justify-content: center;
   width: 100%;
   height: auto;
-  margin:0 auto;
+  margin: 0 auto;
 
   @media (max-width: 480px) {
     flex-direction: column;
   }
-
 `
 export const InfoWrapper = styled.div`
   display: flex;
@@ -105,47 +102,39 @@ export const InfoWrapper = styled.div`
     padding: 20px 20px;
     margin-bottom: 30px;
 
-
     /* padding: 40px 30px 0 30px; */
   }
 `
 
 export const ImageColumn = styled.div`
-
-
-    width: 100%;
-    height: auto;
-    /* max-height: 1292px;
+  width: 100%;
+  height: auto;
+  /* max-height: 1292px;
     max-width: 342px; */
-    margin: 0;
-    /* object-fit:contain; */
-    margin: 0 40px;
+  margin: 0;
+  /* object-fit:contain; */
+  margin: 0 40px;
+  position: relative;
 
-    @media (max-width: 768px) {
-      margin: 0 20px;
-    }
+  @media (max-width: 768px) {
+    margin: 0 20px;
+  }
 
-    :nth-of-type(3) {
-      img {
-      object-fit:contain !important;
-    }
-
-    }
+  :nth-of-type(3) {
     img {
-      margin-top: 0;
-      margin-bottom:0;
-      /* object-fit:contain !important; */
-      /* max-height: 1292px; */
-
+      object-fit: contain !important;
     }
+  }
+  img {
+    margin-top: 0;
+    margin-bottom: 0;
+    /* object-fit:contain !important; */
+    /* max-height: 1292px; */
+  }
 
-    @media (max-width: 480px) {
-
-      margin: 10px 0;
-    }
-
-
-
+  @media (max-width: 480px) {
+    margin: 10px 0;
+  }
 `
 
 export const VideoContainer = styled.div`
@@ -261,7 +250,6 @@ export const QuoteWrapper = styled.div`
   flex-direction: column;
   margin-right: 110px;
 
-
   p {
     max-width: 400px;
     text-align: left;
@@ -298,12 +286,8 @@ export const QuoteWrapper = styled.div`
   }
 
   @media (max-width: 1024px) {
-
     margin-right: 30px;
-
-
   }
-
 
   @media (max-width: 768px) {
     order: 2;
@@ -343,7 +327,68 @@ export const QuoteWrapper = styled.div`
   }
 `
 
+export const Link = styled.a`
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  padding-bottom: 56.25%;
+  top: 36.8%;
+  background: red;
+  opacity: 0;
+  transform: translateX(-50%);
+`
 
-export const link1 = styled.a`
+export const Link1 = styled(Link)`
+  padding-bottom: 38.404348%;
+  top: 0;
+  width: 75%;
+`
 
+export const Link2 = styled(Link)`
+  padding-bottom: 67.404348%;
+  top: 36.8%;
+  width: 79%;
+`
+
+export const Link3 = styled(Link)`
+  padding-bottom: 33.404348%;
+  top: 54.2%;
+`
+export const Link4 = styled(Link)`
+  padding-bottom: 43.404348%;
+  top: 91.1%;
+  width: 62%;
+`
+
+export const Link5 = styled(Link)`
+  padding-bottom: 48.404348%;
+  top: 89.8%;
+  width: 60%;
+`
+export const Link6 = styled(Link)`
+  padding-bottom: 52.904348%;
+  top: 57.9%;
+  width: 100%;
+`
+export const Link7 = styled(Link)`
+  padding-bottom: 65.904348%;
+  top: 71.7%;
+  width: 90%;
+`
+export const Link8 = styled(Link)`
+  padding-bottom: 58.304348%;
+  top: 88%;
+  width: 85%;
+`
+
+export const Link9 = styled(Link)`
+  padding-bottom: 102.404348%;
+  top: 0;
+  width: 80%;
+`
+export const Link10 = styled(Link)`
+  padding-bottom: 152.404348%;
+  top: 23.9%;
+  width: 74%;
 `
