@@ -392,3 +392,14 @@ export const Link10 = styled(Link)`
   top: 23.9%;
   width: 74%;
 `
+export const Link11 = styled(Link)`
+  padding-bottom: 120.404348%;
+  top: 64.4%;
+  width: 79%;
+`
+
+export const Link12 = styled(Link)`
+  padding-bottom: 121.204348%;
+  top: 11.3%;
+  width: 100%;
+`

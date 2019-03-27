@@ -10,7 +10,7 @@ import upArrow from '../../images/up-arrow.svg';
 import Slide from './slide.js';
 import VideoOverlay from './videoOverlay.js';
 
-const videoURLs = [ 'https://vimeo.com/325580763', 'https://vimeo.com/325580524', 'https://vimeo.com/325580567', 'https://vimeo.com/325580603', 'https://vimeo.com/325580737', 'https://vimeo.com/325580628' ];
+const videoURLs = [ 'https://vimeo.com/326736047', 'https://vimeo.com/326736517', 'https://vimeo.com/326736569', 'https://vimeo.com/326736998', 'https://vimeo.com/326736668', 'https://vimeo.com/326737082' ];
 
 class HeaderCarousel extends Component {
 	constructor(props) {

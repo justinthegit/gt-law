@@ -22,7 +22,7 @@ const IndexPage = ({data}) => {
 
 	return (
 		<Layout>
-			<SEO title="There's More" />
+			<SEO title="Clerkships" />
 
 			<NavBar />
 			<HeaderCarousel {...data}  />

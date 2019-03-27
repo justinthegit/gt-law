@@ -22,6 +22,8 @@ import {
 	Link8,
 	Link9,
 	Link10,
+	Link11,
+	Link12,
 } from './style.js';
 
 class About extends Component {
@@ -66,10 +68,12 @@ class About extends Component {
 							<Link2 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gilbert-tobin-ranked-tier-1-across-eight-practice-areas-legal500-asia-pacific" />
 							<Link3 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/people" />
 							<Link4 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-steps-industry-leading-genderequality-commitments-targeting-40-female-partners-2023" />
+							<Link11 target="_blank" rel="noopener noreferrer" href="https://clientchoiceawards.net/2018-winners/" />
 						</ImageColumn>
 						<ImageColumn>
 							<Img fluid={this.props.info2.childImageSharp.fluid} />
 							<Link5 target="_blank" rel="noopener noreferrer" href="https://www.gtlaw.com.au/news/gt-steps-industry-leading-genderequality-commitments-targeting-40-female-partners-2023" />
+							<Link12 target="_blank" rel="noopener noreferrer" href="https://chambers.com/guide/asia-pacific?publicationTypeId=8" />
 						</ImageColumn>
 						<ImageColumn>
 							<Img fluid={this.props.info3.childImageSharp.fluid} />
@@ -94,7 +98,7 @@ class About extends Component {
 					<ImgWrapper playClicked={this.state.playClicked} onClick={this.playVideo}>
 						<VideoWrapper playClicked={this.state.playClicked}>
 							<ReactPlayer
-								url="https://vimeo.com/325580665"
+								url="https://vimeo.com/326736835"
 								playing={this.state.playClicked}
 
 							/>

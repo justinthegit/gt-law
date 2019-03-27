@@ -1,8 +1,8 @@
 module.exports = {
 	pathPrefix: `/theresmore`,
 	siteMetadata: {
-		title: `G+T`,
-		description: `G+T is a leading transactions, regulatory and disputes law firm, committed to outstanding citizenship.`,
+		title: `Gilbert + Tobin Lawyers`,
+		description: `Each year, we invite law students in their penultimate year of study to partake in Gilbert + Tobin’s Clerkship Program. You’ll have interaction with partners, lawyers and other graduates, as well as practical exposure to legal work.`,
 		author: `@gatsbyjs`
 	},
 	plugins: [
