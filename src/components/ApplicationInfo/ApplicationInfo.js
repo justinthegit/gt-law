@@ -173,10 +173,8 @@ class ApplicationInfo extends Component {
 
 							<Question question="Do you offer Indigenous traineeships?">
 								<p>
-									Our{' '}
-									<a  target="_blank" href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
-										Indigenous legal cadetship{' '}
-									</a>lets you complete your studies while working with us part-time.
+									Our <a  target="_blank" href="https://www.gtlaw.com.au/careers/your-career/law-students/indigenous-cadetship-program">
+										Indigenous legal cadetship</a> lets you complete your studies while working with us part-time.
 								</p>
 							</Question>
 
