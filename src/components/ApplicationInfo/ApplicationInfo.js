@@ -53,8 +53,7 @@ class ApplicationInfo extends Component {
 						<QuestionsContainer>
 							<Question question="How do I apply for a clerkship?">
 								<p>
-									If you are a law student in your fourth or penultimate year of study, please apply 
-										<a  target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1"> here</a> for our
+									If you are a law student in your fourth or penultimate year of study, please apply <a target="_blank" href="https://fsr.cvmail.com.au/gtau/main.cfm?srxksl=1">here</a> for our
 									Sydney, Melbourne and Perth clerkships.
 								</p>
 							</Question>
